@@ -35,7 +35,7 @@ function Jurisdiction() {
 
       <div className="juriMainCardContainer">
         {pageData.map((data, index) => (
-          <div className="juriCardContainer">
+          <div className="juriCardContainer" key={index}>
             <div>
               <Image
                 src={data.img}
