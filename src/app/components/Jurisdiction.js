@@ -40,7 +40,7 @@ function Jurisdiction() {
       <div className="juriMainCardContainer">
         {pageData.map((data, index) => (
           <div className="juriCardContainer" key={index}>
-            <div>
+            <div className="juriCardImage">
               <Image
                 src={data.img}
                 width={500}
@@ -56,7 +56,7 @@ function Jurisdiction() {
               <h1 style={{ color: "#fff" }} className="servicesHeading">
                 {data.heading}
               </h1>
-              <p>{data.description}</p>
+              <p className="juriDesc">{data.description}</p>
             </div>
           </div>
         ))}

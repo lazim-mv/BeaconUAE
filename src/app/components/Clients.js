@@ -2,40 +2,48 @@
 import { motion, useAnimation } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import Stats from "./Stats";
 
 function Clients() {
-  const testimonials = [
+  const testimonialData = [
     {
       message:
-        "Beacon has been with us throughout the phase of integrating and adapting business to the dynamic marketplace, with end-to-end business consultation services.",
+        "“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”",
       name: "Omar Abdallah",
       designation: "Riyadh, KSA",
       img: "/profilePic3.jpg",
     },
     {
       message:
-        "While partnering with Beacon, we never felt them as the business consultants, but as a part of our team with transparency and commitment at its best.",
+        "“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”",
+      name: "Muhammed",
+      designation: "Jeddah, KSA",
+      img: "/profilePic4.jpg",
+    },
+    {
+      message:
+        "“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”",
       name: "Muhammed",
       designation: "Jeddah, KSA",
       img: "/profilePic4.jpg",
     },
   ];
 
-  const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
+  // const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
 
-  const nextTestimonial = () => {
-    setCurrentTestimonialIndex((prevIndex) =>
-      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
-    );
-  };
+  // const nextTestimonial = () => {
+  //   setCurrentTestimonialIndex((prevIndex) =>
+  //     prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+  //   );
+  // };
 
-  const previousTestimonial = () => {
-    setCurrentTestimonialIndex((prevIndex) =>
-      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
-    );
-  };
+  // const previousTestimonial = () => {
+  //   setCurrentTestimonialIndex((prevIndex) =>
+  //     prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
+  //   );
+  // };
 
-  const currentTestimonial = testimonials[currentTestimonialIndex];
+  // const currentTestimonial = testimonials[currentTestimonialIndex];
 
   return (
     <div className="clientsContainer">
@@ -48,59 +56,66 @@ function Clients() {
         {/* <ScrollableRow /> */}
       </div>
       <div className="testimonialMainContainer">
-        <div className="testimonialLeftContainer">
-          <h2 className="testimonialHeading">
-            What our clients
-            <br />
-            say about us
+        <div className="businessContentContainer">
+          <h6 className="businessHeading">CLIENT REVIEWS</h6>
+          <h2 className="businessDesc">
+            We always go the extra mile
+            <br /> for our clients
           </h2>
-          <h2 className="mTestimonialHeading">
-            What our clients say <br /> about us
-          </h2>
-          <p className="testimonialDesc">
-            Let&lsquo;s hear from our clients, the core of whatever we commit.
-          </p>
         </div>
+
         <div className="testimonialRightContainer">
-          <div className="testimonialMessage">
-            <h3>&quot;{currentTestimonial.message}&quot;</h3>
-          </div>
-          <div className="testimonialImageButtonContainer">
-            <div className="testimonialProfile">
-              <Image
-                src={currentTestimonial.img}
-                width={67}
-                height={60}
-                alt="person"
-                quality={100}
-                priority={true}
-                unoptimized
-              />
-              <div style={{ display: "flex", flexDirection: "column" }}>
-                {/* Display current testimonial's profile */}
-                <p className="profileName">{currentTestimonial.name}</p>
-                <p className="profileDesignation">
-                  {currentTestimonial.designation}
-                </p>
+          <button className="leftButton" >
+            {"<"}
+          </button>
+          {testimonialData.map((data, index) => (
+            <div className="testimonialProfile" key={index}>
+              <div className="testimonialMessage">
+                <h3>&quot;{data.message}&quot;</h3>
+              </div>
+              <div className="testimonialCardBottom">
+                <div className="testiImg">
+                  <Image
+                    src={data.img}
+                    width={67}
+                    height={60}
+                    alt={`person ${index}`}
+                    quality={100}
+                    priority={true}
+                    unoptimized
+                  />
+                </div>
+                <div>
+                  {/* Display current testimonial's profile */}
+                  <p className="profileName">{data.name}</p>
+                  <p className="profileDesignation">{data.designation}</p>
+                </div>
               </div>
             </div>
-            <div className="testimonialButtonContainer">
+          ))}
+
+          <div className="testimonialImageButtonContainer">
+            {/* <div className="testimonialButtonContainer">
               <button className="leftButton" onClick={previousTestimonial}>
                 {"<"}
               </button>
               <button className="rightButton" onClick={nextTestimonial}>
                 {">"}
               </button>
-            </div>
+            </div> */}
           </div>
+          <button className="rightButton">
+            {">"}
+          </button>
         </div>
+        <hr />
+        <Stats useBackgroundImage={false} isMainPage={false} />
       </div>
     </div>
   );
 }
 
 function ScrollingLogos() {
-  const originalDuration = 10;
   const [isHovered, setIsHovered] = useState(false);
   const [animateValue, setAnimateValue] = useState("-200%");
 
@@ -129,17 +144,6 @@ function ScrollingLogos() {
     };
   }, [animateValue]);
 
-  // const handleMouseEnter = () => {
-  //   setIsHovered(true);
-  //   console.log("hello");
-  // };
-
-  // const handleMouseLeave = () => {
-  //   setIsHovered(false);
-  // };
-
-  // const animationDuration = isHovered ? originalDuration * 200 : originalDuration;
-  // console.log(animationDuration);
   const controls = useAnimation();
 
   const handleHoverStart = () => {
@@ -799,5 +803,4 @@ function ScrollingLogos() {
 //     </div>
 //   );
 // }
-export  {Clients, ScrollingLogos};
-
+export { Clients, ScrollingLogos };

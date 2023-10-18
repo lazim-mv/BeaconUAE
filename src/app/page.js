@@ -5,7 +5,7 @@ import Locations from "./components/Locations";
 import BusinessSetup from "./components/BusinessSetup";
 import Services from "./components/Services";
 import WhyBeacon from "./components/WhyBeacon";
-import {Clients, ScrollingLogos} from "./components/Clients";
+import { Clients, ScrollingLogos } from "./components/Clients";
 import Blogs from "./components/Blogs";
 import Faq from "./components/Faq";
 import Contact from "./components/Contact";
@@ -15,6 +15,7 @@ import Stats from "./components/Stats";
 import { useEffect, useState } from "react";
 import Head from "next/head";
 import Jurisdiction from "./components/Jurisdiction";
+import Places from "./components/Places";
 
 export default function Home() {
   const [hideWhiteScreen, setHideWhiteScreen] = useState(false);
@@ -69,9 +70,10 @@ export default function Home() {
         <Services />
         <Locations />
         <Jurisdiction />
+        <Places />
         {/* <WhyBeacon /> */}
         {/* <Stats useBackgroundImage={useBackgroundImage} isMainPage={true} /> */}
-        {/* <Clients /> */}
+        <Clients />
         {/* <Blogs /> */}
         <Faq />
         <Contact />
@@ -80,5 +82,3 @@ export default function Home() {
     </>
   );
 }
-
-

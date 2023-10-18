@@ -113,12 +113,12 @@ li{
 
 .rightButton{
   background: transparent;
-  color: rgba(19, 103, 11, 1);
+  color: rgba(255, 255, 255, 1);
   /* line-height: 25px; */
   text-align: center;
   width: 50px;
   height: 50px;
-  border: 2px solid rgba(19, 103, 11, 1);
+  border: 1.5px solid rgba(255, 255, 255, 1);
   font-size: 30px;
   font-weight: 300;
   display: flex;
@@ -133,12 +133,12 @@ li{
 
 .leftButton{
   background: transparent;
-  color: rgba(19, 103, 11, 1);
+  color: rgba(255, 255, 255, 1);
   /* line-height: 25px; */
   text-align: center;
   width: 50px;
   height: 50px;
-  border: 2px solid rgba(19, 103, 11, 1);
+  border: 1.5px solid rgba(255, 255, 255, 1);
   font-size: 30px;
   font-weight: 300;
   display: flex;
@@ -152,8 +152,8 @@ li{
 }
 
 .rightButton:hover, .leftButton:hover{
-  background-color: #11215B;
-  color: white;
+  background-color: #fff;
+  color: #11215B;
   border: white;
 }
 
@@ -376,6 +376,10 @@ li{
 
 /* Location Start  */
 
+.mlocationHeading{
+  display: none;
+}
+
 .locationContainer{
   display: flex;
   justify-content: center;
@@ -421,7 +425,7 @@ li{
   text-align: justify;
 }
 
-.locationContainer .servicesButton{
+.servicesButton{
   background-color: transparent;
   border: 1px solid #02040E;
   width: 233px;
@@ -459,6 +463,7 @@ li{
   align-items: center;
   gap:60px;
   padding: 100px 135px;
+  padding-bottom: 0px;
 }
 
 .jurisdictionContainer .businessContentContainer {
@@ -479,6 +484,7 @@ li{
 .juriCardContainer{
   display: flex;
   flex-direction: column;
+  width: 33%;
 }
 
 .juriContent{
@@ -495,7 +501,7 @@ li{
   text-align: center;
 }
 
-.juriContent p{
+.juriDesc{
   color: rgba(255, 255, 255, 0.80);
   text-align: center;
   font-size: 15px;
@@ -506,6 +512,12 @@ li{
 
 
 /* Jurisdiction End */
+
+/* Places Start */
+
+
+
+/* Places End */
 
 
 /* Business Setup Start */
@@ -950,6 +962,17 @@ li{
   display: flex;
   flex-direction: column;
   gap: 73px;
+  background-color: #F7F7F8;
+  padding-top: 80px;
+}
+
+.clientsContainer .businessContentContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.clientsContainer .businessContentContainer .businessHeading{
+  width: 162px;
 }
 
 .clientsImgContainer{
@@ -987,28 +1010,32 @@ li{
 .testimonialMainContainer{
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  background-color: rgba(247, 247, 248, 1);
-  /* height: 424px; */
-  padding: 100px 135px;
+  background-color: rgba(17, 33, 91, 1);
+  flex-direction: column;
+  padding: 100px 30px;
+  padding-bottom: 30px;
   margin-top: 60px;
   gap: 28px;
 }
 
-.testimonialLeftContainer{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 100%;
-  height: 54%;
+.testimonialMainContainer .businessContentContainer .businessHeading{
+  width: 185px;
+  background-color: #FFF;
+  color: #11215B;
+}
+
+.testimonialMainContainer .businessContentContainer .businessDesc{
+  color: #fff;
 }
 
 .testimonialRightContainer{
   display: flex;
-  flex-direction: column;
-  gap: 50px;
-  width: 140vw;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
 }
+
+
 
 .testimonialImageButtonContainer{
   display: flex;
@@ -1020,12 +1047,12 @@ li{
   display: none;
 }
 
-.testimonialMessage{
+/* .testimonialMessage{
   height: 180px;
-}
+} */
 
 .testimonialHeading{
-  color: #02040E;
+  color: #fff;
   font-size: 36px;
   font-style: normal;
   font-weight: 600;
@@ -1045,8 +1072,8 @@ li{
 }
 
 .testimonialMessage h3{
-  color: #02040E;
-  font-size: 30px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 36px */
@@ -1056,7 +1083,16 @@ li{
 .testimonialProfile{
   display: flex;
   gap: 10px;
-  align-items: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  width: 28%;
+  /* margin-right: 30px; */
+  border-radius: 10px;
+}
+
+.testimonialProfile:nth-child(3){
+  margin: 0px;
 }
 
 .testimonialProfile img{
@@ -1066,7 +1102,7 @@ li{
 }
 
 .profileName{
-  color: #02040E;
+  color: rgba(255, 255, 255, 1);
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -1074,11 +1110,22 @@ li{
 }
 
 .profileDesignation{
-  color: #58595B;
+  color: rgba(255, 255, 255, 0.8);
   /* font-size: 15px; */
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 22.4px */
+}
+
+.testimonialCardBottom{
+  display: flex;
+  gap: 15px;
+}
+
+.testimonialMainContainer hr{
+  align-self: center;
+  margin-top: 40px !important;
+  width: 86%;
 }
 
 /* Clients End  */
@@ -1186,6 +1233,7 @@ li{
 .faqLeft .businessHeading{
   text-align: left;
   margin-bottom: 20px;
+  width: 90px;
 }
 
 .faqLeft .businessDesc{
@@ -1680,6 +1728,7 @@ li{
 
   .businessHeading{
     margin-bottom: 3px;
+    padding: 5px 15px;
   }
 
   .mHeaderContainer{
@@ -1833,6 +1882,14 @@ li{
     line-height: 140%; /* 16.8px */
   }
 
+  .locationHeading{
+    display: none;
+  }
+
+  .mlocationHeading{
+    display: block;
+  }
+
   .locationContainer{
     padding: 0 24px;
     margin: 0;
@@ -1861,14 +1918,41 @@ li{
     display: none;
   }
 
+  .jurisdictionContainer{
+    padding: 40px 0px 40px 20px;
+    overflow-x: hidden;
+    gap: 30px;
+  }
+
+  .jurisdictionContainer .businessContentContainer .businessHeading {
+    width: 110px;
+  }
+
   .juriMainCardContainer{
-    width: 100vw;
+    width: 600px;
     overflow-y: hidden;
-    overflow: scroll;
+    overflow-x: scroll;
+    padding-left: 110px;
+    padding-right: 130px;
+  }
+
+  .jurisdictionContainer .mBusinessDesc{
+    display: block;
+    color: #02040E;
   }
 
   .juriCardContainer{
     width: 100%;
+  }
+
+  .juriDesc{
+    font-size: 12px;
+    font-size: 3.2vw;
+    text-align: center;
+  }
+
+  .juriCardImage{
+    width: 300px;
   }
 
   .bussinessContainer{
@@ -1941,6 +2025,10 @@ li{
     gap: 30px;
   }
 
+  .serviceContainer .businessHeading{
+    width: 110px;
+  }
+
   .serviceContainer .businessDesc{
     display: none;
   }
@@ -1971,6 +2059,12 @@ li{
     font-size: 5vw;
   }
   
+  .servicesButton{
+    margin: 0;
+    width: 170px;
+    height: 44px;
+  }
+
   .serviceContainer .servicesButton{
     margin: 0;
     width: 170px;
@@ -2041,6 +2135,15 @@ li{
 
   .clientsContainer{
     gap: 30px;
+    padding-top: 40px;
+  }
+
+  .clientsContainer .businessDesc{
+    display: block;
+  }
+
+  .clientsContainer .businessContentContainer .businessHeading{
+    width: 112px;
   }
 
   .scrolling-logos{
@@ -2063,11 +2166,11 @@ li{
     margin-top: 64px;
     gap: 20px;
   }
- 
-  .testimonialLeftContainer{
-    align-items: flex-start;
-    text-align: left;
+
+  .testimonialMainContainer .businessContentContainer .businessHeading{
+    width: 125px;
   }
+ 
 
   .testimonialMessage{
     height: 96px;
@@ -2075,25 +2178,6 @@ li{
 
   .testimonialHeading{
     display: none;
-  }
-
-  .mTestimonialHeading{
-    display: flex;
-    color: #02040E;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 140%; /* 56px */
-    text-transform: capitalize;
-    margin-bottom: 20px;
-    text-align: left !important;
-  }
-
-  .testimonialLeftContainer .mTestimonialHeading h2{
-    text-align: left !important;
-  }
-
-  .testimonialLeftContainer p{
-    text-align: left !important;
   }
 
   .servicesDescContainer{

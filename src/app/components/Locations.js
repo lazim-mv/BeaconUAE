@@ -24,6 +24,10 @@ function Locations() {
               Committed to Enhance
               <br /> Your Business Efficiency
             </h2>
+            <h2 className="locationHeading mlocationHeading">
+              Committed to Enhance
+               Your <br /> Business Efficiency
+            </h2>
           </div>
           <div>
             <p className="locationDesc">
