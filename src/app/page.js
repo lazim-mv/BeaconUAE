@@ -70,8 +70,8 @@ export default function Home() {
         <Locations />
         <Jurisdiction />
         {/* <WhyBeacon /> */}
-        <Stats useBackgroundImage={useBackgroundImage} isMainPage={true} />
-        <Clients />
+        {/* <Stats useBackgroundImage={useBackgroundImage} isMainPage={true} /> */}
+        {/* <Clients /> */}
         {/* <Blogs /> */}
         <Faq />
         <Contact />

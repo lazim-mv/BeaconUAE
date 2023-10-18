@@ -1,7 +1,11 @@
+"use client"
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 function Jurisdiction() {
+  const [isHovered, setIsHovered] = useState(false);
+  const imageSrc = isHovered ? "/whiteArrow.svg" : "/blackArrow.svg";
+
   const pageData = [
     {
       img: "/jurisdiction/2.svg",
@@ -39,10 +43,13 @@ function Jurisdiction() {
             <div>
               <Image
                 src={data.img}
-                width={100}
-                height={100}
+                width={500}
+                height={500}
                 alt={`juri ${index}`}
                 layout="responsive"
+                quality={100}
+                priority={true}
+                unoptimized
               />
             </div>
             <div className="juriContent">
@@ -54,6 +61,44 @@ function Jurisdiction() {
           </div>
         ))}
       </div>
+      <a href="/pages/Services">
+        <div
+          className="hButtonContainer servicesButton"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          <div className="visibleWrapperContainer">
+            <div className="topVisibleContainer btn">
+              Explore More
+              <div className="topVisibleArrow">
+                <Image
+                  src={imageSrc}
+                  width={23}
+                  height={23}
+                  alt="heroContact"
+                  quality={100}
+                  priority={true}
+                  unoptimized
+                />
+              </div>
+            </div>
+            <div className="bottomVisibleContainer btn">
+              Explore More
+              <div className="bottomVisibleArrow">
+                <Image
+                  src={imageSrc}
+                  width={23}
+                  height={23}
+                  alt="heroContact"
+                  quality={100}
+                  priority={true}
+                  unoptimized
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
     </div>
   );
 }
