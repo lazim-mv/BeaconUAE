@@ -215,7 +215,7 @@ li{
   gap: 10px;
 
   border-radius: 61px;
-  background: #13670B;
+  background: #11215B;
   width: 200px;
 }
 
@@ -1007,6 +1007,16 @@ li{
   width: 3925px;
 }
 
+.arrowButtonsTest{
+  display: none;
+}
+
+.testimonialProfileContainer{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
 .testimonialMainContainer{
   display: flex;
   justify-content: center;
@@ -1315,7 +1325,7 @@ li{
 }
 
 .contactContainer {
-  background: url("../../public/NewSvgs/Backgrounds/bg5.png");
+  background: url("../../public/NewSvgs/Backgrounds/uaeBg2.png");
   width: 100%;
   height: 500px;
   object-fit: cover;
@@ -1359,6 +1369,10 @@ li{
   flex-direction: column;
   position: relative;
   overflow: hidden;
+}
+
+.contactImageButton .btn{
+  color: #fff;
 }
 
 /* Contact End */
@@ -2170,11 +2184,6 @@ li{
   .testimonialMainContainer .businessContentContainer .businessHeading{
     width: 125px;
   }
- 
-
-  .testimonialMessage{
-    height: 96px;
-  }
 
   .testimonialHeading{
     display: none;
@@ -2212,7 +2221,46 @@ li{
     text-align: left;
   }
 
+  .testimonialRightContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .testimonialProfileContainer {
+    display: flex;
+    /* overflow: hidden; */
+    margin-left: 800px;
+    justify-content: center;
+    width: 100%; /* Make sure it's 100% width of the container */
+  }
+  
+  .testimonialRightContainer .testimonialProfile {
+    gap: 15px;
+    height: 230px;
+    flex: 0 0 100% ; 
+    align-self: center;
+    transition: transform 0.3s ease; /* Smooth transition for card changes */
+  }
+/*   
+  .testimonialRightContainer .actived {
+    flex: 0 0 100% !important; 
+  } */
+
+  .arrowButtonsTest{
+    display: flex;
+    gap: 20px;
+    align-self: center;
+  }
+
+  .mRightButton, .mLeftButton{
+    display: flex !important;
+  }
+
   .rightButton, .leftButton{
+    display: none;
     font-size: 25px;
     width: 35px;
     height: 35px;
@@ -2328,7 +2376,7 @@ li{
   }
 
   .contactContainer{
-    background: url("../../public/NewSvgs/Backgrounds/bg1.png");
+    background: url("../../public/NewSvgs/Backgrounds/uaeBg1.png");
     width: 100%;
     height: 250px;
     padding: 31px 20px;

@@ -29,21 +29,40 @@ function Clients() {
     },
   ];
 
-  // const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
+  const [currentCardIndex, setCurrentCardIndex] = useState(0);
 
-  // const nextTestimonial = () => {
-  //   setCurrentTestimonialIndex((prevIndex) =>
-  //     prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
-  //   );
-  // };
+  const showNextCard = () => {
+    setCurrentCardIndex((prevIndex) =>
+      prevIndex === testimonialData.length - 1 ? 0 : prevIndex + 1
+    );
+    console.log(currentCardIndex);
+  };
 
-  // const previousTestimonial = () => {
-  //   setCurrentTestimonialIndex((prevIndex) =>
-  //     prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
-  //   );
-  // };
+  const showPreviousCard = () => {
+    setCurrentCardIndex((prevIndex) =>
+      prevIndex === 0 ? testimonialData.length - 1 : prevIndex - 1
+    );
+    console.log(currentCardIndex);
+  };
 
-  // const currentTestimonial = testimonials[currentTestimonialIndex];
+  const [isMobileScreen, setIsMobileScreen] = useState(false);
+
+  useEffect(() => {
+    // Check screen size on the client side
+    const checkScreenSize = () => {
+      setIsMobileScreen(window.innerWidth < 600);
+    };
+
+    // Add event listener for window resize
+    window.addEventListener("resize", checkScreenSize);
+
+    // Initial check on component mount
+    checkScreenSize();
+
+    return () => {
+      window.removeEventListener("resize", checkScreenSize);
+    };
+  }, []);
 
   return (
     <div className="clientsContainer">
@@ -65,49 +84,61 @@ function Clients() {
         </div>
 
         <div className="testimonialRightContainer">
-          <button className="leftButton" >
+          <button className="leftButton" onClick={showPreviousCard}>
             {"<"}
           </button>
-          {testimonialData.map((data, index) => (
-            <div className="testimonialProfile" key={index}>
-              <div className="testimonialMessage">
-                <h3>&quot;{data.message}&quot;</h3>
-              </div>
-              <div className="testimonialCardBottom">
-                <div className="testiImg">
-                  <Image
-                    src={data.img}
-                    width={67}
-                    height={60}
-                    alt={`person ${index}`}
-                    quality={100}
-                    priority={true}
-                    unoptimized
-                  />
+          <div className="testimonialProfileContainer">
+            {testimonialData.map((data, index) => (
+              <div
+                className={`testimonialProfile`}
+                key={index}
+                style={{
+                  transform: isMobileScreen
+                    ? `translateX(-${currentCardIndex * 110}%)`
+                    : "none", // Set to 'none' or remove transform for desktop view
+                }}
+              >
+                <div className="testimonialMessage">
+                  <h3>{data.message}</h3>
                 </div>
-                <div>
-                  {/* Display current testimonial's profile */}
-                  <p className="profileName">{data.name}</p>
-                  <p className="profileDesignation">{data.designation}</p>
+                <div className="testimonialCardBottom">
+                  <div className="testiImg">
+                    <Image
+                      src={data.img}
+                      width={67}
+                      height={60}
+                      alt={`person ${index}`}
+                      quality={100}
+                      priority={true}
+                      unoptimized
+                    />
+                  </div>
+                  <div>
+                    {/* Display current testimonial's profile */}
+                    <p className="profileName">{data.name}</p>
+                    <p className="profileDesignation">{data.designation}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-
-          <div className="testimonialImageButtonContainer">
-            {/* <div className="testimonialButtonContainer">
-              <button className="leftButton" onClick={previousTestimonial}>
-                {"<"}
-              </button>
-              <button className="rightButton" onClick={nextTestimonial}>
-                {">"}
-              </button>
-            </div> */}
+            ))}
           </div>
-          <button className="rightButton">
+          <button className="rightButton" onClick={showNextCard}>
             {">"}
           </button>
+
+          <div className="arrowButtonsTest">
+            <button
+              className="leftButton mLeftButton"
+              onClick={showPreviousCard}
+            >
+              {"<"}
+            </button>
+            <button className="rightButton mRightButton" onClick={showNextCard}>
+              {">"}
+            </button>
+          </div>
         </div>
+
         <hr />
         <Stats useBackgroundImage={false} isMainPage={false} />
       </div>
