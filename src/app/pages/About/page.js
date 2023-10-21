@@ -9,30 +9,66 @@ import Footer from "@/app/components/Footer";
 import Stats from "@/app/components/Stats";
 
 function About() {
-  const servicesData = [
+  const cvData = [
     {
       img: "/NewSvgs/SVG7/Group1.svg",
-      heading: "Professionalism",
+      heading: "Agile team",
       description:
-        "We perform business with high standards of integrity,ethics and professionalism. Our professionals keep the interactions with the clients fair and lawful.",
+        "Fueled by a team of farsighted consultants, PRO specialists, operations staff, and an expert workforce, we offer custom business incorporation strategies to serve clients while streamlining the financial aspects.",
     },
     {
       img: "/NewSvgs/SVG7/Group2.svg",
-      heading: "Innovation",
+      heading: "Proficiency",
       description:
-        "Our business initiatives focus on keeping up the standards and expectations of the clients with sustainability, innovative practices and strategic principles.",
+        "With expertise and credibility, we confidently take up your business setup ideas, discuss your concerns, gather the requirements and address these well to sustain your position in the UAE market.",
     },
     {
       img: "/NewSvgs/SVG7/Group3.svg",
-      heading: "Synergy",
+      heading: "Client Satisfaction",
       description:
-        "Our team maintains collaboration and inclusiveness while creating a strong synergy between the individual talents and what the client demands.",
+        "We take pride in dedicatedly providing bespoke solutions to serve the clients’ needs. Our clients range from entrepreneurs of various sectors and industries, and we look forward to supporting you to trigger client satisfaction.",
     },
     {
       img: "/NewSvgs/SVG7/Group4.svg",
-      heading: "Passion",
+      heading: "End-to-end Consulting",
       description:
-        "Growing beyond a service provider, we provide timely support and resolve concerns through constructive discussions that generate special value outcomes.",
+        "We understand the business jurisdictions UAE is segmented to, and comprehend the laws and regulations within each. With compliance, we offer risk mitigation strategies and valuable advice to entrepreneurs.",
+    },
+    {
+      img: "/NewSvgs/SVG7/Group5.svg",
+      heading: "Cost-Effective Evaluation",
+      description:
+        "If not directed properly, the cost of business setup in UAE could be massive. We closely evaluate the documentation, legal, business and operational aspects to help you with cost-effective business setup.",
+    },
+    {
+      img: "/NewSvgs/SVG7/Group6.svg",
+      heading: "Smooth Registration Support",
+      description:
+        "Being the leading business setup consultants, we keep your entire company formation process easy and effortless. Through our in-depth experience, we consider all necessary elements to simplify the business setup in UAE.",
+    },
+  ];
+
+  const vissionMissionData = [
+    {
+      img: "/NewSvgs/SVG7/v1.png",
+      heading: "Our Mission",
+      className: "c1",
+      description:
+        "To empower the founders and entrepreneurs with the best appropriate fiscal consultation and business setup services to thrive in the fast-developing business ecosystem. We strive to work with clients to let them make remarkable achievements in business with a key focus on offering holistic digital, financial, legal, operational and technological assistance.",
+    },
+    {
+      img: "/NewSvgs/SVG7/v2.png",
+      heading: "Our Values",
+      className: "c2",
+      description:
+        "Our efforts are infused with the core values of innovation, productivity, transparency, dedication and trust, and we feel confident to build relationships and keep delivering solutions to the businesses based on the client's expectations. We make your dream of business incorporation in UAE a success with our support at every step of your journey while holding to our values which helps us achieve an exceptional position in the market.",
+    },
+    {
+      img: "/NewSvgs/SVG7/v3.png",
+      heading: "Our Vision",
+      className: "c3",
+      description:
+        "To design and establish your business realm through an unparalleled assistance plan, triggering your efforts to strengthen your organisation’s processes, regulations and technologies that add necessary substance for your business, laying a benchmark of excellence. We keep an emphasis on evolving into the global market leader with an all-in-one business setup formula.",
     },
   ];
   const [loaded, setLoaded] = useState(false);
@@ -41,7 +77,7 @@ function About() {
     setLoaded(true);
   };
 
-  const useBackgroundImage = false;
+  const useBackgroundImage = true;
 
   return (
     <>
@@ -101,27 +137,7 @@ function About() {
           </p>
         </div>
 
-        {/* <div className={styles.greenBannerContiner}>
-          <div className={styles.statContainer}>
-            <h1>12K+</h1>
-            <p>Project Complete</p>
-          </div>
-          <div className={styles.statContainer}>
-            <h1>7K+</h1>
-            <p>Happy Client</p>
-          </div>
-          <div className={styles.statContainer}>
-            <h1>10+</h1>
-            <p>Years Experience</p>
-          </div>
-          <div className={styles.statContainer}>
-            <h1>270+</h1>
-            <p>Win Awards</p>
-          </div>
-        </div> */}
-        {/* <div className={styles.greenBannerContiner}> */}
         <Stats useBackgroundImage={useBackgroundImage} isMainPage={false} />
-        {/* </div> */}
 
         <div className={styles.aboutUsContainer2}>
           <h2 className="businessDesc">
@@ -210,31 +226,27 @@ function About() {
                 </div>
                 <div className={styles.cardContent}>
                   <div>
-                    <h1>Right in Time</h1>
+                    <h1>Choice of Location</h1>
                     <p>
-                      With Beacon, you&lsquo;ll never have to waste time
-                      navigating the business process to make it right. We make
-                      the business setup in Saudi Arabia and UAE time-efficient
-                      and easier than ever.
+                      With benefits on ownership, time to establish and profit
+                      repatriation, we offer the best business setup options in
+                      the preferred locations across the UAE.
                     </p>
                   </div>
                   <div>
-                    <h1>Financially Secure</h1>
+                    <h1>Reduced Tax</h1>
                     <p>
-                      Setting up a business can prove to be risky if you have no
-                      professional financial assistance. Our consultants let you
-                      minimise potential financial risks through financial
-                      consultation.
+                      We provide support in leveraging taxation benefits to
+                      promote your investment with liberal policies, which helps
+                      you to establish a business in the UAE.
                     </p>
                   </div>
                   <div>
-                    <h1>Reliable Partner</h1>
+                    <h1>Advanced Digital Solutions</h1>
                     <p>
-                      With our support that guides your business right from the
-                      ideation to the final setup, we let our presence lead you
-                      through each stage. As your strategic advisor, Beacon
-                      stands out to solve your business setup concerns in no
-                      time.
+                      Moving towards the technology-driven future, we leverage
+                      the best tech infrastructure the location offers to
+                      increase opportunities through digital services.
                     </p>
                   </div>
                 </div>
@@ -244,142 +256,57 @@ function About() {
         </div>
 
         <div className={styles.aboutUscontainer3}>
-          {/* <div className={styles.topContainer}>
-            <div className={styles.imgContainer}>
-              <Image
-              quality={100} priority={true} unoptimized 
-                src="/AboutUsPage/aboutPage2.svg"
-                width={576}
-                height={500}
-                layout="responsive"
-                alt="aboutus2"
-              />
-            </div>
-            <div className={styles.contentContainer}>
-              <h1>Our Mission</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Eu elit vitae bibendum
-                bibendum accumsan facilisis libero. At arcu augue ante varius.
-                Integer tellus donec nunc montes rhoncus adipiscing fringilla.
-                Elit dictumst neque tempus porta lorem egestas tellus convallis.
-                Accumsan ullamcorper nunc sit quis egestas thre lectus facilisis
-                nulla fringilla. Vestibulum dis mauris nullam tellus interdum.
-                Consectetur felis euismod future imperdiet. Lorem ipsum dolor
-                sit amet consectetur. Integer tellus donec nunc montes rhoncus
-                adipiscing fringilla. Elit dictumst neque tempus porta lorem
-                egestas tellu
-              </p>
-            </div>
-          </div>
-          <div className={`${styles.topContainer} ${styles.mBottomContainer}`}>
-            <div className={styles.contentContainer}>
-              <h1>Our Vision</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Eu elit vitae bibendum
-                bibendum accumsan facilisis libero. At arcu augue ante varius.
-                Integer tellus donec nunc montes rhoncus adipiscing fringilla.
-                Elit dictumst neque tempus porta lorem egestas tellus convallis.
-                Accumsan ullamcorper nunc sit quis egestas thre lectus facilisis
-                nulla fringilla. Vestibulum dis mauris nullam tellus interdum.
-                Consectetur felis euismod future imperdiet. Lorem ipsum dolor
-                sit amet consectetur. Integer tellus donec nunc montes rhoncus
-                adipiscing fringilla. Elit dictumst neque tempus porta lorem
-                egestas tellu
-              </p>
-            </div>
-            <div className={styles.imgContainer}>
-              <Image
-              quality={100} priority={true} unoptimized 
-                src="/AboutUsPage/aboutPage1.svg"
-                width={576}
-                height={500}
-                layout="responsive"
-                alt="aboutus2"
-              />
-            </div>
-          </div> */}
-
-          <div className={styles.vissionMissionMainContainer}>
-            <div className={styles.vissionMissionContent}>
-              <div className={styles.mission}>
-                <h1>Our Mission</h1>
-                <p>
-                  To evolve into the most trusted partner in business
-                  incorporation and consulting services, thereby laying a
-                  benchmark through the reputation from the best-in-market
-                  business results
-                </p>
-              </div>
-              <div className={styles.vission}>
-                <h1>Our Vision</h1>
-                <p>
-                  To future-proof businesses with fruitful collaborations and
-                  partnerships, which help businesses to multiply their growth
-                  through the quality and integrity of the services we offer.
-                </p>
-              </div>
-            </div>
-            <div className={styles.vissionMissionImage}>
-              {!loaded && (
-                <div className={`${styles.loader} loader`}>
-                  <div className="loader__bar"></div>
-                  <div className="loader__bar"></div>
-                  <div className="loader__bar"></div>
-                  <div className="loader__bar"></div>
-                  <div className="loader__bar"></div>
-                  <div className="loader__ball"></div>
+          <div className={styles.vissionMissionContainer}>
+            {vissionMissionData.map((data, index) => (
+              <div className={styles.vissionMissionCell} key={index}>
+                {/* <div className={styles.topContainer}> */}
+                <div
+                  className={`${styles.container3Content} ${data.className}`}
+                >
+                  <h1>{data.heading}</h1>
+                  <p>{data.description}</p>
                 </div>
-              )}
-              <Image
-                quality={100}
-                priority={true}
-                unoptimized
-                src="/AboutUsPage/aboutPage.svg"
-                width={1212}
-                height={350}
-                layout="responsive"
-                alt="aboutus2"
-                className={loaded ? styles.cardIcon : styles.hidden}
-                onLoad={handleImageLoad}
-              />
-              <Image
-                quality={100}
-                priority={true}
-                unoptimized
-                src="/AboutUsPage/maboutPage.svg"
-                width={327}
-                height={150}
-                layout="responsive"
-                alt="aboutus2"
-                className={loaded ? styles.mCardIcon : styles.hidden}
-                onLoad={handleImageLoad}
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.aboutUscontainer4}>
-          <h2 className="businessDesc">Core Values</h2>
-          <h2 className={`${styles.mBusinessDesc1} mBusinessDesc`}>
-            Core Values
-          </h2>
-          <div className={styles.coreValueCard}>
-            {servicesData.map((data, index) => (
-              <div className={styles.coreValueCards} key={index}>
-                <div className={styles.cvImgContainer}>
+                <div className={styles.container3Img}>
                   <Image
                     quality={100}
                     priority={true}
                     unoptimized
                     src={data.img}
-                    width={50}
-                    height={50}
-                    alt="abouts4"
+                    width={60}
+                    height={60}
+                    layout="responsive"
+                    alt={`vissionMission ${index}`}
                   />
+                  {/* </div> */}
                 </div>
+                <div className={styles.bottomContainer}></div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className={styles.aboutUscontainer4}>
+          <h2 className="businessDesc">Why Should You Work With Us?</h2>
+          <h2 className={`${styles.mBusinessDesc1} mBusinessDesc`}>
+            Why Should You Work <br /> With Us?
+          </h2>
+          <div className={styles.cvCard}>
+            {cvData.map((data, index) => (
+              <div className={styles.cvBackground} key={index}>
                 <div className={styles.cvContent}>
-                  <h1>{data.heading}</h1>
-                  <p>{data.description}</p>
+                  <div className={styles.cvImg}>
+                    <Image
+                      src={data.img}
+                      width={80}
+                      height={80}
+                      alt={`cv ${index}`}
+                      layout="responsive"
+                    />
+                  </div>
+                  <div className={styles.cvText}>
+                    <h1>{data.heading}</h1>
+                    <p>{data.description}</p>
+                  </div>
                 </div>
               </div>
             ))}

@@ -143,21 +143,88 @@
 }
 
 .aboutUscontainer3{
-    padding: 0px 135px;
+    padding: 80px 135px;
     display: flex;
     flex-direction: column;
     /* gap: 70px; */
+    background-color: #F7F7F8;
 }
 
-.topContainer{
+.vissionMissionContainer{
     display: flex;
-    flex-wrap: wrap;
-    gap: 60px;
+    gap: 30px;
 }
 
-.topContainer .imgContainer{
-    flex: 1;
+.vissionMissionCell{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
 }
+
+.vissionMissionContainer div:nth-child(2) .container3Content{
+    order: 1;
+    height: 400px;
+}
+
+.vissionMissionContainer div:nth-child(2) .container3Img {
+   height: 245px ;
+}
+
+.container3Content{
+    display: flex;
+    flex-direction: column;
+    height: 325px;
+    padding-top: 40px;
+    gap: 15px;
+
+}
+
+.container3Content h1{
+    color: #02040E;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 36px */
+    text-transform: capitalize;
+}
+
+.container3Content p{
+    color: #58595B;
+
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+.container3Img{
+    height: 325px;
+}
+
+
+/* .container3Content .c1 {
+    order: -1;
+}
+.container3Content .c2 {
+    order: 1;
+}
+.container3Content .c3 {
+    order: -1;
+} */
+/* 
+.c1 .container3Img{
+    order: 1;
+}
+.c2 .container3Img{
+    order: -1;
+}
+.c3 .container3Img{
+    order: 1;
+} */
 
 .contentContainer{
     flex: 1;
@@ -187,33 +254,6 @@
     line-height: 140%;
 }
 
-.vissionMissionMainContainer{
-    display: flex;
-    flex-direction: column;
-}
-
-.vissionMissionContent{
-    display: flex;
-    padding: 100px 40px 70px 40px;
-    background: #F7F7F8;
-    gap: 40px;
-}
-
-.mission, .vission {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.vissionMissionContent h1 {
-    color: #02040E;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 140%; /* 42px */
-    text-transform: capitalize;
-}
-
 
 .aboutUscontainer4{
     display: flex;
@@ -226,7 +266,7 @@
     margin-top: 0;
 }
 
-.coreValueCard{
+/* .coreValueCard{
     display: flex;
     gap: 30px;
 }
@@ -241,11 +281,49 @@
 
 .cvImgContainer{
     margin-bottom: 20px;
+} */
+
+
+.cvCard{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 70px;
+    margin-bottom: -45px;
 }
+
+.cvBackground{
+    width: 31%;
+    margin-bottom: 60px;
+}
+
+.cvImg{
+    position: absolute;
+    top: -50px;
+    left: 15px;
+    width: 80px;
+    height: 80px;
+}
+
+.cvContent{
+    position: relative;
+    background-color: #F7F7F8;
+    padding-top: 50px;
+    margin-bottom: -15px;
+}
+
+.cvText{
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    height: 220px;
+}
+
 
 .cvContent h1{
     color: #02040E;
-    text-align: center;
+    text-align: left;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -258,7 +336,7 @@
 }
 
 .cvContent p{
-    text-align: center;
+    text-align: left;
     color: #58595B;
     /* font-size: 14px; */
     font-style: normal;
@@ -391,47 +469,64 @@
         gap: 20px;
     }
 
-    .contentContainer h1{
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-
-    .topContainer{
+    .vissionMissionContainer{
         flex-direction: column;
-        gap: 20px;
+        gap: 40px;
     }
 
-    .mBottomContainer .imgContainer{
-        order: -1;
-    }
-
-    .vissionMissionContent{
-        flex-direction: column;
-        padding: 20px 15px;
+    .vissionMissionCell{
+        width: auto;
         gap: 30px;
     }
 
-    .vission, .mission{
-        gap: 10px;
+    .vissionMissionContainer div:nth-child(2) .container3Content{
+        order: -1;
+        height: auto;
+    }
+    
+    .vissionMissionContainer div:nth-child(2) .container3Img {
+        height: auto;
     }
 
-    .vissionMissionContent h1 {
-        font-size: 18px;
+    .vissionMissionContainer .vissionMissionCell:nth-child(3) {
+        margin-top: -40px;
     }
 
-    .vissionMissionContent p{
-        text-align: left;
+    .container3Content{
+        height: auto;
+        padding-top: 0;
     }
 
     .aboutUscontainer4{
         padding: 0 24px;
-        gap: 30px;
+        gap: 0px;
         align-items: center;
+        margin-bottom: 0;
     }
 
     .aboutUscontainer4 .mBusinessDesc1{
         margin: 0;
         text-align: center;
+    }
+
+    .cvBackground{
+        width: 45%;
+    }
+
+    .cvImg{
+        width: 60px;
+        height: 60px;
+        top: -30px;
+        left: 5px;
+    }
+
+    .cvContent{
+        padding-top: 40px;
+    }
+
+    .cvText{
+        height: 240px;
+        padding:10px 10px 20px 10px ;
     }
 
     .coreValueCard{

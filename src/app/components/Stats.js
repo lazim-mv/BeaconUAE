@@ -5,7 +5,7 @@ function Stats({ useBackgroundImage, isMainPage }) {
   const largeBackgroundImageUrl = "/NewSvgs/Backgrounds/bg4.png";
   const smallBackgroundImageUrl = "/NewSvgs/Backgrounds/bg4.png";
   const mainPagePadding = "192px 135px";
-  const aboutPagePadding = "0px 135px";
+  const aboutPagePadding = "50px 135px";
   const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
   const [count3, setCount3] = useState(0);
@@ -119,10 +119,10 @@ function Stats({ useBackgroundImage, isMainPage }) {
       className="greenBannerContiner"
       ref={statsRef}
       style={{
-        backgroundImage: useBackgroundImage
-          ? `url(${backgroundImageUrl})`
-          : "none",
-        backgroundColor: useBackgroundImage ? "transparent" : "transparent",
+        // backgroundImage: "#11215B"
+        //   ? `url(${backgroundImageUrl})`
+        //   : "none",
+        backgroundColor: useBackgroundImage ? "#11215B" : "transparent",
         height: useBackgroundImage ? "auto" : "194px",
         padding: ppadding,
       }}

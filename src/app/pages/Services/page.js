@@ -26,7 +26,7 @@ function Services() {
       img: "/NewSvgs/SVG2/hh/Group6.svg",
       heading: "Business Consultation",
       description:
-        "Our business consultation services augment your business requirements through essential aspects of businesses like people, processes, technology, and related operations.",
+        "Let us discuss your business requirements, augment your business processes and transform your brand with innovation, leadership, and technology.",
       details: [
         "Government Relation Management",
         "Employee Work Permit & Visa Assistance",
@@ -41,7 +41,7 @@ function Services() {
       img: "/NewSvgs/SVG2/hh/Group2.svg",
       heading: "Financial & Accounting",
       description:
-        "Through the regular management of financial reports, accounting, and related activities of the business, we are involved in the analysis and reporting of financial processes.",
+        "With regular monitoring of accounting, financial reporting and related business activities, we analyze the financial processes essential to your business.",
       details: [
         "Financial Statement Preparation",
         "Tax Planning & Preparation",
@@ -56,7 +56,7 @@ function Services() {
       img: "/NewSvgs/SVG2/hh/Group4.svg",
       heading: "Audit & Taxation",
       description:
-        "We engage in the routine monitoring, review, and report of the significant tax matters that impact your business with the panel of our audit and tax experts.",
+        "Through end-to-end monitoring and review of the crucial tax matters of the business, our panel of experts are adept at maintaining accuracy in reports.",
       details: [
         "Internal Audits",
         "Compliance Audits",
@@ -71,7 +71,7 @@ function Services() {
       img: "/NewSvgs/SVG2/hh/Group3.svg",
       heading: "Technology Solutions",
       description:
-        "Along with the business experience, we infuse technology into the business processes to address your specific technical needs that reimagine business models.",
+        "We combine technological expertise with business experience, thereby making prompt resolutions to address your technical needs that propel your business.s",
       details: [
         "Digital Strategy",
         "Designing",
@@ -84,7 +84,7 @@ function Services() {
       img: "/NewSvgs/SVG2/hh/Group5.svg",
       heading: "Digital Marketing",
       description:
-        "Hand over all your digital marketing to-do tasks to our experts and watch through the growth plateau with the finest services that scale your brand outreach.",
+        "Let us take your brand to new heights with the best marketing activities and help you build a positive impression on the customers for better brand outreach.",
       details: [
         "Search Engine Optimization (SEO)",
         "Search Engine Marketing (Google Ads)",
@@ -97,62 +97,29 @@ function Services() {
   const sellingCardData = [
     {
       img: "/NewSvgs/SVG7/G1.svg",
-      heading: "Expert advice",
+      heading: "Optimising Investment Budgets",
       description:
-        "A business should follow strict compliance with the local regulations and laws. With expert advice, we guide you through aspects like licensing, tax regulations, business models, etc. to make informed decisions.",
+        "Make wise investments with our customized packages to suit what your business demands. We help you to fine-tune the budgets based on the timeframe and the nature of the business.",
     },
     {
       img: "/NewSvgs/SVG7/G2.svg",
-      heading: "Ease of Access",
+      heading: "In-depth Field Expertise",
       description:
-        "To grow amidst the thriving business community, having a powerful network is the key. We help you grow networks and connections that can contribute greatly to your business and help you establish a strong business presence.",
+        "Get benefits from our global expertise and the vast knowledge of our team to drive your business quest in the right direction. Make your business decisions the best with our specialised services.",
     },
     {
       img: "/NewSvgs/SVG7/G3.svg",
-      heading: "Save on Costs",
+      heading: "Transparency & Privacy",
       description:
-        "With our team, you can relieve yourself from the time-consuming processes such as hectic paperwork, research, meetings or legal challenges, while we manage everything for you, thereby saving on costs and time.",
+        "We follow 100% transparency and privacy on all business processes and provide business consultation with a set of strategies aligned to your business goals.",
     },
     {
       img: "/NewSvgs/SVG7/G4.svg",
-      heading: "In-depth Market research",
+      heading: "Dedicated Team",
       description:
-        "By leveraging the expertise of business consultants, you can get valuable market insights to back your business decision-making. Our comprehensive market research helps you make the most out of your venture.",
+        "Don’t worry about who can address all your needs in time! Our dedicated team is always at your reach to support your requirements and concerns at the right time without delay.",
     },
   ];
-
-  const testimonials = [
-    {
-      message:
-        "Beacon has been with us throughout the phase of integrating and adapting business to the dynamic marketplace, with end-to-end business consultation services.",
-      name: "Omar Abdallah",
-      designation: "Riyadh, KSA",
-      img: "/profilePic3.jpg",
-    },
-    {
-      message:
-        "While partnering with Beacon, we never felt them as the business consultants, but as a part of our team with transparency and commitment at its best.",
-      name: "Muhammed",
-      designation: "Jeddah, KSA",
-      img: "/profilePic4.jpg",
-    },
-  ];
-
-  const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
-
-  const nextTestimonial = () => {
-    setCurrentTestimonialIndex((prevIndex) =>
-      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  const previousTestimonial = () => {
-    setCurrentTestimonialIndex((prevIndex) =>
-      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
-    );
-  };
-
-  const currentTestimonial = testimonials[currentTestimonialIndex];
 
   const [loaded, setLoaded] = useState(false);
 
@@ -166,10 +133,12 @@ function Services() {
       <MobileHeader />
       <div className={styles.servicePageMainContainer}>
         <h2 className="businessDesc">
-          Everything Your Business Needs to Thrive
+          Your Business Establishment
+          <br /> Done Right
         </h2>
         <h2 className={`${styles.mBusinessDesc1} mBusinessDesc`}>
-          Everything Your Business Needs to Thrive
+          Your Business Establishment
+          <br /> Done Right
         </h2>
         <div
           className={`${styles.servicePageMCardMainContainer} cardMainContainer`}
@@ -215,6 +184,25 @@ function Services() {
         </div>
 
         <div className={styles.servicesPageContainer2}>
+          <div className={styles.container2Contents}>
+            <h1 className="businessDesc">
+              Your Business Milestone Is
+              <br /> Under Progress
+            </h1>
+            <h1 className={`${styles.servicePagecontainer2MobileHeading}`}>
+              Your Business Milestone Is
+              <br /> Under Progress
+            </h1>
+            <p>
+              Starting or developing a business in the UAE involves many steps—
+              this includes visas, sponsorship, trade licenses, financial
+              activities and many must-haves that you require to fund and manage
+              your business. With comprehensive support and collaboration, we
+              handle every aspect of your business without a hitch. You can
+              trust us to manage every nook and corner of your business, no
+              matter how critical or mundane it would be.
+            </p>
+          </div>
           <div className={styles.servicePageImageContainer2}>
             {!loaded && (
               <div className="loader">
@@ -239,31 +227,18 @@ function Services() {
               onLoad={handleImageLoad}
             />
           </div>
-          <div className={styles.container2Contents}>
-            <h1 className="businessDesc">
-              Strategic Excellence to <br /> Scale Your Business
-            </h1>
-            <h1 className={`${styles.servicePagecontainer2MobileHeading}`}>
-              Strategic Excellence to <br /> Scale Your Business
-            </h1>
-            <p>
-              Being your premium partner for all your business requirements, we
-              offer a myriad of professional solutions woven to suit your
-              expectations. Whether you are an entrepreneur searching for
-              assistance to set up a business in the UAE, India, or KSA, or need
-              help with financial, technological, digital transformation, or
-              business consulting solutions, we&lsquo;re here to resolve them.
-              Our experts understand the local and global market, and the
-              regulations to ensure your business can thrive well in the dynamic
-              world through comprehensive services to drive business success.
-            </p>
-          </div>
         </div>
 
         <div className={styles.container3}>
-          <h1 className="businessDesc">Why Choose Us?</h1>
-          <h1 className={`${styles.servicePagecontainer2MobileHeading}`}>
-            Why Choose Us?
+          <h1 className="businessDesc">
+            How Beacon Lets Your Business Thrive?
+          </h1>
+          <h1
+            style={{ textAlign: "center" }}
+            className={`${styles.servicePagecontainer2MobileHeading}`}
+          >
+            How Beacon Lets Your
+            <br /> Business Thrive?
           </h1>
           <div className={styles.container3SellingCard}>
             {sellingCardData.map((data, index) => (
@@ -288,26 +263,6 @@ function Services() {
 
         <div className={styles.container4}>
           <div className={styles.background}></div>
-          <div className={styles.container4Contents}>
-            <h1 className="businessDesc">
-              Let&lsquo;s Unlock Your <br /> Business Formula
-            </h1>
-            <h1 className={`${styles.servicePagecontainer2MobileHeading}`}>
-              Let&lsquo;s Unlock Your <br /> Business Formula
-            </h1>
-            <p className="servicesDesc">
-              A reliable business consulting solutions provider augments your
-              needs to set up your business as you prefer. We help you with
-              everything that ranges from how to start a business to
-              establishing the roots for a firm brand presence. Through
-              end-to-end strategies and consulting solutions, we give businesses
-              the methods to manage any technological, financial, legal,
-              digital, and operational processes to let you scale your business.
-              Our advisory and consulting expertise helps you to quickly adapt
-              to the changes in the dynamic landscape and gain sustainable
-              business advantage.
-            </p>
-          </div>
           <div className={styles.container4ImgContainer}>
             {!loaded && (
               <div className="loader">
@@ -320,7 +275,7 @@ function Services() {
               </div>
             )}
             <Image
-              src="/NewSvgs/Backgrounds/abBg5.svg"
+              src="/NewSvgs/Backgrounds/bguae5.svg"
               width={500}
               height={500}
               layout="responsive"
@@ -332,60 +287,29 @@ function Services() {
               onLoad={handleImageLoad}
             />
           </div>
-        </div>
-        <div className={styles.marginContainer}>
-          <div
-            className={`${styles.testimonialMainContainerServicePage} testimonialMainContainer`}
-          >
-            <div
-              className={`${styles.testimonialLeftContainer} testimonialLeftContainer`}
-            >
-              <h2 className="testimonialHeading">
-                What our clients
-                <br />
-                say about us
-              </h2>
-              <h2 className={`${styles.mTestimonialHeading}`}>
-                What our clients say <br /> about us
-              </h2>
-              <p className="testimonialDesc">
-                Let&lsquo;s hear from our clients, the core of whatever we
-                commit.
-              </p>
-            </div>
-            <div className="testimonialRightContainer">
-              <div className="testimonialMessage">
-                <h3>&quot;{currentTestimonial.message}&quot;</h3>
-              </div>
-              <div className="testimonialImageButtonContainer">
-                <div className="testimonialProfile">
-                  <Image
-                    src={currentTestimonial.img}
-                    width={50}
-                    height={50}
-                    alt="person"
-                  />
-                  <div style={{ display: "flex", flexDirection: "column" }}>
-                    {/* Display current testimonial's profile */}
-                    <p className="profileName">{currentTestimonial.name}</p>
-                    <p className="profileDesignation">
-                      {currentTestimonial.designation}
-                    </p>
-                  </div>
-                </div>
-                <div className="testimonialButtonContainer">
-                  <button className="leftButton" onClick={previousTestimonial}>
-                    {"<"}
-                  </button>
-                  <button className="rightButton" onClick={nextTestimonial}>
-                    {">"}
-                  </button>
-                </div>
-              </div>
-            </div>
+          <div className={styles.container4Contents}>
+            <h1 className="businessDesc">
+              Cracking the Puzzle with the
+              <br /> Right Business Strategies
+            </h1>
+            <h1 className={`${styles.servicePagecontainer2MobileHeading}`}>
+              Cracking the Puzzle with
+              <br /> the Right Business Strategies
+            </h1>
+            <p className="servicesDesc">
+              With expertise in serving the businesses over years, we have been
+              making efficient and compliant business strategies for
+              entrepreneurs all over the UAE. Being the foremost business
+              management consultant and the pioneered business setup provider
+              across the UAE, our company specialises in offering bespoke
+              solutions in business incorporation, Immigration Support,
+              Corporate Banking, technological solutions, Corporate Finance and
+              accounting, Tax Compliance, audit and digital marketing services.
+              Let&lsquo;s get in touch today to make a customised proposal for your
+              business that stays close to your business goals!
+            </p>
           </div>
         </div>
-
         <Faq />
         <Footer />
       </div>
