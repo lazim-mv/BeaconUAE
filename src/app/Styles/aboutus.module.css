@@ -367,6 +367,8 @@
         color: #02040E;
         margin-top: 125px;
         margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .aboutUsHeroContainer{
@@ -402,7 +404,7 @@
     }
 
     .aboutUsContainer2 .mBusinessDesc1{
-        margin: 0;
+        margin: 0 auto;
     }
 
     .mobilePaddingCard{

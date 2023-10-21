@@ -85,10 +85,15 @@ function About() {
       <MobileHeader />
       <div className={styles.aboutUsMainContainer}>
         <h2 className="businessDesc">
-          Your Partner to Unleash the Odyssey of <br /> Business Success
+          Legacy of Providing Invaluable
+          <br /> Business Support
         </h2>
-        <h2 className={`${styles.mBusinessDesc1} mBusinessDesc`}>
-          Your Partner to Unleash the Odyssey of Business Success
+        <h2
+          style={{ textAlign: "center" }}
+          className={`${styles.mBusinessDesc1} mBusinessDesc`}
+        >
+          Legacy of Providing
+          <br /> Invaluable Business Support
         </h2>
         <div className={styles.aboutUsHeroContainer}>
           <div>
@@ -106,7 +111,7 @@ function About() {
               quality={100}
               priority={true}
               unoptimized
-              src="/NewSvgs/Backgrounds/abBg2.png"
+              src="/NewSvgs/Backgrounds/abBg2.svg"
               width={1212}
               height={600}
               layout="responsive"
@@ -116,24 +121,23 @@ function About() {
             />
           </div>
           <p>
-            Founded in 2021, Beacon Global comprises a team of passionate
-            accountants, auditors, and financial analysts. With a complete
-            understanding of the need for a reliable auditing and accounting
-            firm that offers excellent services to clients, we deliver the
-            leading business consulting services in Saudi Arabia. Right from its
-            inception, our team of consultants has been adept at building a good
-            industry reputation with remarkable services to the clients. With
-            the growth of the goodwill of the firm, we have extended the roots
-            to business consultancy, tax advisory, accounting, audit and
-            regulatory services, and digital marketing, with offices across UAE,
-            India, and KSA. We are committed to offering business incorporation
-            services to clients with an emphasis on the principles of
-            professionalism, integrity, and reliability. We are grateful for the
-            recognition gifted by the clients who helped us navigate the
-            complexities of tax, auditing, and regulatory compliance. Our team
-            is dedicated to delivering unparalleled service and value to
-            businesses with strong support of partners, clients, and other
-            stakeholders through constructive relationships.
+            Beacon UAE is dedicated to realising your desire to set up business
+            in the UAE through the best business consultancy services. With its
+            remarkable operations across UAE, KSA and India, Beacon has been
+            helping companies of all sizes to successfully incorporate their
+            businesses in their dream locations. Backed by the goodwill of
+            Beacon Global, our services guarantee to offer full-fledged business
+            setup services that pave an endless path for futuristic business
+            opportunities. Through economic and exceptional business formation
+            and financial, legal, and technological support, we provide amazing
+            mainland, free zone and offshore business setups making the process
+            of business establishment seamless. Through strong project
+            management skills, a comprehensive plan, and an in-depth
+            understanding of legal proceedings, we ensure your business thrives
+            in the UAE in the best possible way. We are also into providing a
+            range of services that include marketing, accounting, audit and
+            taxation, digital marketing and many more to make your transition
+            into a successful business smoother.
           </p>
         </div>
 
@@ -141,11 +145,10 @@ function About() {
 
         <div className={styles.aboutUsContainer2}>
           <h2 className="businessDesc">
-            Let Beacon Lead Your Dream Business Setup <br /> to The Path Of
-            Success!
+          Magnify Your Business Goals With Beacon
           </h2>
-          <h2 className={`${styles.mBusinessDesc1} mBusinessDesc`}>
-            Let Beacon Lead Your Dream Business Setup to The Path Of Success!
+          <h2 style={{textAlign:"center"}} className={`${styles.mBusinessDesc1} mBusinessDesc`}>
+          Magnify Your Business Goals<br/> With Beacon
           </h2>
           <div className={styles.mobilePaddingCard}>
             <div className={styles.cardMainContainer}>
