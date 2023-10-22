@@ -109,6 +109,10 @@
     width: 48%;
 }
 
+.selected {
+    width: 110px !important;
+}
+
 .sellingImageContainer{
     width: 150px;
     height: 80px;
@@ -328,6 +332,10 @@
         width: auto;
         border-radius: 10px;
         padding: 24px 15px 20px 15px;
+    }
+
+    .selected {
+        width: 90px !important;
     }
 
     .sellingImageContainer{

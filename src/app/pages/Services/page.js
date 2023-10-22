@@ -243,7 +243,12 @@ function Services() {
           <div className={styles.container3SellingCard}>
             {sellingCardData.map((data, index) => (
               <div className={styles.sellingCards} key={index}>
-                <div className={styles.sellingImageContainer} key={index}>
+                <div
+                  className={`${styles.sellingImageContainer} ${
+                    index === 2 ? styles.selected : ""
+                  }`}
+                  key={index}
+                >
                   <Image
                     src={data.img}
                     width={80}
@@ -305,8 +310,8 @@ function Services() {
               solutions in business incorporation, Immigration Support,
               Corporate Banking, technological solutions, Corporate Finance and
               accounting, Tax Compliance, audit and digital marketing services.
-              Let&lsquo;s get in touch today to make a customised proposal for your
-              business that stays close to your business goals!
+              Let&lsquo;s get in touch today to make a customised proposal for
+              your business that stays close to your business goals!
             </p>
           </div>
         </div>
