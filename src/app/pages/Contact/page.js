@@ -207,9 +207,13 @@ function Contact() {
                     className={`${styles.contactPageTextDetails} footerContactTextDetails `}
                   >
                     <h1>Head Office:</h1>
-                    <p>
+                    <p className="dAddress">
                       Office #39, 7th Floor, Dubai National Insurance
                       <br /> Building, Port Saeed Deira, Dubai, UAE
+                    </p>
+                    <p className="mAddress">
+                      Office #39, 7th Floor, Dubai National Insurance
+                       Building, Port Saeed Deira, Dubai, UAE
                     </p>
                   </div>
                 </a>

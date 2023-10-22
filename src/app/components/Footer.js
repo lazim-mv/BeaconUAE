@@ -92,8 +92,12 @@ function Footer() {
             <a href="https://maps.app.goo.gl/UzvX5K7o9c3Cepmx9">
               <div className="footerContactTextDetails">
                 <h1>Head Office:</h1>
-                <p>
+                <p className="dAddress">
                   Office #39, 7th Floor, Dubai National Insurance<br /> Building,
+                   Port Saeed Deira, Dubai, UAE
+                </p>
+                <p className="mAddress">
+                  Office #39, 7th Floor, Dubai National Insurance Building,
                    Port Saeed Deira, Dubai, UAE
                 </p>
               </div>
