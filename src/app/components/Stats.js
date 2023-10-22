@@ -64,10 +64,10 @@ function Stats({ useBackgroundImage, isMainPage }) {
             };
 
             const finalCounts = {
-              count1: 2000, // Your final values here
-              count2: 1000,
+              count1: 1000, // Your final values here
+              count2: 500,
               count3: 3,
-              count4: 4,
+              count4: 5,
             };
 
             animateValue("count1", finalCounts.count1, options, setCount1);
@@ -142,7 +142,7 @@ function Stats({ useBackgroundImage, isMainPage }) {
         </div>
         <div className="statContainer">
           <h1>{count4}+</h1>
-          <p>Countries</p>
+          <p>Locations</p>
         </div>
       </div>
     </div>

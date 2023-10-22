@@ -3,10 +3,20 @@
     flex-direction: column;
     gap: 118px;
     gap: 90px;
+    position: relative;
+}
+
+.background{
+    background-color: #11215B;
+    position: absolute;
+    height: 28%;
+    width: 100%;
+    z-index: -1;
 }
 
 .contactUsContainer h2 {
     margin-top: 96px;
+    color: #fff;
 }
 
 .container1{
@@ -130,12 +140,14 @@
 }
 
 .formContainer{
-    background: #F7F7F8;
+    background: #fff;
     padding: 50px 45px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 100px 100px 0px rgba(24, 25, 69, 0.05);
 }
 
 .formContainer div{
@@ -158,7 +170,7 @@
     margin-top: 16px;
     border: 1px solid #D3D3D3;
     padding: 25px 0px 25px 30px;
-    background: #F7F7F8;
+    border-radius: 10px;
 }
 
 .formContainer input::placeholder {
@@ -174,7 +186,8 @@
     border: 1px solid #D3D3D3;
     padding: 25px 0px 0px 30px;
     height: 216px;
-    background: #F7F7F8;
+    border-radius: 10px;
+    /* background: #F7F7F8; */
 }
 
 .formContainer .formSubmit{
@@ -185,11 +198,11 @@
 }
 
 .formSubmit button{
-    width: 280px;
-    height: 65px;
+    width: 250px;
+    height: 58px;
 
     border-radius: 76px;
-    background: #13670B;
+    background: #11215B;
 
 
     color: #FFF;
@@ -198,6 +211,44 @@
     font-weight: 500;
     line-height: 120%; /* 19.2px */
     text-transform: uppercase;
+}
+
+.container3{
+    padding: 0 135px;
+}
+
+.container3 h2{
+    color: #02040E;
+    margin-top: 0;
+}
+
+.contactUsContainer .container3 .mBusinessDesc1{
+    color: #02040E;
+    margin: 0;
+}
+
+.footerContactImgContainer {
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.contactMapImg{
+    margin-top: 50px;
+}
+
+.contactPageTextDetails h1{
+    color: #02040E;
+    font-weight: 400;
+}
+
+.contactPageTextDetails a{
+    color: #02040E;
+    font-weight: 400;
+}
+
+.contactPageTextDetails p{
+    color: #02040E;
+    font-weight: 400;
 }
 
 @media (max-width: 600px) {
@@ -211,10 +262,14 @@
         align-items: center;
     }
 
+    .background{
+        height: 25%;
+    }
+
     .contactUsContainer .mBusinessDesc1{
         display: flex;
         text-align: center;
-        color: #02040E;
+        color: #fff;
         margin-top: 125px;
         margin-bottom: 30px;
     }
@@ -310,6 +365,32 @@
     }
 
     .footerContainer h1{
+        text-align: left;
+    }
+
+    .container3{
+        padding: 0 24px;
+    }
+
+    .footerContactImgContainer{
+        margin-top: 30px;
+    }
+
+    .contactPageTextDetails h1{
+        color: #02040E;
+        font-weight: 400;
+        text-align: left;
+    }
+    
+    .contactPageTextDetails a{
+        color: #02040E;
+        font-weight: 400;
+        text-align: left;
+    }
+    
+    .contactPageTextDetails p{
+        color: #02040E;
+        font-weight: 400;
         text-align: left;
     }
 }

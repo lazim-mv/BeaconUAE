@@ -499,6 +499,11 @@
         padding-top: 0;
     }
 
+    .container3Content h1{
+        font-size: 18px;
+        font-weight: 600;
+    }
+
     .aboutUscontainer4{
         padding: 0 24px;
         gap: 0px;

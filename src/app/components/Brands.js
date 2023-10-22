@@ -3,16 +3,16 @@ import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 
-function Brands({ imageSources }) {
+function Brands({ imageSources, initialAnimateValue  }) {
   const [isHovered, setIsHovered] = useState(false);
-  const [animateValue, setAnimateValue] = useState("-200%");
+  const [animateValue, setAnimateValue] = useState(initialAnimateValue );
 
   useEffect(() => {
     const handleResize = () => {
       const screenWidth = window.innerWidth;
 
       // Set the animate value based on screen width
-      const newAnimateValue = screenWidth < 600 ? "-325%" : "-200%";
+      const newAnimateValue = screenWidth < 600 ? initialAnimateValue  : "-200%";
 
       // Update the animate value only if it has changed
       if (newAnimateValue !== animateValue) {

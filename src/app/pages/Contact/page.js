@@ -29,8 +29,6 @@ function Contact() {
     message: "",
   });
 
-  
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -38,7 +36,7 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-  
+
     emailjs
       .sendForm(
         emailjsConfig.serviceId,
@@ -61,159 +59,18 @@ function Contact() {
         console.error("Email could not be sent:", error);
       });
   };
-  
+
   return (
     <>
       <Header />
       <MobileHeader />
       <div className={styles.contactUsContainer}>
+        <div className={styles.background}></div>
+
         <h2 className="businessDesc">Get In Touch With Us!</h2>
         <h2 className={`${styles.mBusinessDesc1} mBusinessDesc`}>
           Get In Touch With Us!
         </h2>
-        <div className={styles.container1}>
-          <div className={styles.loctaionButtonContainer}>
-            <button
-              className={`${styles.ksa} ${!showUAECard && styles.btnActive}`}
-              onClick={() => toggleUAECard("ksa")}
-            >
-              Saudi arabia
-            </button>
-            <button
-              className={`${styles.uae} ${showUAECard && styles.btnActive}`}
-              onClick={() => toggleUAECard("uae")}
-            >
-              United Arab Emirates
-            </button>
-            <button
-              className={`${styles.uae} ${styles.mUae} ${
-                showUAECard && styles.btnActive
-              }`}
-              onClick={() => toggleUAECard("uae")}
-            >
-              UAE
-            </button>
-          </div>
-
-          {showUAECard ? (
-            <div className={styles.contactMainCard}>
-              <div className={`${styles.contactCard} ${styles.contactCardUAE}`}>
-                <div className={styles.contactImgContainer}>
-                  <Image
-                    src="/NewSvgs/SVG2/Group7.svg"
-                    width={72}
-                    height={72}
-                    alt="contactLocactionIcon"
-                  />
-                </div>
-                <div className={styles.contactCardContents}>
-                  <h1 className={`${styles.jeddah} servicesHeading`}>DUBAI</h1>
-                  <p className={styles.cardDesc}>
-                    Office #39, 7th Floor, Dubai National Insurance Building.
-                    Port Saeed Deira, Dubai, UAE
-                  </p>
-                </div>
-                <div className={styles.numberContainer}>
-                  <a href="tel:971 502 574 396">
-                    + 971 568 352 250
-                    <br />+ 971 502 574 396
-                    <br /> + 971 488 324 58
-                  </a>
-                </div>
-              </div>
-            </div>
-          ) : (
-            <div className={styles.contactMainCard}>
-              <div className={styles.contactCard}>
-                <a href="https://maps.app.goo.gl/UzvX5K7o9c3Cepmx9">
-                  <div className={styles.contactImgContainer}>
-                    <Image
-                      src="/NewSvgs/SVG2/Group7.svg"
-                      width={72}
-                      height={72}
-                      alt="contactLocactionIcon"
-                    />
-                  </div>
-                  <div className={styles.contactCardContents}>
-                    <h1 className={`${styles.jeddah} servicesHeading`}>
-                      JEDDAH
-                    </h1>
-                    <p className={styles.cardDesc}>
-                      Building no. 4626, 501, 5th Floor, Hamza Shehatah St.
-                      Al-Baghdadiyah Al-Gharbiyah Jeddah 22235
-                    </p>
-                  </div>
-                </a>
-                <div className={styles.numberContainer}>
-                  <a href="tel:966 570 807 175">
-                    + 966 570 807 175
-                    <br /> + 966 539 067 414
-                    <br /> + 966 531 170 957
-                  </a>
-                </div>
-              </div>
-
-              <div className={styles.contactCard}>
-                <a href="https://maps.app.goo.gl/Vk3noguNHKx7GrMD8">
-                  <div className={styles.contactImgContainer}>
-                    <Image
-                      src="/NewSvgs/SVG2/Group7.svg"
-                      width={72}
-                      height={72}
-                      alt="contactLocactionIcon"
-                    />
-                  </div>
-                  <div className={styles.contactCardContents}>
-                    <h1 className={`${styles.jeddah} servicesHeading`}>
-                      DAMMAM
-                    </h1>
-                    <p className={styles.cardDesc}>
-                      Building no. 7447, B31, 3rd Floor, Al-Thasih St.
-                      Al-Amamrah, 8th street Dammam <br />
-                      32415
-                    </p>
-                  </div>
-                </a>
-                <div className={styles.numberContainer}>
-                  <a href="tel:966 566 416 774">
-                    + 966 566 416 774
-                    <br /> + 966 539 067 414
-                    <br /> + 966 531 170 957
-                  </a>
-                </div>
-              </div>
-
-              <div className={styles.contactCard}>
-                <a href="https://maps.app.goo.gl/vWfGvAjAcHxV9AUT9">
-                  <div className={styles.contactImgContainer}>
-                    <Image
-                      src="/NewSvgs/SVG2/Group7.svg"
-                      width={72}
-                      height={72}
-                      alt="contactLocactionIcon"
-                    />
-                  </div>
-                  <div className={styles.contactCardContents}>
-                    <h1 className={`${styles.jeddah} servicesHeading`}>
-                      Riyadh
-                    </h1>
-                    <p className={styles.cardDesc}>
-                      Le Cygne Commercial Center 2, 6th FloorAl-Arz,
-                      Al-Olaya,Riyadh <br /> 12611
-                    </p>
-                  </div>
-                </a>
-                <div className={styles.numberContainer}>
-                  <a href="tel:966 540 599 655">
-                    + 966 540 599 655
-                    <br /> + 966 539 067 414
-                    <br /> + 966 531 170 957
-                  </a>
-                </div>
-              </div>
-            </div>
-          )}
-        </div>
 
         <div className={styles.container2}>
           <form className={styles.formContainer} onSubmit={handleSubmit}>
@@ -281,6 +138,98 @@ function Contact() {
             </div>
           </form>
         </div>
+
+        <div className={styles.container3}>
+          <h2 className="businessDesc">Get In Touch With Us!</h2>
+          <h2 className={`${styles.mBusinessDesc1} mBusinessDesc`}>
+            Get In Touch With Us!
+          </h2>
+          <div className={styles.container3Address}>
+            <div
+              className={`${styles.footerContactImgContainer} footerContactImgContainer`}
+            >
+              <div
+                className={`${styles.contactPageContactDetails} footerContactDetails`}
+              >
+                <Image
+                  quality={100}
+                  priority={true}
+                  unoptimized
+                  src="/NewSvgs/SVG3/hh/Icon-1.svg"
+                  width={46}
+                  height={46}
+                  alt="ImageFooter2"
+                />
+                <div
+                  className={`${styles.contactPageTextDetails} footerContactTextDetails footerContactTextDetailsEmail`}
+                >
+                  <h1>Email us:</h1>
+                  <a
+                    href="mailto:admin@bmcglobal.co"
+                    style={{ textTransform: "none" }}
+                  >
+                    admin@bmcglobal.co
+                  </a>
+                </div>
+              </div>
+              <div className="footerContactDetails">
+                <Image
+                  quality={100}
+                  priority={true}
+                  unoptimized
+                  src="/NewSvgs/SVG3/hh/Icon.svg"
+                  width={46}
+                  height={46}
+                  alt="ImageFooter2"
+                />
+                <div
+                  className={`${styles.contactPageTextDetails} footerContactTextDetails`}
+                  style={{ whiteSpace: "nowrap" }}
+                >
+                  <h1>Call us on:</h1>
+                  <a href="tel:971568352250">
+                    <p>+971 568 352 250</p>
+                  </a>
+                </div>
+              </div>
+              <div className="footerContactDetails">
+                <Image
+                  quality={100}
+                  priority={true}
+                  unoptimized
+                  src="/NewSvgs/SVG3/hh/Icon-2.svg"
+                  width={46}
+                  height={46}
+                  alt="ImageFooter2"
+                />
+                <a href="https://maps.app.goo.gl/UzvX5K7o9c3Cepmx9">
+                  <div
+                    className={`${styles.contactPageTextDetails} footerContactTextDetails `}
+                  >
+                    <h1>Head Office:</h1>
+                    <p>
+                      Office #39, 7th Floor, Dubai National Insurance
+                      <br /> Building, Port Saeed Deira, Dubai, UAE
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div className={styles.contactMapImg}>
+              <Image
+                quality={100}
+                priority={true}
+                unoptimized
+                src="/NewSvgs/SVG3/hh/map.svg"
+                width={46}
+                height={46}
+                layout="responsive"
+                alt="ImageFooter2"
+              />
+            </div>
+          </div>
+        </div>
+
         <div className={styles.footerContainer}>
           <Footer />
         </div>
