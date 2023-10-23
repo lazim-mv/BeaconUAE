@@ -107,6 +107,7 @@
     padding: 30px 45px 30px 30px;
     justify-content: space-between;
     width: 48%;
+    border-radius: 10px;
 }
 
 .selected {
@@ -145,6 +146,7 @@
     background: #F7F7F8;
     z-index: -1;
     right: 100px;
+    border-radius: 10px;
 }
 
 .container4ImgContainer{

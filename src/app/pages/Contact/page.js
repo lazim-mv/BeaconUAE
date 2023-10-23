@@ -148,6 +148,26 @@ function Contact() {
             <div
               className={`${styles.footerContactImgContainer} footerContactImgContainer`}
             >
+              <div className="footerContactDetails">
+                <Image
+                  quality={100}
+                  priority={true}
+                  unoptimized
+                  src="/NewSvgs/SVG3/hh/Icon.svg"
+                  width={46}
+                  height={46}
+                  alt="ImageFooter2"
+                />
+                <div
+                  className={`${styles.contactPageTextDetails} footerContactTextDetails`}
+                  style={{ whiteSpace: "nowrap" }}
+                >
+                  <h1>Call us on:</h1>
+                  <a href="tel:971568352250">
+                    <p>+971 568 352 250</p>
+                  </a>
+                </div>
+              </div>
               <div
                 className={`${styles.contactPageContactDetails} footerContactDetails`}
               >
@@ -172,26 +192,7 @@ function Contact() {
                   </a>
                 </div>
               </div>
-              <div className="footerContactDetails">
-                <Image
-                  quality={100}
-                  priority={true}
-                  unoptimized
-                  src="/NewSvgs/SVG3/hh/Icon.svg"
-                  width={46}
-                  height={46}
-                  alt="ImageFooter2"
-                />
-                <div
-                  className={`${styles.contactPageTextDetails} footerContactTextDetails`}
-                  style={{ whiteSpace: "nowrap" }}
-                >
-                  <h1>Call us on:</h1>
-                  <a href="tel:971568352250">
-                    <p>+971 568 352 250</p>
-                  </a>
-                </div>
-              </div>
+
               <div className="footerContactDetails">
                 <Image
                   quality={100}
@@ -206,14 +207,14 @@ function Contact() {
                   <div
                     className={`${styles.contactPageTextDetails} footerContactTextDetails `}
                   >
-                    <h1>Head Office:</h1>
+                    <h1>Office:</h1>
                     <p className="dAddress">
                       Office #39, 7th Floor, Dubai National Insurance
                       <br /> Building, Port Saeed Deira, Dubai, UAE
                     </p>
                     <p className="mAddress">
-                      Office #39, 7th Floor, Dubai National Insurance
-                       Building, Port Saeed Deira, Dubai, UAE
+                      Office #39, 7th Floor, Dubai National Insurance Building,
+                      Port Saeed Deira, Dubai, UAE
                     </p>
                   </div>
                 </a>
