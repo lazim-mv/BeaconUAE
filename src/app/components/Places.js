@@ -46,7 +46,7 @@ function Places() {
       <div className="scrollContainer">
       <div className="juriMainCardContainer">
         {pageData.map((data, index) => (
-          <div class="placesCard ">
+          <div class="placesCard " key={index}>
             <div class="card-side back placesCardImage">
               <Image
                 src={data.img}
