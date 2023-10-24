@@ -85,6 +85,7 @@
     background-color: #F7F7F8;
     padding: 0 60px 40px 60px;
     position: relative;
+    border-radius: 10px;
 }
 
 .cardContainer .ImageCon{
@@ -453,7 +454,6 @@
     
     .cardContent h1{
         color: #02040E;
-        font-family: Sora;
         font-size: 16px;
         font-style: normal;
         font-weight: 600;

@@ -10,28 +10,28 @@ function Places() {
     {
       img: "/Jurisdiction/Image-1.svg",
       heading: "Abu Dhabi",
+      Number: "01",
       description:
         "Explore the unparalleled ease of running your business in Abu Dhabi, the largest emirate in UAE, and make your business thrive amongst the best dynamic economy.",
     },
     {
       img: "/Jurisdiction/Image.svg",
       heading: "Dubai",
+      Number: "02",
       description:
         "Establish your business in Dubai, the tax-favorable, business-friendly and highly desirable economically diverse destination that has ranked first in ease of doing business.",
     },
     {
       img: "/Jurisdiction/Image-2.svg",
       heading: "Sharjah",
+      Number: "03",
       description:
         "Get immense advantage of seamless business setup in Sharjah, and experience the privilege of setting up business irrespective of mainland, offshore, or freezone preferences.",
     },
   ];
 
   return (
-    <div
-      className="jurisdictionContainer"
-      style={{ backgroundColor: "transparent" }}
-    >
+    <div className="placesContainer">
       <div className="businessContentContainer">
         <h6 className="businessHeading">Places</h6>
         <h2 className="businessDesc">
@@ -43,11 +43,11 @@ function Places() {
           <br /> Business Landmarks
         </h2>
       </div>
-
+      <div className="scrollContainer">
       <div className="juriMainCardContainer">
         {pageData.map((data, index) => (
-          <div className="juriCardContainer" key={index}>
-            <div className="juriCardImage placesImg">
+          <div class="placesCard ">
+            <div class="card-side back placesCardImage">
               <Image
                 src={data.img}
                 width={500}
@@ -60,7 +60,10 @@ function Places() {
                 objectFit="cover"
               />
             </div>
-            <div style={{marginTop:"-10px"}} className="juriContent">
+            <div className="juriContent card-side front">
+              <div className="circleNumber">
+                <h1>{data.Number}</h1>
+              </div>
               <h1 style={{ color: "#fff" }} className="servicesHeading">
                 {data.heading}
               </h1>
@@ -68,6 +71,7 @@ function Places() {
             </div>
           </div>
         ))}
+      </div>
       </div>
       <a href="/pages/Services">
         <div

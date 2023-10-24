@@ -515,7 +515,100 @@ li{
 
 /* Places Start */
 
+.placesContainer{
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #F7F7F8;
+  justify-content: center;
+  align-items: center;
+  gap:60px;
+  padding: 100px 135px;
+}
 
+.placesContainer .businessContentContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.scrollContainer{
+  width: 100%;
+}
+
+.placesContainer .juriMainCardContainer{
+  width: 100%;
+}
+
+.placesCard {
+  position: relative;
+  box-shadow: none;
+  background: none;
+  width: 100%;
+  height: 373px
+}
+
+.card-side {
+  border-radius: 10px;
+  transition: all 0.8s ease;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  height: auto;
+}
+
+.card-side.back {
+  transform: rotateY(-180deg);
+  padding: 0;
+}
+
+.placesCardImage img{
+  width: auto;
+  height: 373px !important;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-side.front {
+  background-color:#11215B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.placesCard .juriContent{
+  padding: 70px 30px;
+}
+
+.circleNumber{
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.circleNumber h1{
+  color: #11215B;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.placesCard:hover .card-side.front {
+  transform: rotateY(180deg);
+}
+
+.placesCard:hover .card-side.back {
+  transform: rotateY(0deg);
+}
 
 /* Places End */
 
@@ -1891,7 +1984,6 @@ li{
   .textOverlay h1{
     color: #FFF;
     text-align: center !important;
-    font-family: Sora;
     font-size: 36px;
     font-size: 8.835432vw;
     font-style: normal;
@@ -1987,6 +2079,49 @@ li{
 
   .juriCardImage{
     width: 300px;
+  }
+
+  .placesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px 40px 20px;
+    gap: 30px;
+    overflow-x: hidden; /* Hide horizontal overflow */
+  }
+
+  .placesContainer .juriMainCardContainer{
+    width: 270vw;
+    overflow-y: hidden;
+    padding: 0;
+    padding-right: 30px;
+  }
+
+  .scrollContainer {
+    width: 100%; /* Allow the container to expand horizontally */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    height: 310px;
+  }
+
+  .placesCard .juriContent{
+    padding: 45px 30px;
+  }
+
+  .placesCard{
+    width: 100%;
+    flex: 1;
+    height: 305px;
+  }
+
+  .placesCardImage img {
+    /* height: 350px !important; */
+    border-radius: 10px;
+    /* object-fit: cover; */
+  }
+
+  .front .juriDesc{
+    height: 85px;
   }
 
   .bussinessContainer{
@@ -2370,6 +2505,11 @@ li{
   .faqCountContainer{
     width: 120px ;
     margin-top: 1px;
+  }
+
+  .faqNumber{
+    font-size: 18px;
+    font-weight: 600;
   }
 
   .faqContentMainContainer{
