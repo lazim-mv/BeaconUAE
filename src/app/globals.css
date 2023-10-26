@@ -2390,15 +2390,16 @@ li{
   .testimonialProfileContainer {
     display: flex;
     /* overflow: hidden; */
-    margin-left: 750px;
+    margin-left: 200%;
     justify-content: center;
-    width: 100%; /* Make sure it's 100% width of the container */
+    align-items: center;
+    width: 100%; 
   }
   
   .testimonialRightContainer .testimonialProfile {
     gap: 15px;
     height: 230px;
-    flex: 0 0 95% ; 
+    flex: 0 0 90% ; 
     align-self: center;
     transition: transform 0.3s ease; /* Smooth transition for card changes */
   }
