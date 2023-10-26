@@ -485,6 +485,7 @@ li{
   display: flex;
   flex-direction: column;
   width: 33%;
+  height: 435px;
 }
 
 .juriContent{
@@ -2389,7 +2390,7 @@ li{
   .testimonialProfileContainer {
     display: flex;
     /* overflow: hidden; */
-    margin-left: 800px;
+    margin-left: 750px;
     justify-content: center;
     width: 100%; /* Make sure it's 100% width of the container */
   }
@@ -2397,7 +2398,7 @@ li{
   .testimonialRightContainer .testimonialProfile {
     gap: 15px;
     height: 230px;
-    flex: 0 0 100% ; 
+    flex: 0 0 95% ; 
     align-self: center;
     transition: transform 0.3s ease; /* Smooth transition for card changes */
   }
