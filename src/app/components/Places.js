@@ -8,14 +8,14 @@ function Places() {
 
   const pageData = [
     {
-      img: "/Jurisdiction/Image-1.svg",
+      img: "/Jurisdiction/Image.svg",
       heading: "Abu Dhabi",
       Number: "01",
       description:
         "Explore the unparalleled ease of running your business in Abu Dhabi, the largest emirate in UAE, and make your business thrive amongst the best dynamic economy.",
     },
     {
-      img: "/Jurisdiction/Image.svg",
+      img: "/Jurisdiction/Image-1.svg",
       heading: "Dubai",
       Number: "02",
       description:

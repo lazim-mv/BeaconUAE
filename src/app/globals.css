@@ -533,6 +533,7 @@ li{
 
 .scrollContainer{
   width: 100%;
+  height: 373px;
 }
 
 .placesContainer .juriMainCardContainer{
@@ -544,7 +545,6 @@ li{
   box-shadow: none;
   background: none;
   width: 100%;
-  height: 373px
 }
 
 .card-side {
@@ -579,6 +579,7 @@ li{
 
 .placesCard .juriContent{
   padding: 70px 30px;
+  height: 373px;
 }
 
 .circleNumber{
@@ -2096,6 +2097,7 @@ li{
     overflow-y: hidden;
     padding: 0;
     padding-right: 30px;
+    height: 373px;
   }
 
   .scrollContainer {
@@ -2106,12 +2108,12 @@ li{
 
   .placesCard .juriContent{
     padding: 45px 30px;
+    height: 305px;
   }
 
   .placesCard{
     width: 100%;
     flex: 1;
-    height: 305px;
   }
 
   .placesCardImage img {
