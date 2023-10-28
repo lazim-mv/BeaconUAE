@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 function Places() {
   const [isHovered, setIsHovered] = useState(false);
@@ -30,6 +30,25 @@ function Places() {
     },
   ];
 
+  const placesContainerRef = useRef(null);
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const horizontalContainer = placesContainerRef.current;
+  //     const containerRect = horizontalContainer.getBoundingClientRect();
+  //     const scrollLeft = window.scrollY - containerRect.top;
+  //     const translateX = Math.max(0, scrollLeft * 0.1); // Increase by 10%
+
+  //     horizontalContainer.style.transform = `translateX(-${translateX}px)`;
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
   return (
     <div className="placesContainer">
       <div className="businessContentContainer">
@@ -44,34 +63,34 @@ function Places() {
         </h2>
       </div>
       <div className="scrollContainer">
-      <div className="juriMainCardContainer">
-        {pageData.map((data, index) => (
-          <div class="placesCard " key={index}>
-            <div class="card-side back placesCardImage">
-              <Image
-                src={data.img}
-                width={500}
-                height={500}
-                alt={`juri ${index}`}
-                layout="responsive"
-                quality={100}
-                priority={true}
-                unoptimized
-                objectFit="cover"
-              />
-            </div>
-            <div className="juriContent card-side front">
-              <div className="circleNumber">
-                <h1>{data.Number}</h1>
+        <div className="juriMainCardContainer" ref={placesContainerRef}>
+          {pageData.map((data, index) => (
+            <div class="placesCard " key={index}>
+              <div class="card-side back placesCardImage">
+                <Image
+                  src={data.img}
+                  width={500}
+                  height={500}
+                  alt={`juri ${index}`}
+                  layout="responsive"
+                  quality={100}
+                  priority={true}
+                  unoptimized
+                  objectFit="cover"
+                />
               </div>
-              <h1 style={{ color: "#fff" }} className="servicesHeading">
-                {data.heading}
-              </h1>
-              <p className="juriDesc">{data.description}</p>
+              <div className="juriContent card-side front">
+                <div className="circleNumber">
+                  <h1>{data.Number}</h1>
+                </div>
+                <h1 style={{ color: "#fff" }} className="servicesHeading">
+                  {data.heading}
+                </h1>
+                <p className="juriDesc">{data.description}</p>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
       </div>
       <a href="/pages/Services">
         <div

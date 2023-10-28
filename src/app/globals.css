@@ -2105,6 +2105,8 @@ li{
     width: 100%; /* Allow the container to expand horizontally */
     overflow-x: auto; /* Enable horizontal scrolling */
     height: 310px;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
   }
 
   .placesCard .juriContent{
@@ -2398,7 +2400,7 @@ li{
   
   .testimonialRightContainer .testimonialProfile {
     gap: 15px;
-    height: 230px;
+    /* height: 230px; */
     flex: 0 0 90% ; 
     align-self: center;
     transition: transform 0.3s ease; /* Smooth transition for card changes */

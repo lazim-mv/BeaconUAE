@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function Jurisdiction() {
   const [isHovered, setIsHovered] = useState(false);
@@ -26,6 +26,20 @@ function Jurisdiction() {
         "Trigger your business even without a physical presence in the UAE. Enjoy convenient access to all business services including consultancy, legal support, and more.",
     },
   ];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const horizontalContainer = document.querySelector('.juriMainCardContainer');
+      const scrollTop = 0;
+      horizontalContainer.style.transform = `translateX(-${scrollTop}px)`;
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <div className="jurisdictionContainer">
