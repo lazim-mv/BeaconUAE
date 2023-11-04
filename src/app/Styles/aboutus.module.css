@@ -517,7 +517,7 @@
     }
 
     .cvBackground{
-        width: 45%;
+        width: 44%;
     }
 
     .cvImg{
@@ -529,10 +529,11 @@
 
     .cvContent{
         padding-top: 40px;
+        border-radius: 10px;
     }
 
     .cvText{
-        height: 240px;
+        height: 100%;
         padding:10px 10px 20px 10px ;
     }
 

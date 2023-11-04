@@ -5,11 +5,11 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Beacon - Your Global Advisory Partner For Business Success",
+  title: "Beacon - Launch and Expand Your Business In UAE with our Expertise",
   description:
     "Beacon is your global business advisory partner who offers you a range of services that enable your business growth and ultimate business transformation. We provide a plethora of services like Business Incorporation, Digital Marketing, Technology, Finance and Accounting, Audit & Taxation and Business Consulting services.",
   openGraph: {
-    title: "Beacon - Your Global Advisory Partner For Business Success",
+    title: "Beacon - Launch and Expand Your Business In UAE with our Expertise",
     description:
       "Beacon is your global business advisory partner who offers you a range of services that enable your business growth and ultimate business transformation. We provide a plethora of services like Business Incorporation, Digital Marketing, Technology, Finance and Accounting, Audit & Taxation and Business Consulting services.",
     url: "https://bmcglobal.co",
