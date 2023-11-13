@@ -1094,10 +1094,6 @@ li{
   display: inline-block;
 }
 
-/* .scrolling-logos:hover {
-  transition: transform 2s ease !important ;
-} */
-
 .logosContainer{
   display: flex;
   gap: 70px;
@@ -1153,10 +1149,6 @@ li{
 .mTestimonialHeading{
   display: none;
 }
-
-/* .testimonialMessage{
-  height: 180px;
-} */
 
 .testimonialHeading{
   color: #fff;
@@ -1723,27 +1715,6 @@ li{
 }
 
 
-/* .serviceContainer .topVisibleArrow{
-  transform: translate(304%, -60%);
-}
-
-.serviceContainer .bottomVisibleArrow{
-  transform: translate(230.5%, 50%);
-}
-
-.serviceContainer .hButtonContainer:hover .bottomVisibleArrow{
-  transform: translate(304%, -60%);
-}
-
-
-.serviceContainer .hButtonContainer:hover .topVisibleArrow{
-  transform: translate(395.5%, -100%);
-} */
-/* ButtonArrow Anim or Transi Start */
-
-
-/* card Anim or Transi Start */
-
 .servicesButton::before {
   content: "";
   position: absolute;
@@ -1770,7 +1741,6 @@ li{
 
 
 .greenBannerContiner{
-  /* background: url("../../public/NewSvgs/Backgrounds/bg4.png"); */
   width: 100%;
   height: 500px;
 
@@ -1800,31 +1770,6 @@ li{
   justify-content: space-between;
   width: 100%;
 }
-
-/* card Anim or Transi End */
-/* Animations End */
-
-
-/* .slide img {
-  animation: scroll 10s linear infinite;
-}
-
-.slide-track {
-  width: 100%;
-  display: flex;
-  gap: 3em;
-  overflow: hidden;
-}
-
-.slider {
-  background-color: whitesmoke;
-  padding: 8em 2em;
-}
-
-@keyframes scroll {
-  0% {transform: translateX(0);}
-  100% {transform: translatex(-1000%)}
-} */
 
 @media (max-width: 600px) {
   body {
@@ -1944,6 +1889,24 @@ li{
     transition: opacity 1s ease-in-out;
     opacity: 1; /* Initially visible */
     overflow: hidden;
+  }
+
+  #white-screen .changeTextContainer{
+    margin-left: -40px;
+    gap: 5px;
+  }
+
+  .changeTextContainer .spinnerText{
+    text-align: center;
+    font-size: 3.5vw;
+    white-space: nowrap;
+  }
+
+  .changeTextContainer .changeText{
+    text-align: left;
+    font-size: 3.5vw;
+    white-space: nowrap;
+    width: 75px;
   }
 
   .hContainer{
@@ -2695,6 +2658,7 @@ li{
   z-index: 9999; /* Make sure it's on top of other content */
   /* You can also add transitions for a smoother effect */
   transition: height 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition-delay: 2s;
   opacity: 1; /* Initially visible */
   overflow: hidden;
 }
@@ -2706,25 +2670,82 @@ li{
   /* transition: opacity 2s cubic-bezier(0.25, 0.1, 0.25, 1), height 0.8s cubic-bezier(0.25, 0.1, 0.25, 1); */
 }
 
-.loadingHeading{
-  color: #fff;
-  text-align: center;
-  /* font-size: 15px; */
-  font-style: normal;
-  font-weight: 600;
-  line-height: 120%; /* 19.2px */
-  text-transform: uppercase;
-}
-
-
 #white-screen {
   height: 100%;
 
-  background: #fff; /* Use the background color directly */
+  background: #fff; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Cortana Animation outer-circle Start */
+
+.outer-circle {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background-color: #5073f0;
+  border-radius: 50%;
+  animation: pulsar 1.8s infinite;
 }
+
+.inner-circle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border: 10px solid #11215B;
+  border-radius: 50%;
+  animation: shrink 1.8s infinite;
+}
+
+.changeTextContainer{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 110px;
+  margin-bottom: 120px;
+}
+
+.spinnerText{
+  font-size: 15px;
+}
+
+.changeText {
+  font-size: 15px;
+  font-weight: 600;
+  width: 270px;
+  color: #11215B;
+}
+
+@keyframes pulsar {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes shrink {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+}
+
+/* Cortana Animation outer-circle End */
+
+/* Network Bar Animation loader Start */
 
 .loader {
   position: relative;
@@ -2919,3 +2940,5 @@ li{
   transform: scale(1, 1);
 }
 }
+
+/* Network Bar Animation loader End */

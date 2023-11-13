@@ -18,8 +18,14 @@ import Jurisdiction from "./components/Jurisdiction";
 import Places from "./components/Places";
 
 export default function Home() {
-  const [hideWhiteScreen, setHideWhiteScreen] = useState(false);
-  const [loaded, setLoaded] = useState(false);
+  const [textIndex, setTextIndex] = useState(0);
+  const textOptions = [
+    "Incorporation",
+    "Accounting",
+    "Auditing",
+    "Digital Strategy",
+    "Digital Marketing",
+  ];
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -28,53 +34,39 @@ export default function Home() {
         // whiteScreen.style.opacity = '0';
         whiteScreen.classList.add("hidden");
       }
-    }, 2500); // 1000 milliseconds = 1 second
+    }, 1000);
 
-    // Cleanup the timeout to avoid memory leaks
     return () => clearTimeout(timeoutId);
   }, []);
 
-  const useBackgroundImage = true;
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTextIndex((prevIndex) => (prevIndex + 1) % textOptions.length);
+    }, 450);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <>
-      {/* <Head>
-        <meta property="og:image" content="/linkImage.png" />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="1024" />
-        <meta property="og:image:height" content="1024" />
-      </Head> */}
       <Header />
       <MobileHeader />
-      {!hideWhiteScreen && (
-        <div
-          id="white-screen"
-          // style={{
-          //   opacity: hideWhiteScreen ? 0 : 1,
-          //   transition: "opacity 0.8s cubic-bezier(0.25, 0.1, 0.25, 1)",
-          // }}
-        >
-          <div class="loader">
-            <div class="loader__bar"></div>
-            <div class="loader__bar"></div>
-            <div class="loader__bar"></div>
-            <div class="loader__bar"></div>
-            <div class="loader__bar"></div>
-            <div class="loader__ball"></div>
-          </div>
+      <div id="white-screen">
+        <div className="outer-circle">
+          <div className="inner-circle"></div>
         </div>
-      )}
+        <div className="changeTextContainer">
+          <h1 className="spinnerText">Your Global Advisory Partner For</h1>
+          <h1 className="changeText">{textOptions[textIndex]}</h1>
+        </div>
+      </div>
       <div className="mainContainer">
         <Hero />
-        {/* <BusinessSetup /> */}
         <Services />
         <Locations />
         <Jurisdiction />
         <Places />
-        {/* <WhyBeacon /> */}
-        {/* <Stats useBackgroundImage={useBackgroundImage} isMainPage={true} /> */}
         <Clients />
-        {/* <Blogs /> */}
         <Faq />
         <Contact />
         <Footer />

@@ -215,7 +215,7 @@ function Services() {
               </div>
             )}
             <Image
-              src="/ServicesPage/servicesPage7.svg"
+              src="/ServicesPage/servicesPage7.png"
               width={576}
               height={540}
               layout="responsive"
@@ -280,7 +280,7 @@ function Services() {
               </div>
             )}
             <Image
-              src="/NewSvgs/Backgrounds/bguae5.svg"
+              src="/ServicesPage/servicesPage1.png"
               width={500}
               height={500}
               layout="responsive"

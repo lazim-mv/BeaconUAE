@@ -48,15 +48,12 @@ function Clients() {
   const [isMobileScreen, setIsMobileScreen] = useState(false);
 
   useEffect(() => {
-    // Check screen size on the client side
     const checkScreenSize = () => {
       setIsMobileScreen(window.innerWidth < 600);
     };
 
-    // Add event listener for window resize
     window.addEventListener("resize", checkScreenSize);
 
-    // Initial check on component mount
     checkScreenSize();
 
     return () => {
@@ -745,93 +742,4 @@ function ScrollingLogos() {
     </motion.div>
   );
 }
-
-// function LogosSlide() {
-//   return (
-//     <div class="slider">
-//       <div class="slide-track">
-//         <div class="slide">
-//           <Image
-//             src="/clients/bookMyShow.svg"
-//             width={100}
-//             height={0}
-//             layout="responsive"
-//             alt="ImageClients"
-//             className="logoClients"
-//           />
-//         </div>
-//         <div class="slide">
-//           <Image
-//             src="/clients/airBnb.svg"
-//             width={100}
-//             height={0}
-//             layout="responsive"
-//             alt="ImageClients"
-//             className="logoClients"
-//           />
-//         </div>
-//         <div class="slide">
-//           <Image
-//             src="/clients/fedex.svg"
-//             width={100}
-//             height={0}
-//             layout="responsive"
-//             alt="ImageClients"
-//             className="logoClients"
-//           />
-//         </div>
-//         <div class="slide">
-//           <Image
-//             src="/clients/apple.svg"
-//             width={100}
-//             height={0}
-//             layout="responsive"
-//             alt="ImageClients"
-//             className="logoClients"
-//           />
-//         </div>
-//         <div class="slide">
-//           <Image
-//             src="/clients/google.svg"
-//             width={100}
-//             height={0}
-//             layout="responsive"
-//             alt="ImageClients"
-//             className="logoClients"
-//           />
-//         </div>
-//         <div class="slide">
-//           <Image
-//             src="/clients/microsoft.svg"
-//             width={100}
-//             height={0}
-//             layout="responsive"
-//             alt="ImageClients"
-//             className="logoClients"
-//           />
-//         </div>
-//         <div class="slide">
-//           <Image
-//             src="/clients/ola.svg"
-//             width={100}
-//             height={0}
-//             layout="responsive"
-//             alt="ImageClients"
-//             className="logoClients"
-//           />
-//         </div>
-//         <div class="slide">
-//           <Image
-//             src="/clients/Amazon.svg"
-//             width={100}
-//             height={0}
-//             layout="responsive"
-//             alt="ImageClients"
-//             className="logoClients"
-//           />
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
 export { Clients, ScrollingLogos };

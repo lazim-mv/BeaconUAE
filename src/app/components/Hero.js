@@ -37,7 +37,6 @@ function Hero() {
     "/clients/newBrands/4.svg",
     "/clients/newBrands/5.svg",
     "/clients/newBrands/6.svg",
-    // Add more image sources as needed
   ];
 
   return (
@@ -116,7 +115,7 @@ function Hero() {
         </div>
       </div>
       <div className="clientsImgContainer">
-        <Brands imageSources={imageSources} initialAnimateValue ="-160%" />;
+        <Brands imageSources={imageSources} initialAnimateValue="-160%" />;
       </div>
     </div>
   );

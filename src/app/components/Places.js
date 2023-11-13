@@ -8,21 +8,21 @@ function Places() {
 
   const pageData = [
     {
-      img: "/Jurisdiction/Image.svg",
+      img: "/Jurisdiction/Image.jpg",
       heading: "Abu Dhabi",
       Number: "01",
       description:
         "Explore the unparalleled ease of running your business in Abu Dhabi, the largest emirate in UAE, and make your business thrive amongst the best dynamic economy.",
     },
     {
-      img: "/Jurisdiction/Image-1.svg",
+      img: "/Jurisdiction/Image-1.jpg",
       heading: "Dubai",
       Number: "02",
       description:
         "Establish your business in Dubai, the tax-favorable, business-friendly and highly desirable economically diverse destination that has ranked first in ease of doing business.",
     },
     {
-      img: "/Jurisdiction/Image-2.svg",
+      img: "/Jurisdiction/Image-2.jpg",
       heading: "Sharjah",
       Number: "03",
       description:
@@ -32,22 +32,6 @@ function Places() {
 
   const placesContainerRef = useRef(null);
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const horizontalContainer = placesContainerRef.current;
-  //     const containerRect = horizontalContainer.getBoundingClientRect();
-  //     const scrollLeft = window.scrollY - containerRect.top;
-  //     const translateX = Math.max(0, scrollLeft * 0.1); // Increase by 10%
-
-  //     horizontalContainer.style.transform = `translateX(-${translateX}px)`;
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
 
   return (
     <div className="placesContainer">

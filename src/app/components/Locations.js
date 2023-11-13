@@ -11,7 +11,7 @@ function Locations() {
       <div className="locationFlexContainer">
         <div className="locationImgContainer">
           <Image
-            src="/location.svg"
+            src="/location.jpg"
             width={500}
             height={500}
             alt="ImageLocation"

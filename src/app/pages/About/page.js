@@ -111,7 +111,7 @@ function About() {
               quality={100}
               priority={true}
               unoptimized
-              src="/NewSvgs/Backgrounds/abBg2.svg"
+              src="/AboutUsPage/aboutPage.jpg"
               width={1212}
               height={600}
               layout="responsive"
