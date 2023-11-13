@@ -1,8 +1,8 @@
 import Head from "next/head";
 import "./globals.css";
-// import { Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 
-// const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Beacon - Launch and Expand Your Business In UAE with our Expertise",
@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
         <meta property="og:image:width" content="1024" />
         <meta property="og:image:height" content="1024" />
       </Head>
-      <body >{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
