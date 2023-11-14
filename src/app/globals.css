@@ -13,7 +13,7 @@
 
 @font-face {
   font-family: 'Gellix';
-  src: url('/Fonts/Gellix/Gellix-Bold.ttf') format('truetype');
+  src: url('/Fonts/Gellix/Gellix-Bold.woff2') format('woff2');
   font-weight: 700; /* Bold font weight */
   font-style: normal;
   font-display: swap;
@@ -21,7 +21,7 @@
 
 @font-face {
   font-family: 'Gellix';
-  src: url('/Fonts/Gellix/Gellix-SemiBold.ttf') format('truetype');
+  src: url('/Fonts/Gellix/Gellix-SemiBold.woff2') format('woff2');
   font-weight: 600; /* Semi-Bold font weight */
   font-style: normal;
   font-display: swap;
@@ -29,7 +29,7 @@
 
 @font-face {
   font-family: 'Gellix';
-  src: url('/Fonts/Gellix/Gellix-Medium.ttf') format('truetype');
+  src: url('/Fonts/Gellix/Gellix-Medium.woff2') format('woff2');
   font-weight: 500; /* Medium font weight */
   font-style: normal;
   font-display: swap;
@@ -38,7 +38,7 @@
 
 @font-face {
   font-family: 'Gellix';
-  src: url('/Fonts/Gellix/Gellix-Regular.ttf') format('truetype');
+  src: url('/Fonts/Gellix/Gellix-Regular.woff2') format('woff2');
   font-weight: 400; /* Regular font weight */
   font-style: normal;
   font-display: swap;
@@ -46,7 +46,7 @@
 
 @font-face {
   font-family: 'Gellix';
-  src: url('/Fonts/Gellix/Gellix-Light.ttf') format('truetype');
+  src: url('/Fonts/Gellix/Gellix-Light.woff2') format('woff2');
   font-weight: 300; /* Light font weight */
   font-style: normal;
   font-display: swap;
@@ -54,7 +54,7 @@
 
 @font-face {
   font-family: 'Gellix';
-  src: url('/Fonts/Gellix/Gellix-Thin.ttf') format('truetype');
+  src: url('/Fonts/Gellix/Gellix-Thin.woff2') format('woff2');
   font-weight: 200; /* Extra-Light font weight */
   font-style: normal;
   font-display: swap;
