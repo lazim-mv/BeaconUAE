@@ -10,11 +10,8 @@
 
 
 
-
 @font-face {
   font-family: 'Gellix';
-  src: url('/Fonts/Gellix/Gellix-Bold.woff2') format('woff2');
-  font-weight: 700; /* Bold font weight */
   font-style: normal;
   font-display: swap;
 }
@@ -23,51 +20,17 @@
   font-family: 'Gellix';
   src: url('/Fonts/Gellix/Gellix-SemiBold.woff2') format('woff2');
   font-weight: 600; /* Semi-Bold font weight */
-  font-style: normal;
-  font-display: swap;
 }
-
-@font-face {
-  font-family: 'Gellix';
-  src: url('/Fonts/Gellix/Gellix-Medium.woff2') format('woff2');
-  font-weight: 500; /* Medium font weight */
-  font-style: normal;
-  font-display: swap;
-}
-
 
 @font-face {
   font-family: 'Gellix';
   src: url('/Fonts/Gellix/Gellix-Regular.woff2') format('woff2');
   font-weight: 400; /* Regular font weight */
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gellix';
-  src: url('/Fonts/Gellix/Gellix-Light.woff2') format('woff2');
-  font-weight: 300; /* Light font weight */
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gellix';
-  src: url('/Fonts/Gellix/Gellix-Thin.woff2') format('woff2');
-  font-weight: 200; /* Extra-Light font weight */
-  font-style: normal;
-  font-display: swap;
 }
 
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+
+
 
 *{
   box-sizing: border-box;
@@ -125,7 +88,7 @@ li{
   height: 50px;
   border: 1.5px solid rgba(255, 255, 255, 1);
   font-size: 30px;
-  font-weight: 300;
+  font-weight: 400;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -145,7 +108,7 @@ li{
   height: 50px;
   border: 1.5px solid rgba(255, 255, 255, 1);
   font-size: 30px;
-  font-weight: 300;
+  font-weight: 400;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -932,7 +895,7 @@ li{
   color: #02040E;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 120%; /* 19.2px */
   text-transform: uppercase;
   white-space: nowrap;
@@ -1179,7 +1142,7 @@ li{
   color: rgba(255, 255, 255, 0.80);
   font-size: 13px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 120%; /* 36px */
   text-transform: capitalize;
 }
@@ -1209,7 +1172,7 @@ li{
   color: rgba(255, 255, 255, 1);
   font-size: 20px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 140%; /* 28px */
 }
 
@@ -1363,7 +1326,7 @@ li{
   font-family: Gellix;
   font-size: 24px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 120%; /* 28.8px */
   text-transform: capitalize;
 }
@@ -1383,7 +1346,7 @@ li{
   color: #02040E;
   font-size: 22px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 120%; /* 28.8px */
   text-transform: capitalize;
 }
@@ -1553,7 +1516,7 @@ li{
   color: #FFF;
   font-size: 13px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 140%;
   margin-bottom: 5px;
 }
@@ -1865,7 +1828,7 @@ li{
     text-align: right;
     font-size: 16px !important;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 140%; /* 22.4px */
   }
 
