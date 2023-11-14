@@ -17,6 +17,7 @@ function Locations() {
             height={500}
             alt="ImageLocation"
             layout="responsive"
+            loading="lazy"
             quality={100}
             priority={true}
             unoptimized

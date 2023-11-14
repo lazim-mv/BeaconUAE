@@ -58,9 +58,9 @@ function Places() {
                   alt={`juri ${index}`}
                   layout="responsive"
                   quality={100}
-                  priority={true}
                   unoptimized
                   objectFit="cover"
+                  loading="lazy"
                 />
               </div>
               <div className="juriContent card-side front">
