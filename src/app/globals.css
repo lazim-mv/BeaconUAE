@@ -1,9 +1,8 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities; */
+@tailwind utilities;
 
 :root {
-  
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -71,10 +70,6 @@ p {
   font-weight: 400;
   line-height: 140%;
   color: #58595B;
-}
-
-a{
-  text-decoration: none;
 }
 
 li{
@@ -1913,7 +1908,6 @@ li{
   .hImage{
     display: flex;
     margin-top: 500px;
-    height: 90vw !important;
     /* display: none; */
   }
 
@@ -2019,7 +2013,6 @@ li{
 
   .juriCardImage{
     width: 300px;
-    margin-bottom: -10px;
   }
 
   .placesContainer {
