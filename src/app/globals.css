@@ -276,7 +276,7 @@ li{
   width: 100%;  
   height: auto;
   object-fit: cover;
-  width: 669px !important;
+  /* width: 669px !important; */
   margin-left: auto;
   margin-right: 100px;
   margin-top: 50px;
@@ -2013,6 +2013,7 @@ li{
 
   .juriCardImage{
     width: 300px;
+    margin-bottom: -10px;
   }
 
   .placesContainer {

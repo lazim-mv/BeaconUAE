@@ -14,6 +14,7 @@ function Locations() {
           <Image
             src={locationImg}
             alt="ImageLocation"
+            layout="responsive"
             priority={true}
             quality={100}
             unoptimized

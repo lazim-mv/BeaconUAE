@@ -45,8 +45,8 @@ function Hero() {
           className="hImage"
           src={heroImg}
           alt="Asian Engineer"
-          width={1366}
-          height={670}
+          // width={1366}
+          // height={670}
           layout="responsive"
           quality={100}
           priority={true}
