@@ -72,6 +72,10 @@ p {
   color: #58595B;
 }
 
+a{
+  text-decoration: none;
+}
+
 li{
   cursor: pointer;
 }
@@ -276,7 +280,7 @@ li{
   width: 100%;  
   height: auto;
   object-fit: cover;
-  /* width: 669px !important; */
+  width: 669px !important;
   margin-left: auto;
   margin-right: 100px;
   margin-top: 50px;
@@ -1908,6 +1912,7 @@ li{
   .hImage{
     display: flex;
     margin-top: 500px;
+    height: 90vw !important;
     /* display: none; */
   }
 

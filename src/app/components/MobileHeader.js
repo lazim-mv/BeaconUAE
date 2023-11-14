@@ -81,7 +81,7 @@ function MobileHeader() {
           
         </Logo>
         </a>
-        <ToggleButton onClick={toggleMenu}>
+        <ToggleButton onClick={toggleMenu} style={{width:'40px'}}>
           {isMenuOpen ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"

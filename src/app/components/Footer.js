@@ -160,7 +160,7 @@ function Footer() {
         <p className="footerCopyRight">
           © 2023 by Beacon Management Consultants CO.LTD | All Right Reserved |
           Powered by{" "}
-          <a href="https://procube.cx/" style={{ textDecoration: "underline" }}>
+          <a href="https://procube.cx/" style={{ textDecoration: "underline",color:'#fff' }}>
             procube.cx
           </a>
         </p>
