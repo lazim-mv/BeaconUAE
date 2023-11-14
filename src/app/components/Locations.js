@@ -19,7 +19,6 @@ function Locations() {
             layout="responsive"
             loading="lazy"
             quality={100}
-            priority={true}
             unoptimized
           />
         </div>
