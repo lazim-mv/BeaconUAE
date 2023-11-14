@@ -59,7 +59,7 @@ function Clients() {
     return () => {
       window.removeEventListener("resize", checkScreenSize);
     };
-  }, []);
+  }, [isMobileScreen]);
 
   return (
     <div className="clientsContainer">

@@ -94,7 +94,7 @@ function Stats({ useBackgroundImage, isMainPage }) {
         observer.unobserve(statsRef.current);
       }
     };
-  }, []);
+  }, [statsRef]);
 
   // Function to animate the value from start to end
   const animateValue = (id, end, { duration, step }, setValue) => {
