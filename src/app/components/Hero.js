@@ -1,42 +1,41 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Brands from "./Brands";
 import heroImg from "../../../public/hero.png"
 
 function Hero() {
   const imageSources = [
-    "/clients/newBrands/1.svg",
-    "/clients/newBrands/2.svg",
-    "/clients/newBrands/3.svg",
-    "/clients/newBrands/4.svg",
-    "/clients/newBrands/5.svg",
-    "/clients/newBrands/6.svg",
-    "/clients/newBrands/1.svg",
-    "/clients/newBrands/2.svg",
-    "/clients/newBrands/3.svg",
-    "/clients/newBrands/4.svg",
-    "/clients/newBrands/5.svg",
-    "/clients/newBrands/6.svg",
-    "/clients/newBrands/1.svg",
-    "/clients/newBrands/2.svg",
-    "/clients/newBrands/3.svg",
-    "/clients/newBrands/4.svg",
-    "/clients/newBrands/5.svg",
-    "/clients/newBrands/6.svg",
-    "/clients/newBrands/1.svg",
-    "/clients/newBrands/2.svg",
-    "/clients/newBrands/3.svg",
-    "/clients/newBrands/4.svg",
-    "/clients/newBrands/5.svg",
-    "/clients/newBrands/6.svg",
-    "/clients/newBrands/1.svg",
-    "/clients/newBrands/2.svg",
-    "/clients/newBrands/3.svg",
-    "/clients/newBrands/4.svg",
-    "/clients/newBrands/5.svg",
-    "/clients/newBrands/6.svg",
+    "/clients/newBrands/1.png",
+    "/clients/newBrands/2.png",
+    "/clients/newBrands/3.png",
+    "/clients/newBrands/4.png",
+    "/clients/newBrands/5.png",
+    "/clients/newBrands/6.png",
+    "/clients/newBrands/1.png",
+    "/clients/newBrands/2.png",
+    "/clients/newBrands/3.png",
+    "/clients/newBrands/4.png",
+    "/clients/newBrands/5.png",
+    "/clients/newBrands/6.png",
+    "/clients/newBrands/1.png",
+    "/clients/newBrands/2.png",
+    "/clients/newBrands/3.png",
+    "/clients/newBrands/4.png",
+    "/clients/newBrands/5.png",
+    "/clients/newBrands/6.png",
+    "/clients/newBrands/1.png",
+    "/clients/newBrands/2.png",
+    "/clients/newBrands/3.png",
+    "/clients/newBrands/4.png",
+    "/clients/newBrands/5.png",
+    "/clients/newBrands/6.png",
+    "/clients/newBrands/1.png",
+    "/clients/newBrands/2.png",
+    "/clients/newBrands/3.png",
+    "/clients/newBrands/4.png",
+    "/clients/newBrands/5.png",
+    "/clients/newBrands/6.png",
   ];
 
   return (
@@ -104,7 +103,7 @@ function Hero() {
         </div>
       </div>
       <div className="clientsImgContainer">
-        <Brands imageSources={imageSources} initialAnimateValue="-160%" />;
+        {/* <Brands imageSources={imageSources} initialAnimateValue="-160%" />; */}
       </div>
     </div>
   );

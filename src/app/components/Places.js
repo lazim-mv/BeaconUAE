@@ -22,7 +22,7 @@ function Places() {
         "Establish your business in Dubai, the tax-favorable, business-friendly and highly desirable economically diverse destination that has ranked first in ease of doing business.",
     },
     {
-      img: "/Jurisdiction/Image-2.jpg",
+      img: "/Jurisdiction/Image-2.webp",
       heading: "Sharjah",
       Number: "03",
       description:

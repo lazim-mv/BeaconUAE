@@ -2,6 +2,7 @@
 import React, { useEffect, useState, useRef } from "react";
 
 function Stats({ useBackgroundImage, isMainPage }) {
+  const statsRef = useRef(null);
   const largeBackgroundImageUrl = "/NewSvgs/Backgrounds/bg4.png";
   const smallBackgroundImageUrl = "/NewSvgs/Backgrounds/bg4.png";
   const mainPagePadding = "192px 135px";
@@ -13,7 +14,7 @@ function Stats({ useBackgroundImage, isMainPage }) {
   const [backgroundImageUrl, setBackgroundImageUrl] = useState("");
   const [ppadding, setPadding] = useState("");
 
-  const statsRef = useRef(null);
+  
 
   useEffect(() => {
     const handleResize = () => {
@@ -40,13 +41,9 @@ function Stats({ useBackgroundImage, isMainPage }) {
       }
     };
 
-    // Attach the resize event listener
     window.addEventListener("resize", handleResize);
 
-    // Call handleResize once to set the initial background image based on the initial width
     handleResize();
-
-    // Remove the event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -94,7 +91,7 @@ function Stats({ useBackgroundImage, isMainPage }) {
         observer.unobserve(statsRef.current);
       }
     };
-  }, [statsRef]);
+  }, [statsRef]); // Add statsRef as a dependency
 
   // Function to animate the value from start to end
   const animateValue = (id, end, { duration, step }, setValue) => {

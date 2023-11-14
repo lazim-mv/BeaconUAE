@@ -19,6 +19,7 @@ export const metadata = {
         url: "https://uae.bmcglobal.co/linkImageWhatsApp.png",
         width: 800,
         height: 600,
+        alt: "My custom alt1",
       },
       {
         url: "https://uae.bmcglobal.co/linkImageWhatsApp.png",
@@ -53,13 +54,6 @@ export default function RootLayout({ children }) {
 
         <link
           rel="preload"
-          href="/Fonts/Gellix/Gellix-Bold.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
           href="/Fonts/Gellix/Gellix-SemiBold.woff2"
           as="font"
           type="font/woff2"
@@ -67,28 +61,7 @@ export default function RootLayout({ children }) {
         />
         <link
           rel="preload"
-          href="/Fonts/Gellix/Gellix-Medium.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
           href="/Fonts/Gellix-Regular.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/Fonts/Gellix/Gellix-Light.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/Fonts/Gellix/Gellix-Thin.woff2"
           as="font"
           type="font/woff2"
           crossOrigin="anonymous"

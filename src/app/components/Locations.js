@@ -13,11 +13,8 @@ function Locations() {
         <div className="locationImgContainer">
           <Image
             src={locationImg}
-            width={500}
-            height={500}
             alt="ImageLocation"
-            layout="responsive"
-            loading="lazy"
+            priority={true}
             quality={100}
             unoptimized
           />

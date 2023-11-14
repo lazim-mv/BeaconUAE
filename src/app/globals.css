@@ -20,12 +20,14 @@
   font-family: 'Gellix';
   src: url('/Fonts/Gellix/Gellix-SemiBold.woff2') format('woff2');
   font-weight: 600; /* Semi-Bold font weight */
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Gellix';
   src: url('/Fonts/Gellix/Gellix-Regular.woff2') format('woff2');
   font-weight: 400; /* Regular font weight */
+  font-display: swap;
 }
 
 
@@ -1394,7 +1396,7 @@ li{
 }
 
 .contactContainer {
-  background: url("../../public/NewSvgs/Backgrounds/uaeBg2.png");
+  background: url("../../public/NewSvgs/Backgrounds/uaeBg2.jpg");
   width: 100%;
   height: 450px;
   object-fit: cover;

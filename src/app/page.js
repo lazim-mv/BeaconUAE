@@ -66,7 +66,7 @@ export default function Home() {
         <Locations />
         <Jurisdiction />
         <Places />
-        <Clients />
+        {/* <Clients /> */}
         <Faq />
         <Contact />
         <Footer />
