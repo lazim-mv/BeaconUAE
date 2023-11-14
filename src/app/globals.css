@@ -1906,7 +1906,7 @@ li{
   }
 
   .hImage{
-    display: block;
+    display: flex;
     margin-top: 500px;
     /* display: none; */
   }
@@ -1947,7 +1947,7 @@ li{
   }
 
   .mlocationHeading{
-    display: block;
+    display: flex;
   }
 
   .locationContainer{
@@ -1997,7 +1997,7 @@ li{
   }
 
   .jurisdictionContainer .mBusinessDesc{
-    display: block;
+    display: flex;
     color: #02040E;
   }
 
@@ -2069,7 +2069,7 @@ li{
   }
 
   .bussinessContainer .mBusinessDesc{
-    display: block;
+    display: flex;
     color: #02040E;
     text-align: center;
     font-style: normal;
@@ -2138,7 +2138,7 @@ li{
   }
 
   .serviceContainer .mBusinessDesc{
-    display: block;
+    display: flex;
     color: #02040E;
     text-align: center;
     font-style: normal;
@@ -2243,7 +2243,7 @@ li{
   }
 
   .clientsContainer .businessDesc{
-    display: block;
+    display: flex;
   }
 
   .clientsContainer .businessContentContainer .businessHeading{
@@ -2493,7 +2493,7 @@ li{
   }
 
   .mContactDesc{
-    display: block;
+    display: flex;
     font-size: 14px !important;
     text-align: center !important;
     color: #FFF;
@@ -2585,7 +2585,7 @@ li{
   }
 
   .mAddress{
-    display: block;
+    display: flex;
   }
 
   .greenBannerContiner{

@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-// import { motion, useAnimation } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 
 function Brands({ imageSources, initialAnimateValue  }) {
@@ -74,7 +74,7 @@ function Brands({ imageSources, initialAnimateValue  }) {
           <Image
             key={index}
             quality={100}
-            loading="lazy"
+            priority={true}
             unoptimized
             src={src}
             width={100}

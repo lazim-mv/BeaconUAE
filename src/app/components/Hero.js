@@ -103,7 +103,7 @@ function Hero() {
         </div>
       </div>
       <div className="clientsImgContainer">
-        {/* <Brands imageSources={imageSources} initialAnimateValue="-160%" />; */}
+        <Brands imageSources={imageSources} initialAnimateValue="-160%" />;
       </div>
     </div>
   );
