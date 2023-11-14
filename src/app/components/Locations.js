@@ -16,6 +16,9 @@ function Locations() {
             height={500}
             alt="ImageLocation"
             layout="responsive"
+            quality={100}
+            priority={true}
+            unoptimized
           />
         </div>
         <div className="locationContentContainer">

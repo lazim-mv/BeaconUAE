@@ -16,12 +16,12 @@ export const metadata = {
     siteName: "Beacon",
     images: [
       {
-        url: "https://bmcglobal.co/linkImageWhatsApp.png",
+        url: "https://uae.bmcglobal.co/linkImageWhatsApp.png",
         width: 800,
         height: 600,
       },
       {
-        url: "https://bmcglobal.co/linkImageWhatsApp.png",
+        url: "https://uae.bmcglobal.co/linkImageWhatsApp.png",
         width: 1800,
         height: 1600,
         alt: "My custom alt",
@@ -34,8 +34,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   const baseUrl =
-    "https://bmcglobal.co/linkImageWhatsApp.png" ||
-    "https://beacon-alpha.vercel.app/linkImageWhatsApp.png";
+    "https://uae.bmcglobal.co/linkImageWhatsApp.png" ||
+    "https://beacon-uae.vercel.app/linkImageWhatsApp.png";
   return (
     <html lang="en">
       <head>

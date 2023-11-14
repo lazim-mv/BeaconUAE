@@ -45,7 +45,7 @@ export default function Home() {
     }, 450);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [textOptions.length]);
 
   return (
     <>

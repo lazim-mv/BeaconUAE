@@ -60,7 +60,6 @@ function Brands({ imageSources, initialAnimateValue  }) {
 
   useEffect(() => {
     handleHoverEnd();
-    console.log("use");
   }, []);
   return (
     <div>

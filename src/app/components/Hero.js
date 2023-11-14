@@ -4,6 +4,8 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { ScrollingLogos } from "./Clients";
 import Brands from "./Brands";
+import heroImg from "../../../public/hero.png"
+import mheroImg from "../../../public/hero.png"
 
 function Hero() {
   const imageSources = [
@@ -48,17 +50,6 @@ function Hero() {
           alt="Asian Engineer"
           width={1366}
           height={670}
-          layout="responsive"
-          quality={100}
-          priority={true}
-          unoptimized
-        />
-        <Image
-          className="MobilehImage"
-          src="/hero.png"
-          alt="Asians Engineer"
-          width={0}
-          height={600}
           layout="responsive"
           quality={100}
           priority={true}

@@ -1936,12 +1936,9 @@ li{
   }
 
   .hImage{
-    display: none;
-  }
-
-  .MobilehImage{
     display: block;
     margin-top: 500px;
+    /* display: none; */
   }
 
   .heroDescContainer{
