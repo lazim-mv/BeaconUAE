@@ -2,10 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { ScrollingLogos } from "./Clients";
 import Brands from "./Brands";
 import heroImg from "../../../public/hero.png"
-import mheroImg from "../../../public/hero.png"
 
 function Hero() {
   const imageSources = [
@@ -46,7 +44,7 @@ function Hero() {
       <div className="imageWithText">
         <Image
           className="hImage"
-          src="/hero.png"
+          src={heroImg}
           alt="Asian Engineer"
           width={1366}
           height={670}

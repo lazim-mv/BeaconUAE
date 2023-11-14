@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
+import locationImg from '../../../public/location.jpg'
 
 function Locations() {
   const [isHovered, setIsHovered] = useState(false);
@@ -11,7 +12,7 @@ function Locations() {
       <div className="locationFlexContainer">
         <div className="locationImgContainer">
           <Image
-            src="/location.jpg"
+            src={locationImg}
             width={500}
             height={500}
             alt="ImageLocation"
