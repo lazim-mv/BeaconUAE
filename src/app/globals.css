@@ -1,6 +1,6 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -2244,6 +2244,8 @@ li{
 
   .clientsContainer .businessDesc{
     display: flex;
+    text-align: center;
+    margin: 0 auto;
   }
 
   .clientsContainer .businessContentContainer .businessHeading{
