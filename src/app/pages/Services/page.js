@@ -1,14 +1,17 @@
 "use client";
+import Header from "@/app/components/Header";
+import MobileHeader from "@/app/components/MobileHeader";
 import React, { useState } from "react";
 import styles from "../../Styles/servicesPage.module.css";
 import Image from "next/image";
-import Header from "@/app/components/Header";
-import MobileHeader from "@/app/components/MobileHeader";
-import Faq from "@/app/components/Faq";
-import Footer from "@/app/components/Footer";
-import LoadingCircle from "@/app/components/LoadingCircle";
+
+const LoadingCircle = dynamic(() => import("@/app/components/LoadingCircle"));
+const Faq = dynamic(() => import("@/app/components/Faq"));
+const Footer = dynamic(() => import("@/app/components/Footer"));
 
 function Services() {
+  const [loaded, setLoaded] = useState(false);
+
   const servicePageData = [
     {
       img: "/NewSvgs/SVG2/hh/Group1.svg",
@@ -120,8 +123,6 @@ function Services() {
         "Don’t worry about who can address all your needs in time! Our dedicated team is always at your reach to support your requirements and concerns at the right time without delay.",
     },
   ];
-
-  const [loaded, setLoaded] = useState(false);
 
   const handleImageLoad = () => {
     setLoaded(true);

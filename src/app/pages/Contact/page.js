@@ -2,11 +2,14 @@
 import React, { useState } from "react";
 import styles from "../../Styles/contact.module.css";
 import Header from "@/app/components/Header";
-import MobileHeader from "@/app/components/MobileHeader";
+// import MobileHeader from "@/app/components/MobileHeader";
 import Image from "next/image";
-import Footer from "@/app/components/Footer";
 import emailjs from "@emailjs/browser";
 import emailjsConfig from "../../../../emailjs.config";
+
+
+const Footer = dynamic(() => import('@/app/components/Footer'));
+const MobileHeader = dynamic(() => import('@/app/components/MobileHeader'));
 
 function Contact() {
   const [showUAECard, setShowUAECard] = useState(false);
