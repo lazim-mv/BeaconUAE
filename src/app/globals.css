@@ -1834,8 +1834,7 @@ li{
     width: 100%;
     height: 100vh;
     background-color: white;
-    z-index: 9999; /* Make sure it's on top of other content */
-    /* You can also add transitions for a smoother effect */
+    z-index: 9999; 
     transition: opacity 1s ease-in-out;
     opacity: 1; /* Initially visible */
     overflow: hidden;
@@ -1849,13 +1848,13 @@ li{
 
   .changeTextContainer .spinnerText{
     text-align: center;
-    font-size: 6vw;
+    font-size: 5vw;
     white-space: nowrap;
   }
 
   .changeTextContainer .changeText{
     text-align: center;
-    font-size: 6vw;
+    font-size: 5vw;
     white-space: nowrap;
   }
 

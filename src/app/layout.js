@@ -1,9 +1,6 @@
-import Head from "next/head";
 import "./globals.css";
-import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Beacon - Launch and Expand Your Business In UAE with our Expertise",

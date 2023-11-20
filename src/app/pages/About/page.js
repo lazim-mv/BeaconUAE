@@ -1,15 +1,20 @@
 "use client";
-import Header from "@/app/components/Header";
 import MobileHeader from "@/app/components/MobileHeader";
+import Header from "@/app/components/Header";
 import styles from "../../Styles/aboutus.module.css";
 import React, { useState } from "react";
 import Image from "next/image";
-import Contact from "@/app/components/Contact";
-import Footer from "@/app/components/Footer";
-import Stats from "@/app/components/Stats";
-import LoadingCircle from "@/app/components/LoadingCircle";
+import dynamic from 'next/dynamic';
+
+
+const LoadingCircle = dynamic(() => import('@/app/components/LoadingCircle'));
+const Stats = dynamic(() => import('@/app/components/Stats'));
+const Contact = dynamic(() => import('@/app/components/Contact'));
+const Footer = dynamic(() => import('@/app/components/Footer'));
 
 function About() {
+  const [loaded, setLoaded] = useState(false);
+
   const cvData = [
     {
       img: "/NewSvgs/SVG7/Group1.svg",
@@ -72,7 +77,6 @@ function About() {
         "To design and establish your business realm through an unparalleled assistance plan, triggering your efforts to strengthen your organisation’s processes, regulations and technologies that add necessary substance for your business, laying a benchmark of excellence. We keep an emphasis on evolving into the global market leader with an all-in-one business setup formula.",
     },
   ];
-  const [loaded, setLoaded] = useState(false);
 
   const handleImageLoad = () => {
     setLoaded(true);
