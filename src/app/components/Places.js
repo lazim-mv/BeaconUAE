@@ -48,7 +48,7 @@ function Places() {
       <div className="scrollContainer">
         <div className="juriMainCardContainer" ref={placesContainerRef}>
           {pageData.map((data, index) => (
-            <div class="cardNew">
+            <div class="cardNew" key={index}>
               <div class="content">
                 <div class="frontNew">
                   <div className="juriContent ">
