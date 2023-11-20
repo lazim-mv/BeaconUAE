@@ -1,17 +1,20 @@
 "use client";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import Locations from "./components/Locations";
 import Services from "./components/Services";
 import { Clients, ScrollingLogos } from "./components/Clients";
 import Faq from "./components/Faq";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
 import MobileHeader from "./components/MobileHeader";
 import { useEffect, useState } from "react";
-import Jurisdiction from "./components/Jurisdiction";
-import Places from "./components/Places";
-import LoadingCircle from "./components/LoadingCircle";
+import dynamic from "next/dynamic";
+
+
+const LoadingCircle = dynamic(() => import('@/app/components/LoadingCircle'));
+const Locations = dynamic(() => import('@/app/components/Locations'));
+const Jurisdiction = dynamic(() => import('@/app/components/Jurisdiction'));
+const Places = dynamic(() => import('@/app/components/Places'));
+const Contact = dynamic(() => import('@/app/components/Contact'));
+const Footer = dynamic(() => import('@/app/components/Footer'));
 
 export default function Home() {
   const [textIndex, setTextIndex] = useState(0);

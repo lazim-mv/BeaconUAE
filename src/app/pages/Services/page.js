@@ -4,6 +4,7 @@ import MobileHeader from "@/app/components/MobileHeader";
 import React, { useState } from "react";
 import styles from "../../Styles/servicesPage.module.css";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
 const LoadingCircle = dynamic(() => import("@/app/components/LoadingCircle"));
 const Faq = dynamic(() => import("@/app/components/Faq"));

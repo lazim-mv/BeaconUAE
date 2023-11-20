@@ -6,6 +6,7 @@ import Header from "@/app/components/Header";
 import Image from "next/image";
 import emailjs from "@emailjs/browser";
 import emailjsConfig from "../../../../emailjs.config";
+import dynamic from "next/dynamic";
 
 
 const Footer = dynamic(() => import('@/app/components/Footer'));
