@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import locationImg from '../../../public/location.jpg'
+import locationImg from '../../../public/location.webp'
 
 function Locations() {
   const [isHovered, setIsHovered] = useState(false);

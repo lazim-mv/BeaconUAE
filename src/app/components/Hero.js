@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import Brands from "./Brands";
-import heroImg from "../../../public/hero.png"
+import heroImg from "../../../public/hero.webp";
 
 function Hero() {
   const imageSources = [
@@ -41,38 +41,26 @@ function Hero() {
   return (
     <div className="heroContainer">
       <div className="imageWithText">
-        <Image
-          className="hImage"
-          src={heroImg}
-          alt="Asian Engineer"
-          // width={1366}
-          // height={670}
-          layout="responsive"
-          quality={100}
-          priority={true}
-          unoptimized
-        />
-        <div className="textOverlay">
-          <div>
-            <h1 className="heorHeading">
-              Launch and Expand
-              <br /> Your Business In UAE <br /> with our Expertise
-            </h1>
+        <div className="heroContent">
+          <h1 className="heorHeading">
+            Launch and Expand
+            <br /> Your Business In UAE <br /> with our Expertise
+          </h1>
+        
+        <div className="heroDescContainer">
+          <p className="heroDesc">
+            We help you fulfill your entrepreneurial journey and dream
+            <br />
+            business setup in UAE with support on tax and accounting to
+            <br /> legal support and marketing.
+          </p>
+          <p className="mHeroDesc">
+            We help you fulfill your entrepreneurial journey and dream business
+            setup in UAE with support on tax and accounting to legal support and
+            marketing.
+          </p>
           </div>
-          <div className="heroDescContainer">
-            <p className="heroDesc">
-              We help you fulfill your entrepreneurial journey and dream
-              <br />
-              business setup in UAE with support on tax and accounting to
-              <br /> legal support and marketing.
-            </p>
-            <p className="mHeroDesc">
-              We help you fulfill your entrepreneurial journey and dream
-              business setup in UAE with support on tax and accounting to legal
-              support and marketing.
-            </p>
-          </div>
-          <a href="/pages/Services">
+          <a href="/pages/Services" className="heroAnchorButton">
             <div className="hButtonContainer heroButton">
               <div className="visibleWrapperContainer">
                 <div className="topVisibleContainer btn">
@@ -101,6 +89,17 @@ function Hero() {
             </div>
           </a>
         </div>
+        <Image
+          className="hImage"
+          src={heroImg}
+          alt="Asian Engineer"
+          // width={1366}
+          // height={670}
+          layout="responsive"
+          quality={100}
+          priority={true}
+          unoptimized
+        />
       </div>
       <div className="clientsImgContainer">
         <Brands imageSources={imageSources} initialAnimateValue="-160%" />;

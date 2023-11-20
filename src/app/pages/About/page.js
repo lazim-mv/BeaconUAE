@@ -7,6 +7,7 @@ import Image from "next/image";
 import Contact from "@/app/components/Contact";
 import Footer from "@/app/components/Footer";
 import Stats from "@/app/components/Stats";
+import LoadingCircle from "@/app/components/LoadingCircle";
 
 function About() {
   const cvData = [
@@ -50,21 +51,21 @@ function About() {
 
   const vissionMissionData = [
     {
-      img: "/NewSvgs/SVG7/v1.png",
+      img: "/NewSvgs/SVG7/v1.webp",
       heading: "Our Mission",
       className: "c1",
       description:
         "To empower the founders and entrepreneurs with the best appropriate fiscal consultation and business setup services to thrive in the fast-developing business ecosystem. We strive to work with clients to let them make remarkable achievements in business with a key focus on offering holistic digital, financial, legal, operational and technological assistance.",
     },
     {
-      img: "/NewSvgs/SVG7/v2.png",
+      img: "/NewSvgs/SVG7/v2.webp",
       heading: "Our Values",
       className: "c2",
       description:
         "Our efforts are infused with the core values of innovation, productivity, transparency, dedication and trust, and we feel confident to build relationships and keep delivering solutions to the businesses based on the client's expectations. We make your dream of business incorporation in UAE a success with our support at every step of your journey while holding to our values which helps us achieve an exceptional position in the market.",
     },
     {
-      img: "/NewSvgs/SVG7/v3.png",
+      img: "/NewSvgs/SVG7/v3.webp",
       heading: "Our Vision",
       className: "c3",
       description:
@@ -97,21 +98,12 @@ function About() {
         </h2>
         <div className={styles.aboutUsHeroContainer}>
           <div>
-            {!loaded && (
-              <div className="loader">
-                <div className="loader__bar"></div>
-                <div className="loader__bar"></div>
-                <div className="loader__bar"></div>
-                <div className="loader__bar"></div>
-                <div className="loader__bar"></div>
-                <div className="loader__ball"></div>
-              </div>
-            )}
+          {!loaded && <LoadingCircle onLoadedImages={handleImageLoad} />}
             <Image
               quality={100}
               priority={true}
               unoptimized
-              src="/AboutUsPage/aboutPage.jpg"
+              src="/AboutUsPage/aboutPage.webp"
               width={1212}
               height={600}
               layout="responsive"

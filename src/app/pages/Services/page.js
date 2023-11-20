@@ -4,9 +4,9 @@ import styles from "../../Styles/servicesPage.module.css";
 import Image from "next/image";
 import Header from "@/app/components/Header";
 import MobileHeader from "@/app/components/MobileHeader";
-import { LeftArrowSvg, RightArrowSvg } from "../../components/ButtonSvg";
 import Faq from "@/app/components/Faq";
 import Footer from "@/app/components/Footer";
+import LoadingCircle from "@/app/components/LoadingCircle";
 
 function Services() {
   const servicePageData = [
@@ -205,18 +205,9 @@ function Services() {
             </p>
           </div>
           <div className={styles.servicePageImageContainer2}>
-            {!loaded && (
-              <div className="loader">
-                <div className="loader__bar"></div>
-                <div className="loader__bar"></div>
-                <div className="loader__bar"></div>
-                <div className="loader__bar"></div>
-                <div className="loader__bar"></div>
-                <div className="loader__ball"></div>
-              </div>
-            )}
+            {!loaded && <LoadingCircle onLoadedImages={handleImageLoad} />}
             <Image
-              src="/ServicesPage/servicesPage7.png"
+              src="/ServicesPage/servicesPage7.webp"
               width={576}
               height={540}
               layout="responsive"
@@ -270,18 +261,9 @@ function Services() {
         <div className={styles.container4}>
           <div className={styles.background}></div>
           <div className={styles.container4ImgContainer}>
-            {!loaded && (
-              <div className="loader">
-                <div className="loader__bar"></div>
-                <div className="loader__bar"></div>
-                <div className="loader__bar"></div>
-                <div className="loader__bar"></div>
-                <div className="loader__bar"></div>
-                <div className="loader__ball"></div>
-              </div>
-            )}
+            {!loaded && <LoadingCircle onLoadedImages={handleImageLoad} />}
             <Image
-              src="/ServicesPage/servicesPage1.png"
+              src="/ServicesPage/servicesPage1.webp"
               width={500}
               height={500}
               layout="responsive"

@@ -8,32 +8,6 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-
-
-@font-face {
-  font-family: 'Gellix';
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gellix';
-  src: url('/Fonts/Gellix/Gellix-SemiBold.woff2') format('woff2');
-  font-weight: 600; /* Semi-Bold font weight */
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gellix';
-  src: url('/Fonts/Gellix/Gellix-Regular.woff2') format('woff2');
-  font-weight: 400; /* Regular font weight */
-  font-display: swap;
-}
-
-
-
-
-
 *{
   box-sizing: border-box;
   margin: 0;
@@ -42,7 +16,6 @@
 
 body {
   background: #FFF;
-  font-family: 'Gellix', sans-serif !important;
 
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; 
@@ -74,6 +47,10 @@ p {
 
 li{
   cursor: pointer;
+}
+
+.MobileLottieContainer{
+  display: none;
 }
 
 .testimonialButtonContainer{
@@ -264,12 +241,14 @@ li{
   height: 100%;
   position: relative;
   height: auto;
-  /* padding-right: 130px;
-  padding-top: 50px; */
 }
 
-.imageOverlay {
-  position: relative;
+.heroContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin-left: 10%;
 }
 
 .hImage {
@@ -282,40 +261,11 @@ li{
   margin-top: 50px;
 }
 
-.MobilehImage{
-  display: none;
-}
-
 .mHeroDesc{
   display: none;
 }
 
-.heroDescContainer{
-  width: 45%;
-}
-
-.textOverlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  /* background-color: rgba(0, 0, 0, 0.2); */
-  width: 100%;
-  height: 100%;
-  /* color: white;  */
-  gap: 30px;
-  text-align: center;
-  padding-left: 135px; /* Adjust as needed */
-  /* padding-top: 300px;  */
-}
-
-.textOverlay h1 {
-  margin-bottom: 10px;
+.heorHeading {
   color: #FFF;
   font-size: 58px;
   font-style: normal;
@@ -323,18 +273,18 @@ li{
   line-height: 120%; /* 76.8px */
   text-transform: capitalize;
   text-align: left;
-  margin-bottom: -10px;
   white-space: nowrap;
-  margin-top: 57px;
+  margin-bottom: 20px;
 }
 
 .heroDesc {
   color: rgba(255, 255, 255, 0.60);
-  /* font-size: 15px; */
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%; 
   text-align: justify;
+  margin-bottom: 30px;
 }
 
 .mainContainer{
@@ -372,6 +322,7 @@ li{
   flex-direction: column;
   gap: 28px;
   width: 100%;
+  width: 47%;
   margin-top: 10px;
 }
 
@@ -509,29 +460,8 @@ li{
 
 .placesContainer .juriMainCardContainer{
   width: 100%;
-}
-
-.placesCard {
-  position: relative;
-  box-shadow: none;
-  background: none;
-  width: 100%;
-}
-
-.card-side {
-  border-radius: 10px;
-  transition: all 0.8s ease;
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: white;
-  height: auto;
-}
-
-.card-side.back {
-  transform: rotateY(-180deg);
-  padding: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .placesCardImage img{
@@ -539,18 +469,6 @@ li{
   height: 373px !important;
   object-fit: cover;
   border-radius: 10px;
-}
-
-.card-side.front {
-  background-color:#11215B;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.placesCard .juriContent{
-  padding: 70px 30px;
-  height: 373px;
 }
 
 .circleNumber{
@@ -574,16 +492,59 @@ li{
   text-transform: capitalize;
 }
 
-.placesCard:hover .card-side.front {
-  transform: rotateY(180deg);
+
+.frontNew .juriContent{
+  background-color: transparent;
+  border-radius: 0;
+  align-items: center;
+  padding: 0;
 }
 
-.placesCard:hover .card-side.back {
-  transform: rotateY(0deg);
-  overflow-y: hidden;
-  border-radius: 10px;
+.cardNew {
+  width: 31%;
+  height: 373px;
+  perspective: 500px;
+  display: flex;
+  background: transparent;
 }
 
+.content {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.cardNew:hover .content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+
+.frontNew{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+}
+
+.frontNew,
+.backNew {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #11215B;
+  text-align: center;
+  border-radius: 11px;
+  backface-visibility: hidden;
+}
+
+.backNew {
+  background: #03446A;
+  color: white;
+  transform: rotateY( 180deg );
+}
 /* Places End */
 
 
@@ -1325,7 +1286,6 @@ li{
 
 .faqNumber{
   color: #11215B;
-  font-family: Gellix;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -1400,7 +1360,6 @@ li{
   width: 100%;
   height: 450px;
   object-fit: cover;
-
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -1772,6 +1731,14 @@ li{
     font-size: 12px !important;
   }
 
+  .DesktopLottieContainer{
+    display: none;
+  }
+
+  .MobileLottieContainer{
+    display: block;
+  }
+
   .businessHeading{
     margin-bottom: 3px;
     padding: 5px 15px;
@@ -1819,10 +1786,22 @@ li{
   }
 
   .mHeader{
+    display: block;
+    height: 75px;
+  }
+
+  .fixedmHeadContainer{
+    background-color: #FFF;
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
     height: 75px;
     padding: 0 24px;
     align-items: center;
+    height: 75px;
   }
 
   .mLinks{
@@ -1847,6 +1826,7 @@ li{
   .mhuList{
     margin: 0;
   }
+
   #white-screen {
     position: fixed;
     top: 0;
@@ -1862,42 +1842,40 @@ li{
   }
 
   #white-screen .changeTextContainer{
-    margin-left: -40px;
+    margin-left: 0px;
+    flex-direction: column;
     gap: 5px;
   }
 
   .changeTextContainer .spinnerText{
     text-align: center;
-    font-size: 3.5vw;
+    font-size: 6vw;
     white-space: nowrap;
   }
 
   .changeTextContainer .changeText{
-    text-align: left;
-    font-size: 3.5vw;
+    text-align: center;
+    font-size: 6vw;
     white-space: nowrap;
-    width: 75px;
   }
 
   .hContainer{
     display: none;
   }
+
+  .heroContainer{
+    /* margin-top: 74px; */
+  }
   
   .imageWithText{
     height: 100%;
+    flex-direction: column;
   }
 
-  .textOverlay{
-    padding: 0 24px;
-    top: 155px;
-    /* margin-top: 74px; */
-    align-items: center;
-    justify-content: flex-start;
-    /* height: 600px; */
-  }
-
-  .heroContainer {
-    /* margin-top: 74px; */
+  .heroContent{
+    margin: 0;
+    width: 100%;
+    padding-top: 80px;
   }
 
   .heroContainer .heroButton{
@@ -1907,7 +1885,6 @@ li{
 
   .hImage{
     display: flex;
-    margin-top: 500px;
     /* display: none; */
   }
 
@@ -1915,7 +1892,7 @@ li{
     width: auto;
   }
 
-  .textOverlay h1{
+  .heorHeading{
     color: #FFF;
     text-align: center !important;
     font-size: 36px;
@@ -1924,7 +1901,7 @@ li{
     font-weight: 600;
     line-height: 120%; /* 43.2px */
     text-transform: capitalize;
-    margin-top: -0px;
+    margin-bottom: 10px;
   }
 
   .heroDesc{
@@ -1936,10 +1913,15 @@ li{
     color: rgba(255, 255, 255, 0.80);
     text-align: center;
     font-size:  3.150vw;
-    
     font-style: normal;
     font-weight: 400;
     line-height: 140%; /* 16.8px */
+    margin-bottom: 20px ;
+    padding: 0 25px;
+  }
+
+  .heroAnchorButton{
+    margin: 0 auto;
   }
 
   .locationHeading{
@@ -2036,7 +2018,7 @@ li{
   .scrollContainer {
     width: 100%; /* Allow the container to expand horizontally */
     overflow-x: auto; /* Enable horizontal scrolling */
-    height: 310px;
+    height: 400px;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
   }
@@ -2634,9 +2616,7 @@ li{
 
 #white-screen.hidden {
   background-color: white;
-  /* opacity: 0; */
   height: 0;
-  /* transition: opacity 2s cubic-bezier(0.25, 0.1, 0.25, 1), height 0.8s cubic-bezier(0.25, 0.1, 0.25, 1); */
 }
 
 #white-screen {
@@ -2652,27 +2632,6 @@ li{
 
 /* Cortana Animation outer-circle Start */
 
-.outer-circle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 80px;
-  height: 80px;
-  background-color: #5073f0;
-  border-radius: 50%;
-  animation: pulsar 1.8s infinite;
-}
-
-.inner-circle {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  background-color: #fff;
-  border: 10px solid #11215B;
-  border-radius: 50%;
-  animation: shrink 1.8s infinite;
-}
 
 .changeTextContainer{
   display: flex;
@@ -2684,230 +2643,19 @@ li{
 }
 
 .spinnerText{
-  font-size: 15px;
+  color: #02040E;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 28.8px */
+  text-transform: capitalize;
 }
 
 .changeText {
-  font-size: 15px;
+  font-size: 24px;
   font-weight: 600;
   width: 270px;
   color: #11215B;
 }
-
-@keyframes pulsar {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-}
-
-@keyframes shrink {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.7);
-  }
-}
-
-/* Cortana Animation outer-circle End */
-
-/* Network Bar Animation loader Start */
-
-.loader {
-  position: relative;
-  width: 75px;
-  height: 100px;
-}
-
-.loader__bar {
-  position: absolute;
-  bottom: 0;
-  width: 10px;
-  height: 50%;
-  background: #11215B; /* Use the bar color directly */
-  transform-origin: center bottom;
-  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
-}
-
-.loader__bar:nth-child(1) {
-  left: 0;
-  transform: scale(1, 0.2);
-  animation: barUp1 4s infinite;
-}
-
-.loader__bar:nth-child(2) {
-  left: 15px;
-  transform: scale(1, 0.4);
-  animation: barUp2 4s infinite;
-}
-
-.loader__bar:nth-child(3) {
-  left: 30px;
-  transform: scale(1, 0.6);
-  animation: barUp3 4s infinite;
-}
-
-.loader__bar:nth-child(4) {
-  left: 45px;
-  transform: scale(1, 0.8);
-  animation: barUp4 4s infinite;
-}
-
-.loader__bar:nth-child(5) {
-  left: 60px;
-  transform: scale(1, 1);
-  animation: barUp5 4s infinite;
-}
-
-.loader__ball {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  width: 10px;
-  height: 10px;
-  background: #11215B; /* Use the ball color directly */
-  border-radius: 50%;
-  animation: ball 4s infinite;
-}
-
-@keyframes ball {
-0% {
-  transform: translate(0, 0);
-}
-5% {
-  transform: translate(8px, -14px);
-}
-10% {
-  transform: translate(15px, -10px)
-}
-17% {
-  transform: translate(23px, -24px)
-}
-20% {
-  transform: translate(30px, -20px)
-}
-27% {
-  transform: translate(38px, -34px)
-}
-30% {
-  transform: translate(45px, -30px)
-}
-37% {
-  transform: translate(53px, -44px)
-}
-40% {
-  transform: translate(60px, -40px)
-}
-50% {
-  transform: translate(60px, 0)
-}
-57% {
-  transform: translate(53px, -14px)
-}
-60% {
-  transform: translate(45px, -10px)
-}
-67% {
-  transform: translate(37px, -24px)
-}
-70% {
-  transform: translate(30px, -20px)
-}
-77% {
-  transform: translate(22px, -34px)
-}
-80% {
-  transform: translate(15px, -30px)
-}
-87% {
-  transform: translate(7px, -44px)
-}
-90% {
-  transform: translate(0, -40px)
-}
-100% {
-  transform: translate(0, 0);
-}
-}
-
-@keyframes barUp1 { 
-0% {
-  transform: scale(1, .2);
-}
-40%{
-  transform: scale(1, .2);
-}
-50% {
-  transform: scale(1, 1);
-}
-90% {
-  transform: scale(1,1);
-}
-100% {
-  transform: scale(1,.2);
-}
-}
-@keyframes barUp2 { 
-0% {
-  transform: scale(1, .4);
-}
-40% {
-  transform: scale(1, .4);
-}
-50% {
-  transform: scale(1, .8);
-}
-90% {
-  transform: scale(1, .8);
-}
-100% {
-  transform: scale(1, .4);
-}
-}
-@keyframes barUp3 { 
-0% {
-  transform: scale(1, .6);
-}
-100% {
-  transform: scale(1, .6);
-}
-}
-@keyframes barUp4 { 
-0% {
-  transform: scale(1, .8);
-}
-40% {
-  transform: scale(1, .8);
-}
-50% {
-  transform: scale(1, .4);
-}
-90% {
-  transform: scale(1, .4);
-}
-100% {
-  transform: scale(1, .8);
-}
-}
-@keyframes barUp5 { 
-0% {
-  transform: scale(1, 1);
-}
-40% {
-  transform: scale(1, 1);
-}
-50% {
-  transform: scale(1, .2);
-}
-90% {
-  transform: scale(1, .2);
-}
-100% {
-  transform: scale(1, 1);
-}
-}
-
 /* Network Bar Animation loader End */

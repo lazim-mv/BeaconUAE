@@ -215,7 +215,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo1.png"
+        src="/clients/brands/webp/logo1.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -226,7 +226,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo2.png"
+        src="/clients/brands/webp/logo2.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -237,7 +237,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo3.png"
+        src="/clients/brands/webp/logo3.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -248,7 +248,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo4.png"
+        src="/clients/brands/webp/logo4.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -259,7 +259,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo5.png"
+        src="/clients/brands/webp/logo5.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -270,7 +270,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo6.png"
+        src="/clients/brands/webp/logo6.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -281,7 +281,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo9.png"
+        src="/clients/brands/webp/logo9.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -292,7 +292,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo10.png"
+        src="/clients/brands/webp/logo10.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -303,7 +303,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo11.png"
+        src="/clients/brands/webp/logo11.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -314,7 +314,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo12.png"
+        src="/clients/brands/webp/logo12.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -325,7 +325,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo13.png"
+        src="/clients/brands/webp/logo13.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -336,7 +336,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo15.png"
+        src="/clients/brands/webp/logo15.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -347,7 +347,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo17.png"
+        src="/clients/brands/webp/logo17.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -358,7 +358,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo18.png"
+        src="/clients/brands/webp/logo18.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -369,7 +369,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo20.png"
+        src="/clients/brands/webp/logo20.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -380,7 +380,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo22.png"
+        src="/clients/brands/webp/logo22.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -391,7 +391,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo1.png"
+        src="/clients/brands/webp/logo1.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -402,7 +402,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo2.png"
+        src="/clients/brands/webp/logo2.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -413,7 +413,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo3.png"
+        src="/clients/brands/webp/logo3.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -424,7 +424,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo4.png"
+        src="/clients/brands/webp/logo4.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -435,7 +435,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo5.png"
+        src="/clients/brands/webp/logo5.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -446,7 +446,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo6.png"
+        src="/clients/brands/webp/logo6.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -457,7 +457,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo9.png"
+        src="/clients/brands/webp/logo9.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -468,7 +468,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo10.png"
+        src="/clients/brands/webp/logo10.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -479,7 +479,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo11.png"
+        src="/clients/brands/webp/logo11.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -490,7 +490,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo12.png"
+        src="/clients/brands/webp/logo12.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -501,7 +501,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo13.png"
+        src="/clients/brands/webp/logo13.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -512,7 +512,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo15.png"
+        src="/clients/brands/webp/logo15.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -523,7 +523,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo17.png"
+        src="/clients/brands/webp/logo17.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -534,7 +534,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo18.png"
+        src="/clients/brands/webp/logo18.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -545,7 +545,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo20.png"
+        src="/clients/brands/webp/logo20.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -556,7 +556,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo22.png"
+        src="/clients/brands/webp/logo22.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -567,7 +567,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo1.png"
+        src="/clients/brands/webp/logo1.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -578,7 +578,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo2.png"
+        src="/clients/brands/webp/logo2.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -589,7 +589,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo3.png"
+        src="/clients/brands/webp/logo3.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -600,7 +600,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo4.png"
+        src="/clients/brands/webp/logo4.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -611,7 +611,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo5.png"
+        src="/clients/brands/webp/logo5.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -622,7 +622,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo6.png"
+        src="/clients/brands/webp/logo6.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -633,7 +633,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo9.png"
+        src="/clients/brands/webp/logo9.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -644,7 +644,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo10.png"
+        src="/clients/brands/webp/logo10.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -655,7 +655,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo11.png"
+        src="/clients/brands/webp/logo11.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -666,7 +666,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo12.png"
+        src="/clients/brands/webp/logo12.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -677,7 +677,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo13.png"
+        src="/clients/brands/webp/logo13.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -688,7 +688,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo15.png"
+        src="/clients/brands/webp/logo15.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -699,7 +699,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo17.png"
+        src="/clients/brands/webp/logo17.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -710,7 +710,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo18.png"
+        src="/clients/brands/webp/logo18.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -721,7 +721,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo20.png"
+        src="/clients/brands/webp/logo20.webp"
         width={100}
         height={0}
         layout="responsive"
@@ -732,7 +732,7 @@ function ScrollingLogos() {
         quality={100}
         loading="lazy"
         unoptimized
-        src="/clients/brands/logo22.png"
+        src="/clients/brands/webp/logo22.webp"
         width={100}
         height={0}
         layout="responsive"

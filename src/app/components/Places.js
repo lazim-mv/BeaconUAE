@@ -32,7 +32,6 @@ function Places() {
 
   const placesContainerRef = useRef(null);
 
-
   return (
     <div className="placesContainer">
       <div className="businessContentContainer">
@@ -49,28 +48,34 @@ function Places() {
       <div className="scrollContainer">
         <div className="juriMainCardContainer" ref={placesContainerRef}>
           {pageData.map((data, index) => (
-            <div class="placesCard " key={index}>
-              <div class="card-side back placesCardImage">
-                <Image
-                  src={data.img}
-                  width={500}
-                  height={500}
-                  alt={`juri ${index}`}
-                  layout="responsive"
-                  quality={100}
-                  unoptimized
-                  objectFit="cover"
-                  loading="lazy"
-                />
-              </div>
-              <div className="juriContent card-side front">
-                <div className="circleNumber">
-                  <h1>{data.Number}</h1>
+            <div class="cardNew">
+              <div class="content">
+                <div class="frontNew">
+                  <div className="juriContent ">
+                    <div className="circleNumber">
+                      <h1>{data.Number}</h1>
+                    </div>
+                    <h1 style={{ color: "#fff" }} className="servicesHeading">
+                      {data.heading}
+                    </h1>
+                    <p className="juriDesc">{data.description}</p>
+                  </div>
                 </div>
-                <h1 style={{ color: "#fff" }} className="servicesHeading">
-                  {data.heading}
-                </h1>
-                <p className="juriDesc">{data.description}</p>
+                <div class="backNew">
+                  <div class=" placesCardImage">
+                    <Image
+                      src={data.img}
+                      width={500}
+                      height={500}
+                      alt={`juri ${index}`}
+                      layout="responsive"
+                      quality={100}
+                      unoptimized
+                      objectFit="cover"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           ))}

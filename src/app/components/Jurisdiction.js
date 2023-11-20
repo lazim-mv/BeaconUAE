@@ -14,7 +14,7 @@ function Jurisdiction() {
         "Enjoy your freedom to establish and conduct business anywhere in the UAE with a broad scope of business and trade activities both within and outside the UAE.",
     },
     {
-      img: "/Jurisdiction/3.png",
+      img: "/Jurisdiction/3.webp",
       heading: "Free Zone Company",
       description:
         "Unveil the ideal jurisdiction for your business across 50 free zones of UAE with stunning low tax rates, and full foreign ownership, to explore the business ecosystem.",
