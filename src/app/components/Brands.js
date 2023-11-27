@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { motion, useAnimation } from "framer-motion";
+import { LazyMotion, domAnimation, m, useAnimation } from "framer-motion"
 import Image from "next/image";
 
 function Brands({ imageSources, initialAnimateValue  }) {
@@ -62,8 +62,8 @@ function Brands({ imageSources, initialAnimateValue  }) {
     handleHoverEnd();
   }, []);
   return (
-    <div>
-      <motion.div
+    <LazyMotion features={domAnimation}>
+      <m.div
         className="scrolling-logos"
         initial={{ x: "0%" }}
         animate={controls}
@@ -84,8 +84,8 @@ function Brands({ imageSources, initialAnimateValue  }) {
             className="logoClients"
           />
         ))}
-      </motion.div>
-    </div>
+      </m.div>
+    </LazyMotion>
   );
 }
 

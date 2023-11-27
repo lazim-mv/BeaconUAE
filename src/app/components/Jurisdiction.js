@@ -57,13 +57,13 @@ function Jurisdiction() {
             <div className="juriCardImage">
               <Image
                 src={data.img}
-                width={500}
-                height={500}
+                layout='fill'
+                objectFit="cover"
+                objectPosition="center"
                 alt={`juri ${index}`}
-                layout="responsive"
                 quality={100}
-                priority={true}
                 unoptimized
+                loading="lazy"
               />
             </div>
             <div className="juriContent">

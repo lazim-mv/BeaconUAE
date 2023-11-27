@@ -1,6 +1,7 @@
 "use client";
 import { motion, useAnimation } from "framer-motion";
 import React, { useEffect, useState } from "react";
+import { LazyMotion, domAnimation, m } from "framer-motion"
 import Image from "next/image";
 import Stats from "./Stats";
 
@@ -67,10 +68,10 @@ function Clients() {
         <h6 className="businessHeading">our CLIENTS</h6>
         <h2 className="businessDesc">Our core partners</h2>
       </div>
-      <div className="clientsImgContainer">
+      <LazyMotion features={domAnimation} className="clientsImgContainer">
         <ScrollingLogos />
         {/* <ScrollableRow /> */}
-      </div>
+      </LazyMotion>
       <div className="testimonialMainContainer">
         <div className="businessContentContainer">
           <h6 className="businessHeading">CLIENT REVIEWS</h6>
@@ -102,12 +103,13 @@ function Clients() {
                   <div className="testiImg">
                     <Image
                       src={data.img}
-                      width={67}
-                      height={60}
+                      layout='fill'
+                      objectFit="cover"
+                      objectPosition="center"
                       alt={`person ${index}`}
                       quality={100}
-                      priority={true}
                       unoptimized
+                      loading="lazy"
                     />
                   </div>
                   <div>
@@ -204,7 +206,7 @@ function ScrollingLogos() {
   }, []);
 
   return (
-    <motion.div
+    <m.div
       className="scrolling-logos"
       initial={{ x: "0%" }}
       animate={controls}
@@ -739,7 +741,7 @@ function ScrollingLogos() {
         alt="ImageClients"
         className="logoClients"
       />
-    </motion.div>
+    </m.div>
   );
 }
 export { Clients, ScrollingLogos };

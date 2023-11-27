@@ -8,31 +8,32 @@ function Footer() {
       <div className="topContainer">
         <div className="footerLogoContainer">
           <Image
-            quality={100}
-            priority={true}
-            unoptimized
             src="/NewSvgs/Logos/beaconWhite.svg"
-            width={170}
-            height={60}
+            layout="fill"
+            objectFit="contain"
+            objectPosition="center"
             alt="ImageFooter1"
+            quality={100}
+            loading="lazy"
+            unoptimized
           />
         </div>
         <div className="footerContentContainer">
           <ul className="footercontent">
             <a href="/">
-              <li>Home</li>
+              <p>Home</p>
             </a>
             <a href="/pages/About">
-              <li>About Us</li>
+              <p>About Us</p>
             </a>
             <a href="/pages/Services">
-              <li>Services</li>
+              <p>Services</p>
             </a>
-            <a>
-              <li>Blogs</li>
+            <a href="/">
+              <p>Blogs</p>
             </a>
             <a href="/pages/Contact">
-              <li>Contact</li>
+              <p>Contact</p>
             </a>
           </ul>
         </div>
@@ -93,12 +94,12 @@ function Footer() {
               <div className="footerContactTextDetails">
                 <h1>Head Office:</h1>
                 <p className="dAddress">
-                  Office #39, 7th Floor, Dubai National Insurance<br /> Building,
-                   Port Saeed Deira, Dubai, UAE
+                  Office #39, 7th Floor, Dubai National Insurance
+                  <br /> Building, Port Saeed Deira, Dubai, UAE
                 </p>
                 <p className="mAddress">
-                  Office #39, 7th Floor, Dubai National Insurance Building,
-                   Port Saeed Deira, Dubai, UAE
+                  Office #39, 7th Floor, Dubai National Insurance Building, Port
+                  Saeed Deira, Dubai, UAE
                 </p>
               </div>
             </a>
@@ -160,7 +161,10 @@ function Footer() {
         <p className="footerCopyRight">
           © 2023 by Beacon Management Consultants CO.LTD | All Right Reserved |
           Powered by{" "}
-          <a href="https://procube.cx/" style={{ textDecoration: "underline",color:'#fff' }}>
+          <a
+            href="https://procube.cx/"
+            style={{ textDecoration: "underline", color: "#fff" }}
+          >
             procube.cx
           </a>
         </p>

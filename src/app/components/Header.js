@@ -1,32 +1,33 @@
 "use client";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
-import Link from "next/link";
 
 function Header() {
   const [isActive, setIsActive] = useState("Home");
+  const pathname = usePathname();
 
   const menuList = [
     // "Our Presence ⮟"
     { text: "Home", href: "/" },
     // { text: "Our Presence", href: "/" },
-    { text: "About Us", href: "/pages/About" },
-    { text: "Services", href: "/pages/Services" },
+    { text: "About Us", href: "/pages/About/" },
+    { text: "Services", href: "/pages/Services/" },
     // { text: "Blogs", href: "/" },
-    { text: "Contact Us", href: "/pages/Contact" },
+    { text: "Contact Us", href: "/pages/Contact/" },
   ];
 
-  const handleClick = (text) => {
-    setIsActive(text);
-    localStorage.setItem("activeMenuItem", text);
-  };
+  // const handleClick = (text) => {
+  //   setIsActive(text);
+  //   localStorage.setItem("activeMenuItem", text);
+  // };
 
-  useEffect(() => {
-    const storedActiveMenuItem = localStorage.getItem("activeMenuItem");
-    if (storedActiveMenuItem) {
-      setIsActive(storedActiveMenuItem);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const storedActiveMenuItem = localStorage.getItem("activeMenuItem");
+  //   if (storedActiveMenuItem) {
+  //     setIsActive(storedActiveMenuItem);
+  //   }
+  // }, []);
 
   return (
     <>
@@ -50,9 +51,10 @@ function Header() {
               {menuList.map((item, index) => (
                 <li
                   key={index}
-                  className={`huListTransitionWrapper ${
-                    item.text === isActive ? "active" : ""
-                  }`}
+                  // className={`huListTransitionWrapper ${
+                  //   item.text === isActive ? "active" : ""
+                  // }`}
+                  className={`huListTransitionWrapper ${pathname === item.href ? "active" : ""}`}
                   onClick={() => handleClick(item.text)}
                 >
                   <a href={item.href}>
@@ -74,7 +76,7 @@ function Header() {
                   height={18}
                   alt="heroContact"
                 />
-               +971 568 352 250
+                +971 568 352 250
               </div>
               <div className="bottomVisibleContainer btn">
                 <Image
@@ -83,7 +85,7 @@ function Header() {
                   height={18}
                   alt="heroContact"
                 />
-               +971 568 352 250
+                +971 568 352 250
               </div>
             </div>
           </div>
