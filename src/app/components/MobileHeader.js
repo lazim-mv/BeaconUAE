@@ -92,7 +92,7 @@ function MobileHeader() {
               />
             </Logo>
           </a>
-          <ToggleButton onClick={toggleMenu}>
+          <ToggleButton aria-label="HamBurgerMenu" onClick={toggleMenu}>
             {isMenuOpen ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"

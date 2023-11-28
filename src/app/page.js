@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 
 
-const LoadingCircle = dynamic(() => import('@/app/components/LoadingCircle'));
 const Header = dynamic(() => import('@/app/components/Header'));
 const MobileHeader = dynamic(() => import('@/app/components/MobileHeader'));
 const Hero = dynamic(() => import('@/app/components/Hero'));
@@ -50,7 +49,8 @@ export default function Home() {
       <Header />
       <MobileHeader />
       <div id="white-screen">
-        <LoadingCircle />
+        {/* <LoadingCircle /> */}
+        <div class="loadingss"></div>
         <div className="changeTextContainer">
           <h1 className="spinnerText">Your Global Advisory Partner For</h1>
           <h1 className="changeText"><span className="spinnerText"> Business </span> {textOptions[textIndex]}</h1>
@@ -71,13 +71,13 @@ export default function Home() {
   );
 }
 
-// export async function getStaticProps() {
-//   // Fetch data here (e.g., from an API)
-//   const data = "Some data fetched at build time";
+export async function getStaticProps() {
+  // Fetch data here (e.g., from an API)
+  const data = "Some data fetched at build time";
 
-//   return {
-//     props: {
-//       data,
-//     },
-//   };
-// }
+  return {
+    props: {
+      data,
+    },
+  };
+}
