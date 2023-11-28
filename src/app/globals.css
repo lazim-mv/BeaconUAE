@@ -2686,32 +2686,4 @@ li{
 }
 /* Network Bar Animation loader End */
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
-@keyframes pulse {
-  50% {
-    background: black; 
-  }
-}
-
-
-.loadingss {
-  border-radius: 50%;
-  width: 30px;
-  height: 30px; 
-  border: 6px solid #61e455; 
-  border-top-color: #13670b; 
-  animation: spin 1s infinite linear; 
-}
-
-.loadingss--double {
-  border-style: double;
-  border-width: 8px; 
-}
