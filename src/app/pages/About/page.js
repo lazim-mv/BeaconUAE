@@ -7,7 +7,7 @@ import Image from "next/image";
 import dynamic from 'next/dynamic';
 
 
-// const LoadingCircle = dynamic(() => import('@/app/components/LoadingCircle'));
+const LoadingCircle = dynamic(() => import('@/app/components/LoadingCircle'));
 const Stats = dynamic(() => import('@/app/components/Stats'));
 const Contact = dynamic(() => import('@/app/components/Contact'));
 const Footer = dynamic(() => import('@/app/components/Footer'));
@@ -102,7 +102,7 @@ function About() {
         </h2>
         <div className={styles.aboutUsHeroContainer}>
           <div>
-          {!loaded && "loading"}
+          {!loaded && <LoadingCircle onLoadedImages={handleImageLoad} />}
             <Image
               quality={100}
               priority={true}

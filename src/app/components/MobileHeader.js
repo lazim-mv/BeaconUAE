@@ -1,74 +1,5 @@
-"use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import styled from "styled-components";
-
-const HeaderMainContainer = styled.div`
-`;
-
-const HeaderContainer = styled.div`
-  /* background-color: #F7F7F8;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 50;
-  height: 75px;
-  padding: 0 24px;
-  align-items: center;
-  height: 75px; */
-`;
-
-const Container = styled.div`
-  width: 100%;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
-
-const Logo = styled.div`
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #333;
-`;
-
-const ToggleButton = styled.button`
-  font-size: 1rem;
-  color: #02040e;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-
-  &:focus {
-    outline: none;
-  }
-`;
-
-const Card = styled.div`
-  position: fixed;
-  top: 4rem;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #ffffff;
-  z-index: 52;
-  display: ${({ isMenuOpen }) => (isMenuOpen ? "flex" : "none")};
-  transition: display 0.3s ease-in-out;
-  flex-direction: column;
-  align-items: flex-end;
-  padding: 24px;
-  gap: 15px;
-`;
-
-const MLink = styled.a`
-  text-decoration: none;
-  color: #333;
-  font-size: 1rem;
-  &:hover {
-    color: #555;
-  }
-`;
 
 function MobileHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -77,90 +8,84 @@ function MobileHeader() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const cardStyles = {
+    position: "fixed",
+    top: "4rem",
+    left: 0,
+    width: "100vw",
+    height: "100vh",
+    backgroundColor: "#ffffff",
+    zIndex: 52,
+    display: isMenuOpen ? "flex" : "none",
+    transition: "display 0.3s ease-in-out",
+    flexDirection: "column",
+    alignItems: "flex-end",
+    padding: "24px",
+    gap: "15px",
+  };
+
+  const linkStyles = {
+    textDecoration: "none",
+    color: "#333",
+    fontSize: "1rem",
+  };
+
   return (
-    <HeaderMainContainer className="mHeader">
-      <HeaderContainer className="fixedmHeadContainer">
-        <Container className="mHeaderContainer">
+    <div className="mHeader">
+      <div className="fixedmHeadContainer">
+        <div className="mHeaderContainer" style={{ width: "100%", margin: 0, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <a href="/">
-            <Logo>
-              {/* <Image src="/NewSvgs/Logos/Beacon.svg" width={120} height={30} alt="ImageHeader" /> */}
-              <Image
-                src="/NewSvgs/Logos/Beacon11.svg"
-                width={120}
-                height={30}
-                alt="ImageHeader"
-              />
-            </Logo>
+            <div style={{ fontSize: "1.25rem", fontWeight: 600, color: "#333" }}>
+              <Image src="/NewSvgs/Logos/Beacon11.svg" width={120} height={30} alt="ImageHeader" />
+            </div>
           </a>
-          <ToggleButton aria-label="HamBurgerMenu" onClick={toggleMenu}>
+          <button
+            aria-label="HamBurgerMenu"
+            onClick={toggleMenu}
+            style={{
+              fontSize: "1rem",
+              color: "#02040E",
+              backgroundColor: "transparent",
+              border: "none",
+              cursor: "pointer",
+              outline: "none",
+            }}
+          >
             {isMenuOpen ? (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-9 w-9"
-                fill="#02040E"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-9 w-9" fill="#02040E" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
               </svg>
             ) : (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-9 w-9"
-                fill="#02040E"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                />
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-9 w-9" fill="#02040E" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
               </svg>
             )}
-          </ToggleButton>
-          <Card
-            $isMenuOpen={isMenuOpen}
-            style={{ display: isMenuOpen ? "flex" : "none" }}
+          </button>
+          <div
+            style={cardStyles}
           >
-            <MLink href="/" className="mLinks">
+            <a href="/" style={linkStyles} className="mLinks">
               Home
-            </MLink>
-            {/* <MLink href="/" className="mLinks">Our Presence</MLink> */}
-            <MLink href="/pages/About" className="mLinks">
+            </a>
+            <a href="/pages/About" style={linkStyles} className="mLinks">
               About Us
-            </MLink>
-            <MLink href="/pages/Services" className="mLinks">
+            </a>
+            <a href="/pages/Services" style={linkStyles} className="mLinks">
               Services
-            </MLink>
-            {/* <MLink href="/" className="mLinks">Blogs</MLink> */}
-            <MLink href="/pages/Contact" className="mLinks">
+            </a>
+            <a href="/pages/Contact" style={linkStyles} className="mLinks">
               Contact Us
-            </MLink>
-            <div
-              style={{ backgroundColor: "#11215B" }}
-              className="hButtonContainer headerContactButton mHeaderBtn"
-            >
+            </a>
+            <div style={{ backgroundColor: "#11215B" }} className="hButtonContainer headerContactButton mHeaderBtn">
               <a href="tel:971 568 352 250" className="btn mBtn">
-                <Image
-                  src="/telephone.svg"
-                  width={15}
-                  height={15}
-                  alt="heroContact"
-                />
+                <Image src="/telephone.svg" width={15} height={15} alt="heroContact" />
                 +971 568 352 250
               </a>
             </div>
-          </Card>
-        </Container>
-      </HeaderContainer>
-    </HeaderMainContainer>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 

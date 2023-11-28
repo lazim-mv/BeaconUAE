@@ -6,7 +6,7 @@ import styles from "../../Styles/servicesPage.module.css";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 
-// const LoadingCircle = dynamic(() => import("@/app/components/LoadingCircle"));
+const LoadingCircle = dynamic(() => import("@/app/components/LoadingCircle"));
 const Faq = dynamic(() => import("@/app/components/Faq"));
 const Footer = dynamic(() => import("@/app/components/Footer"));
 
@@ -207,7 +207,7 @@ function Services() {
             </p>
           </div>
           <div className={styles.servicePageImageContainer2}>
-            {!loaded && "<LoadingCircle onLoadedImages={handleImageLoad} />"}
+            {!loaded && <LoadingCircle onLoadedImages={handleImageLoad} />}
             <Image
               src="/ServicesPage/servicesPage7.webp"
               width={576}
@@ -263,7 +263,7 @@ function Services() {
         <div className={styles.container4}>
           <div className={styles.background}></div>
           <div className={styles.container4ImgContainer}>
-            {!loaded && "<LoadingCircle onLoadedImages={handleImageLoad} />"}
+            {!loaded && <LoadingCircle onLoadedImages={handleImageLoad} />}
             <Image
               src="/ServicesPage/servicesPage1.webp"
               width={500}

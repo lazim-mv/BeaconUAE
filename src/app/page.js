@@ -4,6 +4,7 @@ import { Clients, ScrollingLogos } from "./components/Clients";
 import Faq from "./components/Faq";
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
+import LoadingCircle from "./components/LoadingCircle";
 
 
 const Header = dynamic(() => import('@/app/components/Header'));
@@ -49,8 +50,7 @@ export default function Home() {
       <Header />
       <MobileHeader />
       <div id="white-screen">
-        {/* <LoadingCircle /> */}
-        <div class="loadingss"></div>
+        <LoadingCircle />
         <div className="changeTextContainer">
           <h1 className="spinnerText">Your Global Advisory Partner For</h1>
           <h1 className="changeText"><span className="spinnerText"> Business </span> {textOptions[textIndex]}</h1>
