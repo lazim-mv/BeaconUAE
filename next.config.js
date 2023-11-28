@@ -20,29 +20,10 @@ const nextConfig = {
   reactStrictMode: true,
   optimizeFonts: true,
   swcMinify: true,
-  compress: true,
-  outDir:"build",
+  compress:true,
+  output: "export",
   images: { unoptimized: true },
   trailingSlash: true,
-
-  webpack: (config, { isServer, dev }) => {
-    config.module.rules.push({
-      test: /next\/dist\/compiled\/react-dom/,
-      loader: "null-loader",
-    });
-
-    return config;
-  },
-  modularizeImports: {
-    "next/dist/compiled/react-dom(/?[A-Z,a-z]*)": {
-      transform: "react-dom{{ matches.[1] }}",
-      skipDefaultConversion: true,
-    },
-  },
 };
 
-const withBundleAnalyzer = require("@next/bundle-analyzer")({
-  enabled: process.env.ANALYZE === "true",
-});
-
-module.exports = withBundleAnalyzer(nextConfig);
+module.exports = nextConfig;
