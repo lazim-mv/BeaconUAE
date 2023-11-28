@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Brands from "./Brands";
 import heroImg from "../../../public/hero.webp";
 
@@ -46,19 +46,19 @@ function Hero() {
             Launch and Expand
             <br /> Your Business In UAE <br /> with our Expertise
           </h1>
-        
-        <div className="heroDescContainer">
-          <p className="heroDesc">
-            We help you fulfill your entrepreneurial journey and dream
-            <br />
-            business setup in UAE with support on tax and accounting to
-            <br /> legal support and marketing.
-          </p>
-          <p className="mHeroDesc">
-            We help you fulfill your entrepreneurial journey and dream business
-            setup in UAE with support on tax and accounting to legal support and
-            marketing.
-          </p>
+
+          <div className="heroDescContainer">
+            <p className="heroDesc">
+              We help you fulfill your entrepreneurial journey and dream
+              <br />
+              business setup in UAE with support on tax and accounting to
+              <br /> legal support and marketing.
+            </p>
+            <p className="mHeroDesc">
+              We help you fulfill your entrepreneurial journey and dream
+              business setup in UAE with support on tax and accounting to legal
+              support and marketing.
+            </p>
           </div>
           <a href="/pages/Services" className="heroAnchorButton">
             <div className="hButtonContainer heroButton">
@@ -89,17 +89,16 @@ function Hero() {
             </div>
           </a>
         </div>
-        <Image
-          className="hImage"
-          src={heroImg}
-          alt="Asian Engineer"
-          // width={1366}
-          // height={670}
-          layout="responsive"
-          quality={100}
-          priority={true}
-          unoptimized
-        />
+        <div className="heroImageContainer">
+          <Image
+            className="hImage"
+            src={heroImg}
+            alt="Asian Engineer"
+            quality={100}
+            priority={true}
+            unoptimized
+          />
+        </div>
       </div>
       <div className="clientsImgContainer">
         <Brands imageSources={imageSources} initialAnimateValue="-160%" />;

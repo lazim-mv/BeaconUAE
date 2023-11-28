@@ -48,9 +48,9 @@ function Places() {
       <div className="scrollContainer">
         <div className="juriMainCardContainer" ref={placesContainerRef}>
           {pageData.map((data, index) => (
-            <div class="cardNew" key={index}>
-              <div class="content">
-                <div class="frontNew">
+            <div className="cardNew" key={index}>
+              <div className="content">
+                <div className="frontNew">
                   <div className="juriContent ">
                     <div className="circleNumber">
                       <h1>{data.Number}</h1>
@@ -61,8 +61,8 @@ function Places() {
                     <p className="juriDesc">{data.description}</p>
                   </div>
                 </div>
-                <div class="backNew">
-                  <div class=" placesCardImage">
+                <div className="backNew">
+                  <div className=" placesCardImage">
                     <Image
                       src={data.img}
                       width={500}

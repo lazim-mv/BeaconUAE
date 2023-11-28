@@ -4,26 +4,21 @@ import { Clients, ScrollingLogos } from "./components/Clients";
 import Faq from "./components/Faq";
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
-import LoadingCircle from "./components/LoadingCircle";
+import LoadingCircle from "./LoadingCircle";
+import { Suspense } from "react";
 
-
-const Header = dynamic(() => import('@/app/components/Header'));
-const MobileHeader = dynamic(() => import('@/app/components/MobileHeader'));
-const Hero = dynamic(() => import('@/app/components/Hero'));
-const Locations = dynamic(() => import('@/app/components/Locations'));
-const Jurisdiction = dynamic(() => import('@/app/components/Jurisdiction'));
-const Places = dynamic(() => import('@/app/components/Places'));
-const Contact = dynamic(() => import('@/app/components/Contact'));
-const Footer = dynamic(() => import('@/app/components/Footer'));
+const Header = dynamic(() => import("@/app/components/Header"));
+const MobileHeader = dynamic(() => import("@/app/components/MobileHeader"));
+const Hero = dynamic(() => import("@/app/components/Hero"));
+const Locations = dynamic(() => import("@/app/components/Locations"));
+const Jurisdiction = dynamic(() => import("@/app/components/Jurisdiction"));
+const Places = dynamic(() => import("@/app/components/Places"));
+const Contact = dynamic(() => import("@/app/components/Contact"));
+const Footer = dynamic(() => import("@/app/components/Footer"));
 
 export default function Home() {
   const [textIndex, setTextIndex] = useState(0);
-  const textOptions = [
-    "Growth",
-    "Success",
-    "Strategy",
-    "Expansion",
-  ];
+  const textOptions = ["Growth", "Success", "Strategy", "Expansion"];
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -47,37 +42,39 @@ export default function Home() {
 
   return (
     <>
-      <Header />
-      <MobileHeader />
-      <div id="white-screen">
+      <Suspense fallback={<LoadingCircle />}>
+        <Header />
+        <MobileHeader />
+        {/* <div id="white-screen">
         <LoadingCircle />
         <div className="changeTextContainer">
           <h1 className="spinnerText">Your Global Advisory Partner For</h1>
           <h1 className="changeText"><span className="spinnerText"> Business </span> {textOptions[textIndex]}</h1>
         </div>
-      </div>
-      <div className="mainContainer">
-        <Hero />
-        <Services />
-        <Locations />
-        <Jurisdiction />
-        <Places />
-        <Clients />
-        <Faq />
-        <Contact />
-        <Footer />
-      </div>
+      </div> */}
+        <div className="mainContainer">
+          <Hero />
+          <Services />
+          <Locations />
+          <Jurisdiction />
+          <Places />
+          <Clients />
+          <Faq />
+          <Contact />
+          <Footer />
+        </div>
+      </Suspense>
     </>
   );
 }
 
-// export async function getStaticProps() {
-//   // Fetch data here (e.g., from an API)
-//   const data = "Some data fetched at build time";
+export async function getStaticProps() {
+  // Fetch data here (e.g., from an API)
+  const data = "Some data fetched at build time";
 
-//   return {
-//     props: {
-//       data,
-//     },
-//   };
-// }
+  return {
+    props: {
+      data,
+    },
+  };
+}

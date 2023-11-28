@@ -1,10 +1,9 @@
 "use client";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 function Header() {
-  const [isActive, setIsActive] = useState("Home");
   const pathname = usePathname();
 
   const menuList = [
@@ -16,18 +15,6 @@ function Header() {
     // { text: "Blogs", href: "/" },
     { text: "Contact Us", href: "/pages/Contact/" },
   ];
-
-  // const handleClick = (text) => {
-  //   setIsActive(text);
-  //   localStorage.setItem("activeMenuItem", text);
-  // };
-
-  // useEffect(() => {
-  //   const storedActiveMenuItem = localStorage.getItem("activeMenuItem");
-  //   if (storedActiveMenuItem) {
-  //     setIsActive(storedActiveMenuItem);
-  //   }
-  // }, []);
 
   return (
     <>
@@ -51,11 +38,14 @@ function Header() {
               {menuList.map((item, index) => (
                 <li
                   key={index}
-                  // className={`huListTransitionWrapper ${
-                  //   item.text === isActive ? "active" : ""
-                  // }`}
-                  className={`huListTransitionWrapper ${pathname === item.href ? "active" : ""}`}
-                  onClick={() => handleClick(item.text)}
+                  className={`huListTransitionWrapper ${
+                    pathname !== undefined &&
+                    pathname !== null &&
+                    pathname !== "" &&
+                    pathname === item.href
+                      ? "active"
+                      : ""
+                  }`}
                 >
                   <a href={item.href}>
                     <div className="listHoverTop">{item.text}</div>

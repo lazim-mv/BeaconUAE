@@ -251,13 +251,18 @@ li{
   margin-left: 10%;
 }
 
+.heroImageContainer{
+  position: relative;
+  right: 5vw;
+}
+
 .hImage {
   width: 100%;  
   height: auto;
   object-fit: cover;
-  width: 600px !important;
+  /* width: 600px !important;
   margin-left: auto;
-  margin-right: 100px;
+  margin-right: 100px; */
   margin-top: 50px;
 }
 
@@ -1907,6 +1912,10 @@ li{
   .heroContainer .heroButton{
     width: 166px;
     height: 46px;
+  }
+
+  .heroImageContainer{
+    right: 0;
   }
 
   .hImage{

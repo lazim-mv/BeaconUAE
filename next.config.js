@@ -21,7 +21,7 @@ const nextConfig = {
   optimizeFonts: true,
   swcMinify: true,
   compress:true,
-  outDir:'out',
+  output: "export",
   images: { unoptimized: true },
   trailingSlash: true,
 };
