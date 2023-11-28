@@ -4,6 +4,7 @@ import Lottie from "lottie-react";
 import groovyWalkAnimation from "../../public/circleGlobal.json";
 
 const LoadingCircle = ({onLoadedImages}) => {
+  console.log("LoadingCircle component is rendering");
   
 
   const DesktopAnimationStyle = {

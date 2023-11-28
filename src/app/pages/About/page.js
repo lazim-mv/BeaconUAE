@@ -1,6 +1,5 @@
 "use client";
-import MobileHeader from "@/app/components/MobileHeader";
-import Header from "@/app/components/Header";
+
 import styles from "../../Styles/aboutus.module.css";
 import React, { useState } from "react";
 import Image from "next/image";
@@ -8,6 +7,8 @@ import dynamic from 'next/dynamic';
 
 
 const LoadingCircle = dynamic(() => import('@/app/components/LoadingCircle'));
+const Header = dynamic(() => import("@/app/components/Header"));
+const MobileHeader = dynamic(() => import("@/app/components/MobileHeader"));
 const Stats = dynamic(() => import('@/app/components/Stats'));
 const Contact = dynamic(() => import('@/app/components/Contact'));
 const Footer = dynamic(() => import('@/app/components/Footer'));
