@@ -74,7 +74,7 @@ function Footer() {
               style={{ whiteSpace: "nowrap" }}
             >
               <h1>Call us on:</h1>
-              <a href="tel:971568352250">
+              <a href="tel:971 568 352 250">
                 <p>+971 568 352 250</p>
               </a>
             </div>

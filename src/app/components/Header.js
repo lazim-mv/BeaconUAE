@@ -7,9 +7,7 @@ function Header() {
   const pathname = usePathname();
 
   const menuList = [
-    // "Our Presence ⮟"
     { text: "Home", href: "/" },
-    // { text: "Our Presence", href: "/" },
     { text: "About Us", href: "/pages/About/" },
     { text: "Services", href: "/pages/Services/" },
     // { text: "Blogs", href: "/" },

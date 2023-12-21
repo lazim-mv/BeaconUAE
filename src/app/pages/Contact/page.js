@@ -1,16 +1,14 @@
 "use client";
 import React, { useState } from "react";
 import styles from "../../Styles/contact.module.css";
-import Header from "@/app/components/Header";
-// import MobileHeader from "@/app/components/MobileHeader";
 import Image from "next/image";
 import emailjs from "@emailjs/browser";
 import emailjsConfig from "../../../../emailjs.config";
 import dynamic from "next/dynamic";
 
-
-const Footer = dynamic(() => import('@/app/components/Footer'));
-const MobileHeader = dynamic(() => import('@/app/components/MobileHeader'));
+const Header = dynamic(() => import("@/app/components/Header"));
+const Footer = dynamic(() => import("@/app/components/Footer"));
+const MobileHeader = dynamic(() => import("@/app/components/MobileHeader"));
 
 function Contact() {
   const [showUAECard, setShowUAECard] = useState(false);
@@ -29,6 +27,7 @@ function Contact() {
     name: "",
     email: "",
     phone: "",
+    country: "",
     subject: "",
     message: "",
   });
@@ -55,6 +54,7 @@ function Contact() {
           name: "",
           email: "",
           phone: "",
+          country: "",
           subject: "",
           message: "",
         });
@@ -136,6 +136,17 @@ function Contact() {
                 onChange={handleChange}
                 placeholder="Type your message here..."
               ></textarea>
+
+              <div style={{ display: "none" }}>
+                <label htmlFor="country">Country *</label>
+                <input
+                  type="text"
+                  id="country"
+                  name="country"
+                  value="United Arab Emirates"
+                  readOnly
+                />
+              </div>
             </div>
             <div className={styles.formSubmit}>
               <button type="submit">Send Message</button>

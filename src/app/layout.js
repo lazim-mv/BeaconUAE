@@ -1,6 +1,6 @@
+import Script from "next/script";
 import "./globals.css";
 import localFont from "next/font/local";
-
 
 export const metadata = {
   title: "Beacon - Launch and Expand Your Business In UAE with our Expertise",
@@ -10,7 +10,7 @@ export const metadata = {
     title: "Beacon - Launch and Expand Your Business In UAE with our Expertise",
     description:
       "Beacon is your global business advisory partner who offers you a range of services that enable your business growth and ultimate business transformation. We provide a plethora of services like Business Incorporation, Digital Marketing, Technology, Finance and Accounting, Audit & Taxation and Business Consulting services.",
-    url: "https://bmcglobal.co",
+    url: "https://uae.bmcglobal.co",
     siteName: "Beacon",
     images: [
       {
@@ -38,20 +38,19 @@ const Gellix = localFont({
       weight: "400",
       style: "normal",
       variable: "--font-Sora",
-      display : "swap",
+      display: "swap",
     },
     {
       path: "./fonts/Gellix-SemiBold.woff2",
       weight: "600",
       style: "normal",
       variable: "--font-Sora",
-      display : "swap",
+      display: "swap",
     },
   ],
 });
 
 export default function RootLayout({ children }) {
-
   return (
     <html lang="en">
       <head>
@@ -70,6 +69,20 @@ export default function RootLayout({ children }) {
         <meta property="og:image:width" content="1024" />
         <meta property="og:image:height" content="1024" />
       </head>
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=AW-11435430520"
+      ></Script>
+      <Script id="gtag-script">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', 'AW-11435430520');
+        `}
+      </Script>
       <body className={Gellix.className}>{children}</body>
     </html>
   );

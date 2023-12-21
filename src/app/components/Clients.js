@@ -9,23 +9,16 @@ function Clients() {
     {
       message:
         "“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”",
-      name: "Omar Abdallah",
+      name: "Usman Tariq",
       designation: "Riyadh, KSA",
-      img: "/profilePic3.jpg",
+      img: "/profilePic3.webp",
     },
     {
       message:
         "“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”",
-      name: "Muhammed",
+      name: "Hassan",
       designation: "Jeddah, KSA",
-      img: "/profilePic4.jpg",
-    },
-    {
-      message:
-        "“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”",
-      name: "Muhammed",
-      designation: "Jeddah, KSA",
-      img: "/profilePic4.jpg",
+      img: "/profilePic4.webp",
     },
   ];
 
@@ -67,9 +60,8 @@ function Clients() {
         <h6 className="businessHeading">our CLIENTS</h6>
         <h2 className="businessDesc">Our core partners</h2>
       </div>
-      <div features={domAnimation} className="clientsImgContainer">
+      <div className="clientsImgContainer">
         <ScrollingLogos />
-        {/* <ScrollableRow /> */}
       </div>
       <div className="testimonialMainContainer">
         <div className="businessContentContainer">
@@ -145,14 +137,12 @@ function Clients() {
 }
 
 function ScrollingLogos() {
-  const [isHovered, setIsHovered] = useState(false);
   const [animateValue, setAnimateValue] = useState("-200%");
 
   useEffect(() => {
     const handleResize = () => {
       const screenWidth = window.innerWidth;
 
-      // Set the animate value based on screen width
       const newAnimateValue = screenWidth < 600 ? "-325%" : "-200%";
 
       // Update the animate value only if it has changed
@@ -176,7 +166,6 @@ function ScrollingLogos() {
   const controls = useAnimation();
 
   const handleHoverStart = () => {
-    setIsHovered(true);
     controls.start({
       x: animateValue,
       transition: {
@@ -188,7 +177,6 @@ function ScrollingLogos() {
   };
 
   const handleHoverEnd = () => {
-    setIsHovered(false);
     controls.start({
       x: animateValue,
       transition: {
