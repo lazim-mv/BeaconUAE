@@ -1,6 +1,5 @@
 "use client";
 import Services from "./components/Services";
-import { Clients, ScrollingLogos } from "./components/Clients";
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import LoadingCircle from "./components/LoadingCircle";
@@ -10,6 +9,7 @@ const Header = dynamic(() => import("@/app/components/Header"));
 const MobileHeader = dynamic(() => import("@/app/components/MobileHeader"));
 const Hero = dynamic(() => import("@/app/components/Hero"));
 const Locations = dynamic(() => import("@/app/components/Locations"));
+const Clients = dynamic(() => import("@/app/components/Clients"));
 const Jurisdiction = dynamic(() => import("@/app/components/Jurisdiction"));
 const Places = dynamic(() => import("@/app/components/Places"));
 const Faq = dynamic(() => import("@/app/components/Faq"));

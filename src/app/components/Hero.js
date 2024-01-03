@@ -101,7 +101,13 @@ function Hero() {
         </div>
       </div>
       <div className="clientsImgContainer">
-        <Brands imageSources={imageSources} initialAnimateValue="-160%" />;
+        <Brands
+          imageSources={imageSources}
+          initialAnimateValue="-160%"
+          hoverDuration="180"
+          duration="60"
+        />
+        ;
       </div>
     </div>
   );

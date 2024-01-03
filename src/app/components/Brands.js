@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { LazyMotion, domAnimation, m, useAnimation } from "framer-motion"
 import Image from "next/image";
 
-function Brands({ imageSources, initialAnimateValue  }) {
+function Brands({ imageSources, initialAnimateValue, hoverDuration, duration  }) {
   const [isHovered, setIsHovered] = useState(false);
   const [animateValue, setAnimateValue] = useState(initialAnimateValue );
 
@@ -40,7 +40,7 @@ function Brands({ imageSources, initialAnimateValue  }) {
       x: animateValue,
       transition: {
         repeat: Infinity,
-        duration: 180, // Adjust the duration when hovering
+        duration: hoverDuration, // Adjust the duration when hovering
         ease: "linear",
       },
     });
@@ -52,7 +52,7 @@ function Brands({ imageSources, initialAnimateValue  }) {
       x: animateValue,
       transition: {
         repeat: Infinity,
-        duration: 60, // Original duration
+        duration: duration, // Original duration
         ease: "linear",
       },
     });
