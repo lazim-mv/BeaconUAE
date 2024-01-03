@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { LazyMotion, domAnimation, m, useAnimation } from "framer-motion";
 import Image from "next/image";
 import Stats from "./Stats";
+import Brands from "./Brands";
 
 function Clients() {
   const testimonialData = [
@@ -54,6 +55,26 @@ function Clients() {
     };
   }, [isMobileScreen]);
 
+  const imageSources = [
+    "/clients/brands/webp/logo1.webp",
+    "/clients/brands/webp/logo2.webp",
+    "/clients/brands/webp/logo3.webp",
+    "/clients/brands/webp/logo4.webp",
+    "/clients/brands/webp/logo5.webp",
+    "/clients/brands/webp/logo6.webp",
+    "/clients/brands/webp/logo9.webp",
+    "/clients/brands/webp/logo10.webp",
+    "/clients/brands/webp/logo11.webp",
+    "/clients/brands/webp/logo12.webp",
+    "/clients/brands/webp/logo13.webp",
+    "/clients/brands/webp/logo15.webp",
+    "/clients/brands/webp/logo17.webp",
+    "/clients/brands/webp/logo18.webp",
+    "/clients/brands/webp/logo20.webp",
+    "/clients/brands/webp/logo22.webp",
+    "/clients/brands/webp/shami.webp",
+  ];
+
   return (
     <div className="clientsContainer">
       <div className="businessContentContainer">
@@ -61,7 +82,7 @@ function Clients() {
         <h2 className="businessDesc">Our core partners</h2>
       </div>
       <div className="clientsImgContainer">
-        <ScrollingLogos />
+        <Brands imageSources={imageSources} initialAnimateValue="-160%" />;
       </div>
       <div className="testimonialMainContainer">
         <div className="businessContentContainer">

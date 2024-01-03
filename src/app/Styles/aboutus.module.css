@@ -353,6 +353,36 @@
     margin: auto;
 }
 
+@media (max-width: 1280px) {
+    .aboutUsHeroContainer{
+        padding: 0 35px;
+    }
+
+    .aboutUsContainer2{
+        padding: 0 35px;
+    }
+
+    .aboutUscontainer3 {
+        padding: 80px 35px;
+    }
+
+    .container3Content{
+        padding-top: 0;
+    }
+
+    .container3Content p{
+        font-size: 14px;
+    }
+
+    .aboutUscontainer4{
+        padding: 0 35px;
+    }
+
+    .cvBackground{
+        width: 47%;
+    }
+}
+
 @media (max-width: 600px) {
 
     .aboutUsMainContainer p{

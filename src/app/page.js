@@ -4,6 +4,7 @@ import { Clients, ScrollingLogos } from "./components/Clients";
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import LoadingCircle from "./components/LoadingCircle";
+import Head from "next/head";
 
 const Header = dynamic(() => import("@/app/components/Header"));
 const MobileHeader = dynamic(() => import("@/app/components/MobileHeader"));
@@ -41,6 +42,9 @@ export default function Home() {
 
   return (
     <>
+    <Head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </Head>
       <Header />
       <MobileHeader />
       <div id="white-screen">

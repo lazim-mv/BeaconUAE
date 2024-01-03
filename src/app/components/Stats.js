@@ -24,15 +24,18 @@ function Stats({ useBackgroundImage, isMainPage }) {
       const newBackgroundImageUrl =
         width >= 600 ? largeBackgroundImageUrl : smallBackgroundImageUrl;
       const newPadding =
-        isMainPage && width >= 600
+        isMainPage && width >= 1280
           ? mainPagePadding
           : isMainPage && width < 600
           ? "54px 45px"
-          : !isMainPage && width >= 600
+          : !isMainPage && width >= 1280
           ? aboutPagePadding
           : !isMainPage && width < 600
           ? "30px 45px"
-          : "30px 45px";
+          : isMainPage && width < 1280
+          ? "50px 30px" 
+          : !isMainPage && width < 1280 
+          ? "50px 30px" : "50px 30px";
 
       // Update the background image URL only if it has changed
       if (newBackgroundImageUrl !== backgroundImageUrl) {

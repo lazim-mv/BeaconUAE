@@ -10,7 +10,7 @@ function MobileHeader() {
 
   const cardStyles = {
     position: "fixed",
-    top: "4rem",
+    top: "3.5rem",
     left: 0,
     width: "100vw",
     height: "100vh",

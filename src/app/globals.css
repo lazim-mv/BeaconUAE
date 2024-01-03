@@ -320,6 +320,7 @@ li{
   display: flex;
   width:100%;
   gap:55px;
+  justify-content: space-between;
 }
 
 .locationContentContainer{
@@ -329,6 +330,7 @@ li{
   width: 100%;
   width: 47%;
   margin-top: 10px;
+  justify-content: space-around;
 }
 
 .locationHeading{
@@ -348,7 +350,7 @@ li{
   font-style: normal;
   font-weight: 400;
   line-height: 135%; /* 22.4px */
-  width: 510px;
+  /* width: 510px; */
   text-align: justify;
 }
 
@@ -367,7 +369,7 @@ li{
 }
 
 .locationImgContainer{
-  width: 100%;
+  width: 47%;
   margin-bottom: 15px;
 }
 
@@ -1732,6 +1734,260 @@ li{
   width: 100%;
 }
 
+.tHeroDesc{
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  
+  .hContainer{
+    display: none;
+  }
+  
+  .mHeader{
+    display: flex;
+    padding: 0 30px;
+    height: 60px;
+    align-items: center;
+  }
+
+  .fixedmHeadContainer{
+    width: 100%;
+  }
+
+  .heorHeading{
+    font-size: 1.475rem;
+  }
+
+  .heroDesc{
+    display: none;
+  }
+
+  .mHeroDesc{
+    display: block;
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 12px;
+  }
+  
+  .heroContainer .heroButton{
+    width: 150px;
+    height: 40px;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .heroContainer .heroButton .btn{
+    font-size: 14px;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .heroContainer .scrolling-logos .logoClients{
+    height: 50px !important;
+  }
+  
+  .heroContainer .clientsImgContainer{
+    height: 100px;
+  }
+  
+
+  .serviceContainer{
+    padding: 0 30px;
+  }
+
+  .cardMainContainer{
+    justify-content: center;
+  }
+
+  .cardContainer{
+    width: 47%;
+  }
+
+  .cardMainContainer .cardContainer{
+    padding: 60px 10px;
+  }
+  
+  .servicesHeading{
+    font-size: 19px;
+  }
+
+  .servicesDescContainer{
+    width: auto;
+  }
+
+  .locationContainer{
+    padding: 0 30px;
+  }
+
+  .locationFlexContainer{
+    flex-direction: column;
+  }
+
+  .locationImgContainer{
+    width: 100%;
+  }
+
+  .locationContentContainer{
+    width: 100%;
+    margin: 0;
+  }
+
+  .locationHeading{
+    text-align: center;
+  }
+
+  .locationDesc{
+    font-size: 13px;
+  }
+
+  .locationButton{
+    margin: auto;
+  }
+
+  .jurisdictionContainer{
+    padding: 100px 30px;
+  }
+
+  .juriContent{
+    height: 50%;
+    padding: 10px;
+  }
+
+  .frontNew{
+    padding: 0 10px;
+  }
+
+  .placesContainer{
+    padding: 100px 30px;
+  }
+
+  .greenBannerContiner h1{
+    font-size: 28px;
+  }
+
+  .testimonialProfile{
+    width: auto;
+  }
+
+  .faqMainContainer{
+    padding: 0 30px;
+  }
+
+  .faqContentContainer{
+    width: auto;
+  }
+
+  .contactMainContainer{
+    padding: 0 30px;
+  }
+
+  .footerContainer{
+    height: auto;
+    gap: 30px;
+    padding: 30px 24px;
+  }
+
+  .footerLogoContainer img{
+    width: 124px;
+    height: 40px;
+  }
+
+  .footerContentContainer{
+    display: none;
+  }
+
+  .bottomContainer{
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .footerContactImgContainer{
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .footerContactDetails{
+    justify-content: flex-start;
+  }
+
+  .footerContactTextDetails{
+    height: auto;
+  }
+
+  .footerContactTextDetails p{
+    text-align: left !important;
+  }
+
+  .footerContactDetails img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .footerContactTextDetails h1{
+    font-size: 11px;
+  }
+
+  .footerContactTextDetails p{
+  }
+
+  .footerSocialContainer{
+    margin-top: 30px;
+  }
+
+  .footerSocialContainer img{
+    width: 40px;
+    height: 40px;
+  }
+
+  .footerCopyRightContainer{
+    height: 40px;
+    padding: 0;
+  }
+
+  .footerCopyRightContainer{
+    margin-top: -15px;
+  }
+
+  .footerCopyRightContainer p{
+    text-align: left !important;
+  }
+
+  .dAddress{
+    display: none;
+  }
+
+  .mAddress{
+    display: flex;
+  }
+
+  .greenBannerContiner{
+    /* background: url("../../public/NewSvgs/Backgrounds/bg4.png"); */
+    height: 256px;
+    padding: 54px 45px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .greenBannerContiner h1{
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 33.6px */
+    text-transform: capitalize;
+}
+
+  .statsContiner{
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+}
+
 @media (max-width: 600px) {
   body {
     padding: 0;
@@ -2341,7 +2597,7 @@ li{
   .testimonialProfileContainer {
     display: flex;
     /* overflow: hidden; */
-    margin-left: 200%;
+    margin-left: 100%;
     justify-content: center;
     align-items: center;
     width: 100%; 
