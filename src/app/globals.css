@@ -1064,7 +1064,7 @@ li{
   justify-content: center;
   background-color: rgba(17, 33, 91, 1);
   flex-direction: column;
-  padding: 100px 30px;
+  padding: 100px 60px;
   padding-bottom: 30px;
   margin-top: 60px;
   gap: 28px;
@@ -1746,7 +1746,7 @@ li{
   
   .mHeader{
     display: flex;
-    padding: 0 30px;
+    padding: 0 60px;
     height: 60px;
     align-items: center;
   }
@@ -1756,7 +1756,7 @@ li{
   }
 
   .heorHeading{
-    font-size: 1.475rem;
+    font-size: 5vw;
   }
 
   .heroDesc{
@@ -1766,7 +1766,7 @@ li{
   .mHeroDesc{
     display: block;
     color: rgba(255, 255, 255, 0.80);
-    font-size: 12px;
+    font-size: 1.5vw;
   }
   
   .heroContainer .heroButton{
@@ -1792,7 +1792,7 @@ li{
   
 
   .serviceContainer{
-    padding: 0 30px;
+    padding: 0 60px;
   }
 
   .cardMainContainer{
@@ -1816,7 +1816,7 @@ li{
   }
 
   .locationContainer{
-    padding: 0 30px;
+    padding: 0 60px;
   }
 
   .locationFlexContainer{
@@ -1845,7 +1845,7 @@ li{
   }
 
   .jurisdictionContainer{
-    padding: 100px 30px;
+    padding: 100px 60px;
   }
 
   .juriContent{
@@ -1858,7 +1858,7 @@ li{
   }
 
   .placesContainer{
-    padding: 100px 30px;
+    padding: 100px 60px;
   }
 
   .greenBannerContiner h1{
@@ -1870,7 +1870,7 @@ li{
   }
 
   .faqMainContainer{
-    padding: 0 30px;
+    padding: 0 60px;
   }
 
   .faqContentContainer{
@@ -1878,7 +1878,7 @@ li{
   }
 
   .contactMainContainer{
-    padding: 0 30px;
+    padding: 0 60px;
   }
 
   .footerContainer{

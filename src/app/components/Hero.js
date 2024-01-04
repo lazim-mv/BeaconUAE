@@ -107,7 +107,6 @@ function Hero() {
           hoverDuration="180"
           duration="60"
         />
-        ;
       </div>
     </div>
   );

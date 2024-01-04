@@ -355,15 +355,15 @@
 
 @media (max-width: 1280px) {
     .aboutUsHeroContainer{
-        padding: 0 35px;
+        padding: 0 60px;
     }
 
     .aboutUsContainer2{
-        padding: 0 35px;
+        padding: 0 60px;
     }
 
     .aboutUscontainer3 {
-        padding: 80px 35px;
+        padding: 80px 60px;
     }
 
     .container3Content{
@@ -375,7 +375,7 @@
     }
 
     .aboutUscontainer4{
-        padding: 0 35px;
+        padding: 0 60px;
     }
 
     .cvBackground{

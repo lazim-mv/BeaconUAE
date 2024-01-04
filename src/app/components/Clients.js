@@ -92,7 +92,6 @@ function Clients() {
           hoverDuration="180"
           duration="100"
         />
-        ;
       </div>
       <div className="testimonialMainContainer">
         <div className="businessContentContainer">
