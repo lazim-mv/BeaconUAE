@@ -1747,7 +1747,7 @@ li{
   .mHeader{
     display: flex;
     padding: 0 60px;
-    height: 60px;
+    height: 65px;
     align-items: center;
   }
 
@@ -1838,6 +1838,7 @@ li{
 
   .locationDesc{
     font-size: 13px;
+    width: auto;
   }
 
   .locationButton{

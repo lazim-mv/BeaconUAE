@@ -191,19 +191,23 @@
 
 @media (max-width: 1280px) {
     .servicePageMainContainer .servicePageMCardMainContainer{
-        padding: 0 35px;
+        padding: 0 60px;
     }
 
     .servicesPageContainer2{
-        padding: 70px 35px;
+        padding: 70px 60px;
     }
 
     .container3{
-        padding: 0 35px;
+        padding: 0 60px;
     }
 
     .container4{
-        padding: 70px 35px;
+        padding: 70px 60px;
+    }
+
+    .background{
+        right: 40px;
     }
 
     .container4Contents{
