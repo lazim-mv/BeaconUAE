@@ -1739,6 +1739,16 @@ li{
 }
 
 @media (max-width: 1280px) {
+
+  #white-screen .changeTextContainer{
+    margin-left: 0px;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .changeText{
+    text-align: center;
+  }
   
   .hContainer{
     display: none;
