@@ -75,7 +75,7 @@ function Clients() {
     "/clients/brands/webp/shami.webp",
   ];
 
-  const repeatedImageSources = Array.from({ length: 5 }, () => [
+  const repeatedImageSources = Array.from({ length: 10 }, () => [
     ...imageSources,
   ]).flat();
 

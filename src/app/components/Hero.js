@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import Brands from "./Brands";
-import heroImg from "../../../public/hero.webp";
+import heroImg from "../../../public/hero.png";
 
 function Hero() {
   const imageSources = [
@@ -12,75 +12,58 @@ function Hero() {
     "/clients/newBrands/4.png",
     "/clients/newBrands/5.png",
     "/clients/newBrands/6.png",
-    "/clients/newBrands/1.png",
-    "/clients/newBrands/2.png",
-    "/clients/newBrands/3.png",
-    "/clients/newBrands/4.png",
-    "/clients/newBrands/5.png",
-    "/clients/newBrands/6.png",
-    "/clients/newBrands/1.png",
-    "/clients/newBrands/2.png",
-    "/clients/newBrands/3.png",
-    "/clients/newBrands/4.png",
-    "/clients/newBrands/5.png",
-    "/clients/newBrands/6.png",
-    "/clients/newBrands/1.png",
-    "/clients/newBrands/2.png",
-    "/clients/newBrands/3.png",
-    "/clients/newBrands/4.png",
-    "/clients/newBrands/5.png",
-    "/clients/newBrands/6.png",
-    "/clients/newBrands/1.png",
-    "/clients/newBrands/2.png",
-    "/clients/newBrands/3.png",
-    "/clients/newBrands/4.png",
-    "/clients/newBrands/5.png",
-    "/clients/newBrands/6.png",
   ];
 
-  return (
-    <div className="heroContainer">
-      <div className="imageWithText">
-        <div className="heroContent">
-          <h1 className="heorHeading">
-            Launch and Expand
-            <br /> Your Business In UAE <br /> with our Expertise
-          </h1>
+  const repeatedImageSources = Array.from({ length: 20 }, () => [
+    ...imageSources,
+  ]).flat();
 
-          <div className="heroDescContainer">
-            <p className="heroDesc">
-              We help you fulfill your entrepreneurial journey and dream
-              <br />
-              business setup in UAE with support on tax and accounting to
-              <br /> legal support and marketing.
-            </p>
-            <p className="mHeroDesc">
-              We help you fulfill your entrepreneurial journey and dream
-              business setup in UAE with support on tax and accounting to legal
-              support and marketing.
-            </p>
-          </div>
-          <a href="/pages/Services" className="heroAnchorButton">
+  return (
+    <>
+      <div className="heroContainer">
+        <Image
+          className="hImage"
+          src={heroImg}
+          alt="Asian Engineer"
+          width={1366}
+          height={670}
+          layout="responsive"
+          quality={100}
+          priority={true}
+          unoptimized
+        />
+        <div className="heroContent">
+          <h1 className="heroTitle">
+            Launch and Expand Your Business In UAE with our Expertise
+          </h1>
+          <p className="heroDescription">
+            We help you fulfill your entrepreneurial journey and dream business
+            setup in UAE with support on tax and accounting to legal support and
+            marketing.
+          </p>
+          <a href="/pages/Contact">
             <div className="hButtonContainer heroButton">
               <div className="visibleWrapperContainer">
                 <div className="topVisibleContainer btn">
-                  Why Dubai
+                  Let&apos;s Talk
                   <div className="topVisibleArrow">
                     <Image
-                      src="/blueArrow.svg"
+                      className="heroArrows"
+                      src="/whiteArrow.svg"
                       width={21}
-                      height={21}
+                      height={18}
                       alt="heroContact"
                     />
                   </div>
                 </div>
                 <div className="bottomVisibleContainer btn">
-                  Why Dubai
+                  Let&apos;s Talk
                   <div className="bottomVisibleArrow">
                     <Image
-                      src="/blueArrow.svg"
+                      className="heroArrows"
+                      src="/whiteArrow.svg"
                       width={21}
-                      height={21}
+                      height={18}
                       alt="heroContact"
                     />
                   </div>
@@ -89,26 +72,16 @@ function Hero() {
             </div>
           </a>
         </div>
-        <div className="heroImageContainer">
-          <Image
-            className="hImage"
-            src={heroImg}
-            alt="Asian Engineer"
-            quality={100}
-            priority={true}
-            unoptimized
-          />
-        </div>
       </div>
       <div className="clientsImgContainer">
         <Brands
-          imageSources={imageSources}
+          imageSources={repeatedImageSources}
           initialAnimateValue="-160%"
-          hoverDuration="180"
-          duration="60"
+          hoverDuration="400"
+          duration="250"
         />
       </div>
-    </div>
+    </>
   );
 }
 

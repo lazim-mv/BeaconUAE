@@ -212,91 +212,72 @@ li{
 
 /* Header End */
 
-/* Hero Start */
-
-.heroContainer{
-  /* margin-bottom: 20px; */
-}
-
-.heroContainer .clientsImgContainer{
-  /* margin-top: 20px; */
-  height: 150px;
-  background-color: #F7F7F8;
-}
-
-.heroContainer .scrolling-logos .logoClients{
-  filter: grayscale(1);
-  height: 75px !important;
-  scale: 1.1;
-}
-
-.heroContainer .scrolling-logos .logoClients:hover{
-  filter: grayscale(0);
-}
-
-.imageWithText{
-  background: #11215B;
-  display: flex;
-  align-items: center;
-  height: 100%;
-  position: relative;
-  height: auto;
-}
-
-.heroContent{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 50%;
-  margin-left: 10%;
-}
-
-.heroImageContainer{
-  position: relative;
-  right: 5vw;
-}
-
-.hImage {
-  width: 100%;  
-  height: auto;
-  object-fit: cover;
-  /* width: 600px !important;
-  margin-left: auto;
-  margin-right: 100px; */
-  margin-top: 50px;
-}
-
-.mHeroDesc{
-  display: none;
-}
-
-.heorHeading {
-  color: #FFF;
-  font-size: 58px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 120%; /* 76.8px */
-  text-transform: capitalize;
-  text-align: left;
-  white-space: nowrap;
-  margin-bottom: 20px;
-}
-
-.heroDesc {
-  color: rgba(255, 255, 255, 0.60);
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%; 
-  text-align: justify;
-  margin-bottom: 30px;
-}
-
 .mainContainer{
   display: flex;
   flex-direction: column;
   gap: 118px;
 }
+
+/* Hero Start */
+
+.heroContainer{
+  height: 48.828125vw;
+  width: 100vw;
+  position: relative;
+}
+
+.hImage{
+  height: 48.828125vw !important;
+}
+
+.heroContent{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 66.14583333333334vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroTitle{
+  color: #FFF;
+  text-align: center;
+  font-size: 4.166666666666666vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 5vw; 
+  text-transform: capitalize;
+}
+
+.heroDescription{
+  margin-top: 1.3020833333333335vw;
+  width: 55.729166666666664vw;
+  color: rgba(255, 255, 255, 0.80);
+
+  text-align: center;
+  font-size: 1.1067708333333335vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5494791666666667vw;
+}
+
+.heroContainer .heroButton{
+  margin-top: 1.953125vw;
+  width: 12.6953125vw;
+  height: 4.231770833333334vw;
+  border-radius: 4.947916666666666vw;
+  background-color: #11215B;
+}
+
+.heroContainer .heroButton .btn{
+  color: #fff;
+  font-size: 1.0416666666666665vw;
+}
+
+
 /* Hero End */
 
 
@@ -1738,7 +1719,8 @@ li{
   display: none;
 }
 
-@media (max-width: 1280px) {
+@media (min-width: 601px) and (max-width: 1280px) {
+
 
   #white-screen .changeTextContainer{
     margin-left: 0px;
