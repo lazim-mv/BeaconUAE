@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import LoadingCircle from "./components/LoadingCircle";
 import Head from "next/head";
+import WhatsAppChat from "./components/WhatsAppChat";
 
 const Header = dynamic(() => import("@/app/components/Header"));
 const MobileHeader = dynamic(() => import("@/app/components/MobileHeader"));
@@ -42,9 +43,10 @@ export default function Home() {
 
   return (
     <>
-    <Head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    </Head>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
+      <WhatsAppChat />
       <Header />
       <MobileHeader />
       <div id="white-screen">
