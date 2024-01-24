@@ -2129,6 +2129,19 @@ li{
     gap: 50px;
   }
 
+  .topVisibleArrow, .bottomVisibleArrow {
+    display: none;
+  }
+
+  .topVisibleContainer,
+  .bottomVisibleContainer {
+    transform: translate(-50%, -50%) !important;
+  }
+
+  .bottomVisibleContainer{
+    display: none;
+  }
+
 
   .topVisibleArrow img{
     width: 14px;
@@ -2289,7 +2302,7 @@ li{
   .heroContainer .heroButton{
     margin-top: 5.333333333333334vw;
     width: 38.794666666666664vw;
-    height: 11.679999999999998vw;
+    height: 10.68vw;
     border-radius: 4.947916666666666vw;
     background-color: #11215B;
   }

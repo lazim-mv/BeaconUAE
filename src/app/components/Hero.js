@@ -45,7 +45,7 @@ function Hero() {
             <div className="hButtonContainer heroButton">
               <div className="visibleWrapperContainer">
                 <div className="topVisibleContainer btn">
-                  Let&apos;s Talk
+                  Contact Us
                   <div className="topVisibleArrow">
                     <Image
                       className="heroArrows"
@@ -57,7 +57,7 @@ function Hero() {
                   </div>
                 </div>
                 <div className="bottomVisibleContainer btn">
-                  Let&apos;s Talk
+                  Contact Us
                   <div className="bottomVisibleArrow">
                     <Image
                       className="heroArrows"
