@@ -42,7 +42,7 @@ function Locations() {
               laws, supporting your dream of starting or expanding a business in
               Dubai. UAE offers world-class infrastructure, connectivity, workforce,
               innovation, and cosmopolitan culture. As leading business consultants
-              in Saudi Arabia and beyond, we've expanded to Dubai to future-proof
+              in Saudi Arabia and beyond, we&apos;ve expanded to Dubai to future-proof
               your entrepreneurial journey with business-friendly policies. Benefit
               from 100% foreign ownership, excellent market connectivity, and
               cost-effective business setup assistance in UAE.
