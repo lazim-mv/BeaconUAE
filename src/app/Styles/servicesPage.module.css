@@ -93,6 +93,35 @@
     display: none;
 }
 
+.heroButton{
+    margin-top: 1.953125vw;
+    width: 16.6953125vw;
+    height: 4.231770833333334vw;
+    border-radius: 4.947916666666666vw;
+    background-color: #11215B;
+    padding: 0.78125vw 0;
+  }
+
+  .heroButton1{
+    margin-top: 1.953125vw;
+    width: 13.6953125vw;
+    height: 4.231770833333334vw;
+    border-radius: 4.947916666666666vw;
+    background-color: #11215B;
+    padding: 0.78125vw 0;
+  }
+
+.btn{
+    text-align: left;
+    align-items: flex-start;
+  }
+
+
+.btn{
+    color: #fff;
+    font-size: 1.2vw;
+  }
+
 .container3SellingCard{
     display: flex;
     gap: 30px;

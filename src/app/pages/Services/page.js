@@ -90,14 +90,43 @@ function Services() {
               <br /> Under Progress
             </h1>
             <p>
-              Starting or developing a business in the UAE involves many steps—
-              this includes visas, sponsorship, trade licenses, financial
-              activities and many must-haves that you require to fund and manage
-              your business. With comprehensive support and collaboration, we
-              handle every aspect of your business without a hitch. You can
-              trust us to manage every nook and corner of your business, no
-              matter how critical or mundane it would be.
+              Starting or expanding a business in the UAE involves various essential
+              steps, from obtaining visas and sponsorship to securing trade licenses
+              and managing financial activities. With our comprehensive support and
+              collaborative approach, we seamlessly handle every aspect of your business.
+              Count on us to oversee all critical and routine tasks with precision, ensuring
+              smooth operations and success.
             </p>
+            <a href="../../pages/Contact">
+              <div className={`hButtonContainer ${styles.heroButton}`}>
+                <div className="visibleWrapperContainer">
+                  <div className={`topVisibleContainer ${styles.btn}`}>
+                    Get In Touch
+                    <div className="topVisibleArrow">
+                      <Image
+                        className="heroArrows"
+                        src="/whiteArrow.svg"
+                        width={21}
+                        height={18}
+                        alt="heroContact"
+                      />
+                    </div>
+                  </div>
+                  <div className={`bottomVisibleContainer ${styles.btn}`}>
+                    Get In Touch
+                    <div className="bottomVisibleArrow">
+                      <Image
+                        className="heroArrows"
+                        src="/whiteArrow.svg"
+                        width={21}
+                        height={18}
+                        alt="heroContact"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
           <div className={styles.servicePageImageContainer2}>
             {!loaded && <LoadingCircle onLoadedImages={handleImageLoad} />}
@@ -131,9 +160,8 @@ function Services() {
             {sellingCardData.map((data, index) => (
               <div className={styles.sellingCards} key={index}>
                 <div
-                  className={`${styles.sellingImageContainer} ${
-                    index === 2 ? styles.selected : ""
-                  }`}
+                  className={`${styles.sellingImageContainer} ${index === 2 ? styles.selected : ""
+                    }`}
                   key={index}
                 >
                   <Image
@@ -191,6 +219,36 @@ function Services() {
               Let&lsquo;s get in touch today to make a customised proposal for
               your business that stays close to your business goals!
             </p>
+            <a href="../../pages/">
+              <div className={`hButtonContainer ${styles.heroButton1}`}>
+                <div className="visibleWrapperContainer">
+                  <div className={`topVisibleContainer ${styles.btn}`}>
+                    Resources
+                    <div className="topVisibleArrow">
+                      <Image
+                        className="heroArrows"
+                        src="/whiteArrow.svg"
+                        width={21}
+                        height={18}
+                        alt="heroContact"
+                      />
+                    </div>
+                  </div>
+                  <div className={`bottomVisibleContainer ${styles.btn}`}>
+                    Resources
+                    <div className="bottomVisibleArrow">
+                      <Image
+                        className="heroArrows"
+                        src="/whiteArrow.svg"
+                        width={21}
+                        height={18}
+                        alt="heroContact"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
         <Faq />

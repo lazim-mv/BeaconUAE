@@ -42,7 +42,7 @@ function About() {
         </h2>
         <div className={styles.aboutUsHeroContainer}>
           <div>
-          {!loaded && <LoadingCircle onLoadedImages={handleImageLoad} />}
+            {!loaded && <LoadingCircle onLoadedImages={handleImageLoad} />}
             <Image
               quality={100}
               priority={true}
@@ -59,16 +59,46 @@ function About() {
           <p>
             {mainText}
           </p>
+          <a href="/pages/Contact">
+            <div className={`hButtonContainer ${styles.heroButton}`}>
+              <div className="visibleWrapperContainer">
+                <div className={`topVisibleContainer ${styles.btn}`}>
+                  Contact Us
+                  <div className="topVisibleArrow">
+                    <Image
+                      className="heroArrows"
+                      src="/whiteArrow.svg"
+                      width={21}
+                      height={18}
+                      alt="heroContact"
+                    />
+                  </div>
+                </div>
+                <div className={`bottomVisibleContainer ${styles.btn}`}>
+                  Contact Us
+                  <div className="bottomVisibleArrow">
+                    <Image
+                      className="heroArrows"
+                      src="/whiteArrow.svg"
+                      width={21}
+                      height={18}
+                      alt="heroContact"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
 
         <Stats useBackgroundImage={useBackgroundImage} isMainPage={false} />
 
         <div className={styles.aboutUsContainer2}>
           <h2 className="businessDesc">
-          Magnify Your Business Goals With Beacon
+            Magnify Your Business Goals With Beacon
           </h2>
-          <h2 style={{textAlign:"center"}} className={`${styles.mBusinessDesc1} mBusinessDesc`}>
-          Magnify Your Business Goals<br/> With Beacon
+          <h2 style={{ textAlign: "center" }} className={`${styles.mBusinessDesc1} mBusinessDesc`}>
+            Magnify Your Business Goals<br /> With Beacon
           </h2>
           <div className={styles.mobilePaddingCard}>
             <div className={styles.cardMainContainer}>

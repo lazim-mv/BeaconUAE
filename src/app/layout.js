@@ -31,17 +31,17 @@ export const metadata = {
   },
 };
 
-const Gellix = localFont({
+const Sora = localFont({
   src: [
     {
-      path: "./fonts/Gellix-Regular.woff2",
+      path: "./fonts/Sora-Regular.woff2",
       weight: "400",
       style: "normal",
       variable: "--font-Sora",
       display: "swap",
     },
     {
-      path: "./fonts/Gellix-SemiBold.woff2",
+      path: "./fonts/Sora-SemiBold.woff2",
       weight: "600",
       style: "normal",
       variable: "--font-Sora",
@@ -83,7 +83,7 @@ export default function RootLayout({ children }) {
           gtag('config', 'AW-11435430520');
         `}
       </Script>
-      <body className={Gellix.className}>{children}</body>
+      <body className={Sora.className}>{children}</body>
     </html>
   );
 }

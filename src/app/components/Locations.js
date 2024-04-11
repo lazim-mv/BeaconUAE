@@ -28,29 +28,24 @@ function Locations() {
             </h2>
             <h2 className="locationHeading mlocationHeading">
               Committed to Enhance
-               Your <br /> Business Efficiency
+              Your <br /> Business Efficiency
             </h2>
           </div>
           <div>
             <p className="locationDesc">
-              Beacon has laid its standards to streamline the business setup
-              services in UAE, KSA, and India, with a plethora of specialised
-              solutions to understand the legal procedures, documentation,
-              financial authenticity, brand promotion, technological
-              improvements, and other vital aspects toward establishing
-              businesses in iconic landmarks. Equipped by a skilled team to
-              simplify the process and adopt compliance with the UAE laws, we
-              encourage and walk along to make your desire to start a business
-              or expand your business in Dubai, UAE, a dream come true. UAE is
-              well known for its world-class infrastructure, connectivity,
-              workforce, technological abundance, innovation, business growth,
-              and cosmopolitan culture. Earmarked as the leading business
-              consultants in Saudi Arabia and global landmarks, we have also
-              extended our roots to Dubai, UAE to help you future-proof your
-              entrepreneurial journey with business-friendly policies at
-              strategic locations. Get our assistance for 100% foreign
-              ownership, amazing connectivity to leading markets, and
-              cost-effective business setup in UAE.
+              Beacon has set high standards for streamlining business
+              setup services in UAE, KSA, Qatar and India. With specialized
+              solutions covering legal procedures, documentation, financial
+              authenticity, brand promotion, and technological improvements,
+              we facilitate business establishment in iconic landmarks. Our
+              skilled team simplifies processes and ensures compliance with UAE
+              laws, supporting your dream of starting or expanding a business in
+              Dubai. UAE offers world-class infrastructure, connectivity, workforce,
+              innovation, and cosmopolitan culture. As leading business consultants
+              in Saudi Arabia and beyond, we've expanded to Dubai to future-proof
+              your entrepreneurial journey with business-friendly policies. Benefit
+              from 100% foreign ownership, excellent market connectivity, and
+              cost-effective business setup assistance in UAE.
             </p>
           </div>
           <a className="locationButton" href="/pages/Services">

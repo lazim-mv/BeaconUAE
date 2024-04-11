@@ -14,7 +14,7 @@
     display: none;
 }
 
-.aboutUsHeroContainer :nth-child(1){
+.aboutUsHeroContainer :nth-child(0){
     margin-top: 5px;
 }
 
@@ -36,6 +36,23 @@
     font-weight: 400;
     line-height: 140%;
 }
+
+.heroButton{
+    width: 210px;
+    height: 55px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    background-color: #11215B;
+    padding: 0;
+  }
+
+.btn{
+    color: #fff;
+    font-size: 1.2vw;
+  }
 
 .greenBannerContiner{
     background: #13670B;
