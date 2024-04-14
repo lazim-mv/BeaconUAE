@@ -123,7 +123,7 @@ function Stats({ useBackgroundImage, isMainPage }) {
         //   ? `url(${backgroundImageUrl})`
         //   : "none",
         backgroundColor: useBackgroundImage ? "#11215B" : "transparent",
-        height: useBackgroundImage ? "auto" : "194px",
+        height: useBackgroundImage ? "auto" : "auto",
         padding: ppadding,
       }}
     >

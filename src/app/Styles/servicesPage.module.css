@@ -266,7 +266,7 @@
     .servicePageMainContainer .mBusinessDesc1{
         display: flex;
         color: #02040E;
-        margin-top: 50px;
+        margin-top: 90px;
         margin-bottom: 30px;
         padding: 0 24px;
     }
@@ -454,6 +454,24 @@
         color: #02040E;
         text-align: left;
     }
+    .heroButton{
+        margin-top: 5.333333333333334vw;
+        width: 38.794666666666664vw;
+        height: 10.68vw;
+        border-radius: 4.947916666666666vw;
+        background-color: #11215B;
+    }
+    .heroButton1{
+        margin-top: 5.333333333333334vw;
+        margin-bottom: 12.333333333333334vw;
+        width: 33.794666666666664vw;
+        height: 10.68vw;
+        border-radius: 4.947916666666666vw;
+        background-color: #11215B;
+    }
+      .btn{
+        font-size: 3vw;
+      }
 
     
 }

@@ -4,7 +4,7 @@ import styles from "../../Styles/aboutus.module.css";
 import React, { useState } from "react";
 import Image from "next/image";
 import dynamic from 'next/dynamic';
-import { cvData, vissionMissionData, mainText } from "./AboutPageContent";
+import { cvData, vissionMissionData, mainText, mainText_p } from "./AboutPageContent";
 
 
 const LoadingCircle = dynamic(() => import('@/app/components/LoadingCircle'));
@@ -56,8 +56,11 @@ function About() {
               onLoad={handleImageLoad}
             />
           </div>
-          <p>
+          <p className={styles.maintext}>
             {mainText}
+          </p>
+          <p className={styles.maintext_p}>
+            {mainText_p}
           </p>
           <a href="/pages/Contact">
             <div className={`hButtonContainer ${styles.heroButton}`}>

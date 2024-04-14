@@ -370,6 +370,13 @@
     margin: auto;
 }
 
+.maintext{
+    display:block;
+}
+.maintext_p{
+    display: none;
+}
+
 @media (min-width: 601px) and (max-width: 1280px) {
 
     .aboutUsHeroContainer{
@@ -414,7 +421,7 @@
     .aboutUsMainContainer .mBusinessDesc1{
         display: flex;
         color: #02040E;
-        margin-top: 50px;
+        margin-top: 80px;
         margin-bottom: 30px;
         margin-left: auto;
         margin-right: auto;
@@ -608,4 +615,20 @@
     .contactCont h2 {
         margin-top: 0;
     }
+    .btn{
+        color: #fff;
+        font-size: 3.6vw;
+    }
+    .heroButton{
+        width: 140px;
+        height: 40px;
+    }
+
+    .maintext{
+        display:none;
+    }
+    .maintext_p{
+        display: block;
+    }
+    
 }

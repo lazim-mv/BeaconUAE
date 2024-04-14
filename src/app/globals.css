@@ -167,7 +167,7 @@ li{
 }
 
 .hContainer .headerContactButton{
-  width: 175px;
+  width: 200px;
   height: 55px;
   height: 50px;
   cursor: pointer;
@@ -190,10 +190,10 @@ li{
 }
 
 .heroContainer .topVisibleArrow{
-  margin-left: -12px;
+  margin-left: 0px;
 }
 .heroContainer .bottomVisibleArrow{
-  margin-left: -12px;
+  margin-left: 0px;
 }
 
 .btn{
@@ -381,7 +381,7 @@ li{
 }
 
 .jurisdictionContainer .businessContentContainer .businessHeading{
-  width: 161px;
+  width: 200px;
   align-self: center;
 }
 
@@ -2203,7 +2203,7 @@ li{
   }
 
   .mHeaderBtn{
-    width: 150px;
+    width: 180px;
     height: 39px;
     padding: 12px 20px;
   }
@@ -2364,7 +2364,7 @@ li{
   }
 
   .jurisdictionContainer .businessContentContainer .businessHeading {
-    width: 110px;
+    width: 130px;
   }
 
   .juriMainCardContainer{
