@@ -46,7 +46,7 @@ function Clients() {
 
   const showPreviousCard = () => {
     setCurrentCardIndex((prevIndex) =>
-      prevIndex === 0 ? testimonialData.length - 1 : prevIndex - 1
+      prevIndex === 0 ? testimonialData.length - 2 : prevIndex - 1
     );
     console.log(currentCardIndex);
   };
@@ -133,7 +133,7 @@ function Clients() {
                   <h3>{data.message}</h3>
                 </div>
                 <div className="testimonialCardBottom">
-                  <div className="testiImg">
+                  {/* <div className="testiImg">
                     <Image
                       src={data.img}
                       layout="fill"
@@ -144,7 +144,7 @@ function Clients() {
                       unoptimized
                       loading="lazy"
                     />
-                  </div>
+                  </div> */}
                   <div>
                     {/* Display current testimonial's profile */}
                     <p className="profileName">{data.name}</p>

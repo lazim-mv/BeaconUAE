@@ -1051,7 +1051,7 @@ li{
   justify-content: center;
   background-color: rgba(17, 33, 91, 1);
   flex-direction: column;
-  padding: 100px 60px;
+  padding: 100px 140px;
   padding-bottom: 30px;
   margin-top: 60px;
   gap: 28px;
@@ -1121,7 +1121,7 @@ li{
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.1);
   padding: 30px;
-  width: 26.396825396825395vw;
+  width: 24.896825396825395vw;
   /* margin-right: 30px; */
   border-radius: 10px;
 }
@@ -1165,12 +1165,13 @@ li{
 .testimonialCardBottom{
   display: flex;
   gap: 15px;
+  margin-top: auto;
 }
 
 .testimonialMainContainer hr{
   align-self: center;
   margin-top: 40px !important;
-  width: 86%;
+  width: 100%;
 }
 
 /* Clients End  */
