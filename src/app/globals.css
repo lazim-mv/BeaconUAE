@@ -61,6 +61,8 @@ li{
 .rightButton{
   background: transparent;
   color: rgba(255, 255, 255, 1);
+  position: absolute;
+  right: 5vw;
   /* line-height: 25px; */
   text-align: center;
   width: 50px;
@@ -81,6 +83,9 @@ li{
 .leftButton{
   background: transparent;
   color: rgba(255, 255, 255, 1);
+  position: absolute;
+  left: 5vw;
+  z-index: 10;
   /* line-height: 25px; */
   text-align: center;
   width: 50px;
@@ -1037,7 +1042,8 @@ li{
 .testimonialProfileContainer{
   display: flex;
   gap: 30px;
-  justify-content: center;
+  /* justify-content: center; */
+  /* overflow: auto; */
 }
 
 .testimonialMainContainer{
@@ -1064,8 +1070,8 @@ li{
 .testimonialRightContainer{
   display: flex;
   gap: 15px;
-  justify-content: center;
   align-items: center;
+  overflow: scroll;
 }
 
 
@@ -1115,7 +1121,7 @@ li{
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.1);
   padding: 30px;
-  width: 28%;
+  width: 26.396825396825395vw;
   /* margin-right: 30px; */
   border-radius: 10px;
 }
@@ -2742,10 +2748,14 @@ li{
 
   .rightButton{
     padding-left: 11px;
+    position: absolute;
+    right: 38vw;
   }
 
   .leftButton{
     padding-right: 11px;
+    position: absolute;
+    left: 38vw;
   }
 
   .blogsContainer{

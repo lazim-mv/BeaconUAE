@@ -11,27 +11,27 @@ function Clients() {
       message:"“Working with Beacon made setting up our business in Saudi Arabia hassle-free. Their comprehensive services covered everything from paperwork to logistics, ensuring a smooth and successful expansion.”",
       name: "Mohammed Al-Saud",
       designation: "Jeddah, KSA",
-      img: "/profilePic1.webp",
+      img: "/profilePic3.webp",
     },
     {
       message:
         "“Working with Beacon felt like having an extended team member. Their transparency and unwavering commitment made the partnership seamless and productive.”",
       name: "Abdul Rasheed",
       designation: "Dammam, KSA",
-      img: "/profilePic2.webp",
+      img: "/profilePic4.webp",
     },
     {
       message:
         "“Beacon's guidance and expertise have been instrumental in our business's growth and success. Their tailored solutions and dedicated support have exceeded our expectations.”",
       name: "Reem Abdullah",
       designation: "Riyadh, KSA",
-      img: "/profilePic5.webp",
+      img: "/profilePic3.webp",
     },
     {
       message:"“Working with Beacon felt like having an extended team member. Their transparency and unwavering commitment made the partnership seamless and productive.",
       name: " Ahmed Al-Sayed",
       designation: "Dubai , UAE",
-      img: "/profilePic2.webp",
+      img: "/profilePic4.webp",
     }
   ];
 
@@ -126,7 +126,7 @@ function Clients() {
                 style={{
                   transform: isMobileScreen
                     ? `translateX(-${currentCardIndex * 110}%)`
-                    : "none", // Set to 'none' or remove transform for desktop view
+                    : `translateX(-${currentCardIndex * 30}%)`, // Set to 'none' or remove transform for desktop view
                 }}
               >
                 <div className="testimonialMessage">
