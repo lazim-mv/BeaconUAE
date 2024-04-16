@@ -1731,10 +1731,11 @@ li{
 /* styles/WhatsAppChat.css */
 .whatsapp-chat {
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: 15vh;
+  right: 2vw;
   z-index: 1000;
   background-color: #fff;
+  border-radius: 10px;
 }
 
 .chat-icon{
@@ -1745,6 +1746,7 @@ li{
   width: 5vw;
   height: 5vw;
   animation: whatssAppIcon 5s infinite;
+  cursor: pointer;
 }
 
 @keyframes whatssAppIcon {
@@ -1777,6 +1779,7 @@ li{
   background-color: #11215B;
   padding: 1.3020833333333335vw;
   position: relative;
+  border-radius: 10px 10px 0 0;
 }
 
 .topCard h3 {
@@ -1813,6 +1816,10 @@ li{
   display: flex;
   gap: 0.6510416666666667vw;
   align-items: center;
+}
+.officeCards:hover{
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 .office-card img{
@@ -3062,6 +3069,7 @@ li{
 
   .officeCard:hover{
     cursor: pointer;
+    background-color: #ECECF1;
   }
 
   .officeCard{
