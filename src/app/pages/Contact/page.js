@@ -235,18 +235,15 @@ function Contact() {
                 </a>
               </div>
             </div>
-            <div className={styles.contactMapImg}>
-              <Image
-                quality={100}
-                priority={true}
-                unoptimized
-                src="/NewSvgs/SVG3/hh/map.svg"
-                width={46}
-                height={46}
-                layout="responsive"
-                alt="ImageFooter2"
-              />
-            </div>
+            {/* <div className={styles.contactMapImg}>
+              <iframe
+                src="https://maps.google.com/maps?q=https://www.google.com/maps/place/Dubai+National+Insurance+Building/@25.2530159,55.3286163,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5f5cd88efab80f:0x4e795f0e11a9bd5a!8m2!3d25.2530159!4d55.3286163!16s%252Fg%252F11df5qd0j4?entry=ttu+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                height="550"
+                style={{ border: 0 }}
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div> */}
           </div>
         </div>
 

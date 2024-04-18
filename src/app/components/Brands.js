@@ -1,18 +1,18 @@
-"use client";
 import React, { useEffect, useState } from "react";
-import { LazyMotion, domAnimation, m, useAnimation } from "framer-motion"
+import { LazyMotion, domAnimation, m, useAnimation } from "framer-motion";
 import Image from "next/image";
 
-function Brands({ imageSources, initialAnimateValue, hoverDuration, duration  }) {
+function Brands({ imageSources, initialAnimateValue, hoverDuration, duration }) {
   const [isHovered, setIsHovered] = useState(false);
-  const [animateValue, setAnimateValue] = useState(initialAnimateValue );
+  const [animateValue, setAnimateValue] = useState(initialAnimateValue);
+  const controls = useAnimation();
 
   useEffect(() => {
     const handleResize = () => {
       const screenWidth = window.innerWidth;
 
       // Set the animate value based on screen width
-      const newAnimateValue = screenWidth < 600 ? initialAnimateValue  : "-200%";
+      const newAnimateValue = screenWidth < 600 ? initialAnimateValue : "-200%";
 
       // Update the animate value only if it has changed
       if (newAnimateValue !== animateValue) {
@@ -30,9 +30,53 @@ function Brands({ imageSources, initialAnimateValue, hoverDuration, duration  })
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [animateValue]);
+  }, [animateValue, initialAnimateValue]);
 
-  const controls = useAnimation();
+  useEffect(() => {
+    const handleHoverStart = () => {
+      setIsHovered(true);
+      controls.start({
+        x: animateValue,
+        transition: {
+          repeat: Infinity,
+          duration: hoverDuration, // Adjust the duration when hovering
+          ease: "linear",
+        },
+      });
+    };
+
+    const handleHoverEnd = () => {
+      setIsHovered(false);
+      controls.start({
+        x: animateValue,
+        transition: {
+          repeat: Infinity,
+          duration: duration, // Original duration
+          ease: "linear",
+        },
+      });
+    };
+
+    const restartAnimation = () => {
+      setTimeout(() => {
+        controls.start({
+          x: animateValue,
+          transition: {
+            repeat: Infinity,
+            duration: duration,
+            ease: "linear",
+          },
+        });
+      }, duration * 1000); // Convert duration from seconds to milliseconds
+    };
+
+    handleHoverEnd();
+    restartAnimation();
+
+    return () => {
+      clearTimeout();
+    };
+  }, [controls, animateValue, duration, hoverDuration]);
 
   const handleHoverStart = () => {
     setIsHovered(true);
@@ -46,21 +90,6 @@ function Brands({ imageSources, initialAnimateValue, hoverDuration, duration  })
     });
   };
 
-  const handleHoverEnd = () => {
-    setIsHovered(false);
-    controls.start({
-      x: animateValue,
-      transition: {
-        repeat: Infinity,
-        duration: duration, // Original duration
-        ease: "linear",
-      },
-    });
-  };
-
-  useEffect(() => {
-    handleHoverEnd();
-  }, []);
   return (
     <LazyMotion features={domAnimation}>
       <m.div
@@ -68,7 +97,6 @@ function Brands({ imageSources, initialAnimateValue, hoverDuration, duration  })
         initial={{ x: "0%" }}
         animate={controls}
         onMouseEnter={handleHoverStart}
-        onMouseLeave={handleHoverEnd}
       >
         {imageSources.map((src, index) => (
           <Image
