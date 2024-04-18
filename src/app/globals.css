@@ -119,6 +119,11 @@ li{
   display: none ;
 }
 
+.active {
+  color: #11215b !important;
+  font-weight: 600 !important;
+}
+
 .hContainer{
   width: 100%;
   height: 94px;
@@ -141,7 +146,7 @@ li{
   gap: 30px;
   font-size: 16px;
   /* font-style: normal; */
-  font-weight: 600;
+  font-weight: 500;
   line-height: 140%; 
   position: relative;
   white-space: nowrap;
