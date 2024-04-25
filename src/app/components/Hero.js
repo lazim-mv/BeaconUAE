@@ -41,11 +41,11 @@ function Hero() {
             setup in UAE with support on tax and accounting to legal support and
             marketing.
           </p>
-          <a href="/pages/Contact">
+          <a href="/pages/WhyDubai">
             <div className="hButtonContainer heroButton">
               <div className="visibleWrapperContainer">
                 <div className="topVisibleContainer btn">
-                  Contact Us
+                Why dubai
                   <div className="topVisibleArrow">
                     <Image
                       className="heroArrows"
