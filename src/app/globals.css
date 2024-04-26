@@ -200,10 +200,10 @@ li{
 }
 
 .heroContainer .topVisibleArrow{
-  margin-left: 0px;
+  margin-left: 12px;
 }
 .heroContainer .bottomVisibleArrow{
-  margin-left: 0px;
+  margin-left: 12px;
 }
 
 .btn{
@@ -232,7 +232,7 @@ li{
 
 .heroContainer{
   height: 48.828125vw;
-  width: 100vw;
+  /* width: 100vw; */
   position: relative;
 }
 
@@ -2190,7 +2190,7 @@ li{
   }
 
   .hButtonContainer{
-    padding: 5px 25px;
+    padding: 0px 0px;
   }
 
   .mHeader{
