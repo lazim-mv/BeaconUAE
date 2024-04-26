@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/arrowbutton.module.css";
+import styles from "../Styles/arrowbutton.module.css";
 import { container2 } from "@/app/Contents/Data";
 import Image from "next/image";
 
