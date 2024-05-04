@@ -219,11 +219,11 @@ function Services() {
               Let&lsquo;s get in touch today to make a customised proposal for
               your business that stays close to your business goals!
             </p>
-            <a href="../../pages/">
+            <a href="../../pages/About">
               <div className={`hButtonContainer ${styles.heroButton1}`}>
                 <div className="visibleWrapperContainer">
                   <div className={`topVisibleContainer ${styles.btn}`}>
-                    Resources
+                    About Us
                     <div className="topVisibleArrow">
                       <Image
                         className="heroArrows"
@@ -235,7 +235,7 @@ function Services() {
                     </div>
                   </div>
                   <div className={`bottomVisibleContainer ${styles.btn}`}>
-                    Resources
+                    About Us
                     <div className="bottomVisibleArrow">
                       <Image
                         className="heroArrows"

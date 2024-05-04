@@ -34,7 +34,7 @@ function Locations() {
           <div>
             <p className="locationDesc">
               Beacon has set high standards for streamlining business
-              setup services in UAE, KSA, Qatar and India. With specialized
+              setup services across GCC. With specialized
               solutions covering legal procedures, documentation, financial
               authenticity, brand promotion, and technological improvements,
               we facilitate business establishment in iconic landmarks. Our

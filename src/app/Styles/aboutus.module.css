@@ -596,6 +596,7 @@
     .cvContent{
         padding-top: 40px;
         border-radius: 10px;
+        height: 105%;
     }
 
     .cvText{

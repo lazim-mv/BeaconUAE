@@ -2835,7 +2835,7 @@ li{
 
   .faqLeft .businessHeading{
     margin-bottom: 3px;
-    width: 55px;
+    /* width: 55px; */
   }
 
   .faqLeft .businessDesc{
