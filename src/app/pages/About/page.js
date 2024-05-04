@@ -181,7 +181,7 @@ function About() {
                   </div>
                 </div>
                 <div className={styles.cardContent}>
-                  <div>
+                  <div className={styles.singleCard}>
                     <h1>Choice of Location</h1>
                     <p>
                       With benefits on ownership, time to establish and profit
@@ -189,7 +189,7 @@ function About() {
                       the preferred locations across the UAE.
                     </p>
                   </div>
-                  <div>
+                  <div className={styles.singleCard}>
                     <h1>Reduced Tax</h1>
                     <p>
                       We provide support in leveraging taxation benefits to
@@ -197,7 +197,7 @@ function About() {
                       you to establish a business in the UAE.
                     </p>
                   </div>
-                  <div>
+                  <div className={styles.singleCard}>
                     <h1>Advanced Digital Solutions</h1>
                     <p>
                       Moving towards the technology-driven future, we leverage

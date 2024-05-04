@@ -21,7 +21,7 @@ function Faq() {
       <div className="faqContainer">
         <div className="faqLeft">
           <div className="businessContentContainer">
-            <h6 className="businessHeading">FAQ</h6>
+            <h6 className="businessHeading faq">FAQ</h6>
             <h2 className="businessDesc">
               Frequently Asked <br /> Questions
             </h2>

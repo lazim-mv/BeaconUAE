@@ -39,14 +39,16 @@ function Clients() {
 
   const showNextCard = () => {
     setCurrentCardIndex((prevIndex) =>
-      prevIndex === testimonialData.length - 2 ? 0 : prevIndex + 1
+    isMobileScreen ? prevIndex === testimonialData.length - 1 ? 0 : prevIndex + 1 :
+      prevIndex === testimonialData.length - 3 ? 0 : prevIndex + 1
     );
     console.log(currentCardIndex);
   };
 
   const showPreviousCard = () => {
     setCurrentCardIndex((prevIndex) =>
-      prevIndex === 0 ? testimonialData.length - 2 : prevIndex - 1
+    isMobileScreen ? prevIndex === 0 ? testimonialData.length - 1 : prevIndex - 1 :
+      prevIndex === 0 ? testimonialData.length - 3 : prevIndex - 1
     );
     console.log(currentCardIndex);
   };
@@ -125,7 +127,7 @@ function Clients() {
                 key={index}
                 style={{
                   transform: isMobileScreen
-                    ? `translateX(-${currentCardIndex * 110}%)`
+                    ? `translateX(${(currentCardIndex * -110)+110}%)`
                     : `translateX(-${currentCardIndex * 105}%)`, 
                     transition: 'transform 0.5s ease',
 

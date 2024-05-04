@@ -279,6 +279,7 @@
     .contactUsContainer{
         gap: 50px;
         align-items: center;
+        margin-top: 50px;
     }
 
     .background{
@@ -290,7 +291,7 @@
         text-align: center;
         color: #fff;
         margin-top: 50px;
-        margin-bottom: 30px;
+        /* margin-bottom: 30px; */
     }
 
     .container1{
