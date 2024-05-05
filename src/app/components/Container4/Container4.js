@@ -29,6 +29,7 @@ const Container4 = () => {
           padding="0 0 1.3227513227513228vw 0"
         />
         <SectionDescription sectionText={container4.description} padding="1.984126984126984vw"/>
+        <a href='../../pages/Contact' className={styles.link}>
         <BtnComponent
           buttonText={container4.btnText}
           bg="transparrent"
@@ -36,6 +37,7 @@ const Container4 = () => {
           arrow={true}
           color="#02040E"
         />
+        </a>
       </div>
     </div>
   );
