@@ -115,7 +115,7 @@ const container5 = {
       img: "/Container5/7.webp",
       cardHeading: "DMCC",
       description:
-        "Dubai Multi Commodities Centre (DMCC), the #1 Dubai Free Zone for company setup, was established to provide the physical, market, and financial infrastructure required to set up a commodity marketplace in Dubai. DMCC offers a unique opportunity for market participants in a wide range of commodities across four major sectors including precious commodities (gold, diamonds, colored stones, and pearls), energy-related sectors, steel and base metals, and soft agricultural commodities (tea, cotton, and others). DMCC attracts key players throughout the entire value chain of each of these commodity sectors, together with a range of support industries such as finance, logistics, consulting, and insurance.",
+        "Dubai Multi Commodities Centre (DMCC), the #1 Dubai Free Zone for company setup, was established to provide the physical, market, and financial infrastructure required to set up a commodity marketplace in Dubai. DMCC offers a unique opportunity for market participants in a wide range of commodities across four major sectors including precious commodities (gold, diamonds, colored stones, and pearls), energy-related sectors, steel and base metals, and soft agricultural commodities.",
     }
   ],
 };
