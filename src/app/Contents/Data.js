@@ -245,7 +245,7 @@ const contactBanner = {
   img: "/contact.png",
   sectionTitle: "Contact Us. It’s Easy.",
   description:
-    "If you think we can do the job for you, do not hesitate. Drop us a message/call us for anyservices anywhere in UAE.",
+    "If you think we can do the job for you, do not hesitate. Drop us a message/call us for any services anywhere in UAE.",
   btnText: "Contact Us",
 };
 

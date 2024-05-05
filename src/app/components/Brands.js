@@ -8,6 +8,33 @@ function Brands({ imageSources, initialAnimateValue, hoverDuration, duration }) 
   const controls = useAnimation();
 
   useEffect(() => {
+    const scrollers = document.querySelectorAll(".scrolling-logos");
+
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      addAnimation(scrollers);
+    }
+
+    function addAnimation(scrollers) {
+      scrollers.forEach((scroller) => {
+        scroller.setAttribute("data-animated", true);
+        const scrollerInner = scroller.querySelector(".scrolling-logos");
+        console.log('scrollerInner:', scrollerInner); // Add this line to log the value of scrollerInner
+        if (scrollerInner) {
+          const scrollerContent = Array.from(scrollerInner.children);
+          scrollerContent.forEach((item) => {
+            const duplicatedItem = item.cloneNode(true);
+            duplicatedItem.setAttribute("aria-hidden", true);
+            scrollerInner.appendChild(duplicatedItem);
+          });
+        }
+      });
+    }
+
+
+  }, []);
+
+
+  useEffect(() => {
     const handleResize = () => {
       const screenWidth = window.innerWidth;
 
