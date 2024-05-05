@@ -49,8 +49,8 @@ const container3 = [
     ],
   },
   {
-    sectionName: "Vision 2030",
-    sectionTitle: "Change Jurisdiction",
+    sectionName: "Jurisdiction",
+    sectionTitle: "",
     cardData: [
       {
         img: "/Container3/4.png",
