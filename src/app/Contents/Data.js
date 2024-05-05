@@ -85,7 +85,7 @@ const container4 = {
 
 const container5 = {
   sectionName: "Startup Ecosystem",
-  sectionTitle: "",
+  sectionTitle: "Dubai's Cohesive Startup Ecosystem",
   cardData: [
     {
       img: "/Container5/2.jpg",
@@ -165,7 +165,7 @@ const container6 = {
 
 const container7 = {
   sectionName: "Process",
-  sectionTitle: "Dubai's cohesive startup ecosystem",
+  sectionTitle: "What’s The Process Of Business Setup In Dubai?",
   faqData: [
     {
       number: "01",
