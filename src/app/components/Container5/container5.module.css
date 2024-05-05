@@ -46,6 +46,7 @@
 .card img {
   width: 25.396825396825395vw;
   height: 23.14814814814815vw;
+  object-fit: cover;
 }
 
 .cardContent {

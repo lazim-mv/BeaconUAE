@@ -88,31 +88,31 @@ const container5 = {
   sectionTitle: "",
   cardData: [
     {
-      img: "/Container5/1.png",
+      img: "/Container5/2.jpg",
       cardHeading: "In5 Tech Hub ",
       description:
         "In5 is home to hundreds of techpreneur startups. Our tech innovation centre is strategically located in the heart of Dubai Internet City and enjoys access to other  media and educational hubs.The in5 tech startups  get access to dedicated facilities including smart labs, private offices, coworking spaces, workshops and top investors. in5 also provides sponsored opportunities for tech startups to showcase themselves  alongside international brands at tech events such as GITEX.",
     },
     {
-      img: "/Container5/1.png",
+      img: "/Container5/3.jpg",
       cardHeading: "AI and Web3 Campus",
       description:
         "Discover the future of innovation at the Dubai AI & Web3 Campus, an integral part of the prestigious Dubai International Financial Centre (DIFC). This cutting-edge hub seamlessly integrates artificial intelligence and Web3 technologies, shaping the next frontier of technological evolution. Immerse yourself in an ecosystem designed for trailblazers, where pioneering minds converge to drive the transformation of industries.",
     },
     {
-      img: "/Container5/1.png",
+      img: "/Container5/4.jpg",
       cardHeading: "Dubai International Financial Centre",
       description:
         "DIFC is one of Dubai's independent free zones; it offers companies 100% ownership without the need for a local partner. The freezone houses financial institutions, and wealth funds in addition to retail and hotel space dedicated to the free zones.",
     },
     {
-      img: "/Container5/1.png",
+      img: "/Container5/6.png",
       cardHeading: "Dubai Business Bay",
       description:
         "Business Bay (Arabic: الخليج التجاري: Al-Khaleej Al-Tijari) is a central business district under construction in Dubai, United Arab Emirates. The project features numerous skyscrapers located in an area where Dubai Creek has been dredged and extended, and located immediately south of Downtown Dubai. Business Bay will have upwards of 240 buildings, comprising commercial and residential developments.",
     },
     {
-      img: "/Container5/1.png",
+      img: "/Container5/7.webp",
       cardHeading: "DMCC",
       description:
         "Dubai Multi Commodities Centre (DMCC), the #1 Dubai Free Zone for company setup, was established to provide the physical, market, and financial infrastructure required to set up a commodity marketplace in Dubai. DMCC offers a unique opportunity for market participants in a wide range of commodities across four major sectors including precious commodities (gold, diamonds, colored stones, and pearls), energy-related sectors, steel and base metals, and soft agricultural commodities (tea, cotton, and others). DMCC attracts key players throughout the entire value chain of each of these commodity sectors, together with a range of support industries such as finance, logistics, consulting, and insurance.",
