@@ -84,33 +84,39 @@ const container4 = {
 };
 
 const container5 = {
-  sectionName: "Projects",
-  sectionTitle: "Reasons to Start a Business in UAE",
+  sectionName: "Startup Ecosystem",
+  sectionTitle: "Dubai Internet City",
   cardData: [
     {
       img: "/Container5/1.png",
-      cardHeading: "A Vibrant Society",
+      cardHeading: "In5 Tech Hub ",
       description:
-        "Porttitor sed viverra curabitur augue at vitae. Adipiscing euismod fermentum et orci orci quis. Sed diam dignissim enim morbi. Ultrices diam pharetra faucibus tristique. Nisl in dui purus nisl sagittis elit. Laoreet suscipit est vel ullamcorper.",
+        "In5 is home to hundreds of techpreneur startups. Our tech innovation centre is strategically located in the heart of Dubai Internet City and enjoys access to other  media and educational hubs.The in5 tech startups  get access to dedicated facilities including smart labs, private offices, coworking spaces, workshops and top investors. in5 also provides sponsored opportunities for tech startups to showcase themselves  alongside international brands at tech events such as GITEX.",
     },
     {
       img: "/Container5/1.png",
-      cardHeading: "A Thriving Economy",
+      cardHeading: "AI and Web3 Campus",
       description:
-        "Porttitor sed viverra curabitur augue at vitae. Adipiscing euismod fermentum et orci orci quis. Sed diam dignissim enim morbi. Ultrices diam pharetra faucibus tristique. Nisl in dui purus nisl sagittis elit. Laoreet suscipit est vel ullamcorper.",
+        "Discover the future of innovation at the Dubai AI & Web3 Campus, an integral part of the prestigious Dubai International Financial Centre (DIFC). This cutting-edge hub seamlessly integrates artificial intelligence and Web3 technologies, shaping the next frontier of technological evolution. Immerse yourself in an ecosystem designed for trailblazers, where pioneering minds converge to drive the transformation of industries.",
     },
     {
       img: "/Container5/1.png",
-      cardHeading: "An Ambitious Nation",
+      cardHeading: "Dubai International Financial Centre",
       description:
-        "Porttitor sed viverra curabitur augue at vitae. Adipiscing euismod fermentum et orci orci quis. Sed diam dignissim enim morbi. Ultrices diam pharetra faucibus tristique. Nisl in dui purus nisl sagittis elit. Laoreet suscipit est vel ullamcorper.",
+        "DIFC is one of Dubai's independent free zones; it offers companies 100% ownership without the need for a local partner. The freezone houses financial institutions, and wealth funds in addition to retail and hotel space dedicated to the free zones.",
     },
     {
       img: "/Container5/1.png",
-      cardHeading: "An Ambitious Nation",
+      cardHeading: "Dubai Business Bay",
       description:
-        "Porttitor sed viverra curabitur augue at vitae. Adipiscing euismod fermentum et orci orci quis. Sed diam dignissim enim morbi. Ultrices diam pharetra faucibus tristique. Nisl in dui purus nisl sagittis elit. Laoreet suscipit est vel ullamcorper.",
+        "Business Bay (Arabic: الخليج التجاري: Al-Khaleej Al-Tijari) is a central business district under construction in Dubai, United Arab Emirates. The project features numerous skyscrapers located in an area where Dubai Creek has been dredged and extended, and located immediately south of Downtown Dubai. Business Bay will have upwards of 240 buildings, comprising commercial and residential developments.",
     },
+    {
+      img: "/Container5/1.png",
+      cardHeading: "DMCC",
+      description:
+        "Dubai Multi Commodities Centre (DMCC), the #1 Dubai Free Zone for company setup, was established to provide the physical, market, and financial infrastructure required to set up a commodity marketplace in Dubai. DMCC offers a unique opportunity for market participants in a wide range of commodities across four major sectors including precious commodities (gold, diamonds, colored stones, and pearls), energy-related sectors, steel and base metals, and soft agricultural commodities (tea, cotton, and others). DMCC attracts key players throughout the entire value chain of each of these commodity sectors, together with a range of support industries such as finance, logistics, consulting, and insurance.",
+    }
   ],
 };
 
@@ -158,43 +164,49 @@ const container6 = {
 };
 
 const container7 = {
-  sectionName: "faq",
-  sectionTitle: "Frequently asked questions",
+  sectionName: "Process",
+  sectionTitle: "Setup Process",
   faqData: [
     {
       number: "01",
-      question: "What is Beacon and what services do you offer?",
+      question: "Choose Business Activity and Structure",
       answer:
-        "Beacon is your global business advisory partner who offers you a range of services that enable your business growth and ultimate business transformation. We provide a plethora of services like Business Incorporation, Digital Marketing, Technology, Finance and Accounting, Audit & Taxation and Business Consulting services.",
+        "Decide on the type of business you want to start and select a suitable legal structure, such as LLC or sole proprietorship, based on your business goals and preferences to ensure alignment with regulatory requirements and operational needs.",
       isAnswerVisible: true,
     },
     {
       number: "02",
       question:
-        "What sets Beacon apart from the other business incorporation and consulting firms?",
+        "Name Approval and Initial Application",
       answer:
-        "With significant expertise and a team with strong professional know-how, Beacon takes on projects with 100% confidence and a perfect blueprint of how to accomplish the business objectives. Through clear delivery models and customer-centric approaches, our efforts consider the business’s expectations with adherence to the global standards that make us stand out from the crowd.",
+        "Choose a unique business name and submit an initial application for approval from the Department of Economic Development (DED) or relevant free zone authority to ensure compliance with naming guidelines and secure the right to operate under the chosen name.",
     },
     {
       number: "03",
       question:
-        "How can Beacon help my business with strategic planning and consultation?",
+        "Prepare Legal Documents",
       answer:
-        "At Beacon, we make a precise understanding of the key areas where businesses can grow, thrive and create difference. We identify the major goals and issues that cater well to the organization and ensure alignment between the organization’s missions and plans. We also implement fine-tuning strategies to make an understanding and address existing barriers.",
+        "Draft essential legal documents like the Memorandum of Association (MOA), outlining business activities, shareholder roles, and other key details to establish clear governance and operational guidelines for the business.",
     },
     {
       number: "04",
       question:
-        "Can Beacon help with financial auditing and reporting requirements?",
+        "Obtain Licenses and Permits",
       answer:
-        "Yes. Beacon can help you with your needs of financial auditing and reporting. With a holistic approach toward scrutinizing the financial statements of the company and filing necessary regulations, we ensure the financial well-being of your business. Our financial reporting services help to report the income statements with summarized revenue and expenses for a complete analysis of the company’s financial status.",
+        "Acquire the necessary licenses and permits for your business activity from the DED or free zone authority to ensure legal compliance and authorization to conduct operations in Dubai, adhering to specific regulations and requirements for your industry.",
     },
     {
       number: "05",
-      question: "Do you offer website development and maintenance services?",
+      question: "Register Your Business",
       answer:
-        "Beacon can assist you with digital marketing and help you take your online presence to the next level. With digital marketing, we let you connect with the prospective and existing client base which is essential to improve the brand awareness and your business.",
+        "Complete the registration process with the relevant authority, such as the DED for mainland businesses or the free zone authority for companies located in free zones, to officially establish your business entity and obtain a trade license permitting commercial activities.",
     },
+    {
+      number: "06",
+      question: "Visa Processing and Compliance",
+      answer:
+        "Manage visa processing for employees, if required, and maintain ongoing compliance with regulatory obligations, including renewing licenses and permits as necessary, to ensure smooth operations and legal conformity with Dubai's business laws and regulations.",
+    }
   ],
 };
 

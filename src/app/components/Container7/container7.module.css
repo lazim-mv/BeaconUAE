@@ -26,9 +26,7 @@
   .faqDataCard {
     display: flex;
     gap: 1.984126984126984vw;
-    padding: 1.984126984126984vw 0;
-    border-top: 0.5px solid #ECECF1;
-    border-bottom: 0.5px solid #ECECF1;
+    padding: 0.984126984126984vw 0;
   }
   
   .questionAnswerContainer {

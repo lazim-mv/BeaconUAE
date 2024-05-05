@@ -49,9 +49,9 @@ const Container7 = () => {
                   <CardHeading
                     sectionText={data.question}
                     width="45.63492063492063vw"
-                    weight="500"
+                    weight="600"
                   />
-                  <div
+                  {/* <div
                     className={styles.plusIcon}
                     onClick={() => handleClick(index)}
                     style={{
@@ -68,16 +68,16 @@ const Container7 = () => {
                       alt="ImageFaq"
                       className={styles.openCloseIcon}
                     />
-                  </div>
+                  </div> */}
                 </div>
                 <div
                   className={`${styles.answerContainer} ${
-                    answerVisible[index] ? styles.visible : ""
+                    styles.visible
                   }`}
                 >
                   <SectionDescription
                     sectionText={data.answer}
-                    width="44.37830687830688vw"
+                    width="49.37830687830688vw"
                     color="#58595B"
                   />
                 </div>
