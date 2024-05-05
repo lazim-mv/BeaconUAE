@@ -7,7 +7,7 @@
   
   .faqContainer {
     display: grid;
-    grid-template-columns: 25vw 52.51322751322751vw;
+    grid-template-columns: 30vw 39.51322751322751vw;
     gap: 2.6455026455026456vw;
   }
   
@@ -117,5 +117,6 @@
   .answerContainer p {
     width: 72.53333333333333vw !important;
     margin-top: 1.3333333333333335vw;
+    text-align: left !important;
   }
   }

@@ -77,7 +77,7 @@ const Container7 = () => {
                 >
                   <SectionDescription
                     sectionText={data.answer}
-                    width="49.37830687830688vw"
+                    width="43.37830687830688vw"
                     color="#58595B"
                   />
                 </div>
