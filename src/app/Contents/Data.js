@@ -32,13 +32,13 @@ const container3 = [
         img: "/Container3/1.png",
         cardHeading: "A Cohesive Society",
         description:
-          "The Cohesive Society pillar envisions the UAE as a vibrant tapestry woven from diverse cultures and backgrounds. It prioritizes fostering tolerance, understanding, and respect for all residents. This includes empowering women and youth, strengthening families, and promoting a sense of national identity. While embracing social progress and innovation, the UAE remains committed to preserving its rich cultural heritage and traditions, ensuring a strong foundation for a unified and prosperous future.",
+          "The \"Cohesive Society\" pillar envisions the UAE as a vibrant tapestry woven from diverse cultures and backgrounds. It prioritizes fostering tolerance, understanding, and respect for all residents. This includes empowering women and youth, strengthening families, and promoting a sense of national identity. While embracing social progress and innovation, the UAE remains committed to preserving its rich cultural heritage and traditions, ensuring a strong foundation for a unified and prosperous future.",
       },
       {
         img: "/Container3/2.png",
         cardHeading: "A Competitive Economy",
         description:
-          "The UAE, with Dubai at its forefront, is shifting gears with its Competitive Economy pillar. Moving beyond a reliance on oil, this vision prioritizes diversification. Dubai is fostering a dynamic hub for innovation, nurturing knowledge-based industries like technology, finance, and tourism. This transformation unlocks a future driven by cutting-edge ideas and skilled workforces. By attracting international investment and fostering entrepreneurship, Dubai aims to solidify its position as a global leader in the new economic landscape.",
+          "The UAE, with Dubai at its forefront, is shifting gears with its \"Competitive Economy\" pillar. Moving beyond a reliance on oil, this vision prioritizes diversification. Dubai is fostering a dynamic hub for innovation, nurturing knowledge-based industries like technology, finance, and tourism. This transformation unlocks a future driven by cutting-edge ideas and skilled workforces. By attracting international investment and fostering entrepreneurship, Dubai aims to solidify its position as a global leader in the new economic landscape.",
       },
       {
         img: "/Container3/3.png",
@@ -85,7 +85,7 @@ const container4 = {
 
 const container5 = {
   sectionName: "Projects",
-  sectionTitle: "Reasons to Start a Business in Saudi arabia",
+  sectionTitle: "Reasons to Start a Business in UAE",
   cardData: [
     {
       img: "/Container5/1.png",
@@ -200,7 +200,7 @@ const container7 = {
 
 const container8 = {
   sectionName: "Advantages",
-  sectionTitle: "Reasons to Start a Business in Saudi arabia",
+  sectionTitle: "Reasons to Start a Business in UAE",
   cardData: [
     {
       img: "/Container8/1.png",
