@@ -525,35 +525,51 @@ li{
   transform-style: preserve-3d;
 }
 
-.cardNew:hover .content {
+/* .cardNew:hover .content {
   transform: rotateY( 180deg ) ;
   transition: transform 0.5s;
-}
+} */
 
 .frontNew{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 0 40px;
+  justify-content: end;
+  padding: 0 35px 25px 35px;
 }
 
 .frontNew,
-.backNew {
+.backNew
+.backOverlay {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: #11215B;
   text-align: center;
   border-radius: 11px;
   backface-visibility: hidden;
 }
 
-.backNew {
+.frontNew{
+  z-index: 1;
+}
+
+.backNew{
+  z-index: -1;
+}
+
+.backOverlay{
+  background: linear-gradient(to top, black, rgba(0, 0, 0, 0.5));
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+/* .backNew {
   background: transparent;
   color: white;
   transform: rotateY( 180deg );
-}
+} */
 /* Places End */
 
 
@@ -2554,6 +2570,10 @@ li{
     flex-direction: column;
     padding: 0 24px;
     gap: 20px;
+  }
+
+  .frontNew{
+    padding: 0 20px 30px 20px;
   }
   
   .cardMainContainer .cardContainer{

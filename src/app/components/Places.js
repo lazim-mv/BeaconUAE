@@ -32,9 +32,9 @@ function Places() {
               <div className="content">
                 <div className="frontNew">
                   <div className="juriContent ">
-                    <div className="circleNumber">
+                    {/* <div className="circleNumber">
                       <h1>{data.Number}</h1>
-                    </div>
+                    </div> */}
                     <h1 style={{ color: "#fff" }} className="servicesHeading">
                       {data.heading}
                     </h1>
@@ -56,6 +56,7 @@ function Places() {
                     />
                   </div>
                 </div>
+                <div className="backOverlay"></div>
               </div>
             </div>
           ))}
