@@ -24,7 +24,7 @@ export default function Home() {
       <MobileHeader />
       <Hero />
       <Container8 />
-      <Container3 data={container3[0]}/>
+      {/* <Container3 data={container3[0]}/> */}
       <Container4 />
       <Container3 data={container3[1]} repeat={true}/>
       <Container5 />

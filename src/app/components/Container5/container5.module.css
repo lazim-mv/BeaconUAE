@@ -30,6 +30,7 @@
   padding: var(--containerPadding);
   width: fit-content !important;
   overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .cards::-webkit-scrollbar {
@@ -133,18 +134,19 @@
     overflow-x: scroll;
     gap: 4vw;
     padding: var(--mobileContainerPadding);
+    height: fit-content;
   }
 
   .card {
     width: 53.333333333333336vw;
-    height: 90.66666666666666vw;
+    height: auto;
     display: flex;
     flex-direction: column;
   }
 
   .card img {
     width: 53.333333333333336vw;
-    height: 40vw;
+    height: 34vw;
     border-radius: 2.666666666666667vw 2.666666666666667vw 0 0;
     object-fit: cover;
   }

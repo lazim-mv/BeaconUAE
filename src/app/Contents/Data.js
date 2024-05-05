@@ -165,7 +165,7 @@ const container6 = {
 
 const container7 = {
   sectionName: "Process",
-  sectionTitle: "What’s The Process Of Business Setup In Dubai?",
+  sectionTitle: "Dubai's cohesive startup ecosystem",
   faqData: [
     {
       number: "01",
