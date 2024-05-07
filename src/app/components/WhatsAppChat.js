@@ -64,12 +64,12 @@ const WhatsAppChat = () => {
         >
           {isCardVisible && (
             <div className="topCard">
-              {/* <button
+              <button
                 className="closeButton"
                 onClick={() => setIsCardVisible(false)}
               >
                 &times;
-              </button> */}
+              </button>
               <h3>Hello...</h3>
               <p>
                 Chat with us! Simply choose an office contact from the list

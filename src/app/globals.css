@@ -1854,6 +1854,9 @@ li{
   height: 1.6276041666666667vw;
 }
 
+.closeButton{
+  display: none;
+}
 
 @media (min-width: 601px) and (max-width: 1280px) {
 
@@ -3137,6 +3140,10 @@ li{
   .office-card img{
     width: 8vw;
     height: 8vw;
+  }
+
+  .closeButton{
+    display: block;
   }
 
 }
