@@ -18,7 +18,7 @@ function BusinessSetup() {
       <div className="businessVideoContainer">
         <div className="ksa">
           <Image
-            src="/KSA.png"
+            src="/KSA.webp"
             width={586}
             height={300}
             layout="responsive"
@@ -50,7 +50,7 @@ function BusinessSetup() {
 
         <div className="uae">
           <Image
-            src="/UAE.png"
+            src="/UAE.webp"
             width={586}
             height={300}
             layout="responsive"

@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import Brands from "./Brands";
-import heroImg from "../../../public/hero.png";
+import heroImg from "../../../public/hero.webp";
 
 function Hero() {
   const imageSources = [
