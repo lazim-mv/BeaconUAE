@@ -99,7 +99,7 @@ function Services() {
             </p>
             <a href="../../pages/Contact">
               <div className={`hButtonContainer ${styles.heroButton}`}>
-                <div className="visibleWrapperContainer">
+                <div className="visibleWrapperContainer buttonleft">
                   <div className={`topVisibleContainer ${styles.btn}`}>
                     Get In Touch
                     <div className="topVisibleArrow">
@@ -221,7 +221,7 @@ function Services() {
             </p>
             <a href="../../pages/About">
               <div className={`hButtonContainer ${styles.heroButton1}`}>
-                <div className="visibleWrapperContainer">
+                <div className="visibleWrapperContainer buttonabout">
                   <div className={`topVisibleContainer ${styles.btn}`}>
                     About Us
                     <div className="topVisibleArrow">

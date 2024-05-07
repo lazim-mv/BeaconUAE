@@ -2172,9 +2172,9 @@ li{
     gap: 50px;
   }
 
-  .topVisibleArrow, .bottomVisibleArrow {
+  /* .topVisibleArrow, .bottomVisibleArrow {
     display: none;
-  }
+  } */
 
   .topVisibleContainer,
   .bottomVisibleContainer {
@@ -2344,7 +2344,7 @@ li{
 
   .heroContainer .heroButton{
     margin-top: 5.333333333333334vw;
-    width: 38.794666666666664vw;
+    width: 44.794666666666664vw;
     height: 10.68vw;
     border-radius: 4.947916666666666vw;
     background-color: #11215B;
@@ -2354,6 +2354,27 @@ li{
     color: #fff;
     font-size: 3.2vw;
   }
+
+  .heroContainer .visibleWrapperContainer{
+    margin-right: 13px;
+  }
+  
+  .buttonleft .topVisibleContainer, .bottomVisibleContainer{
+    left: 40%;
+  }
+
+  .buttonabout .topVisibleContainer, .bottomVisibleContainer{
+    left: 45%;
+  }
+
+  .buttonabout .topVisibleArrow, .bottomVisibleArrow{
+    transform: translate(185%, -50%);
+  }
+
+  
+.heroContainer .topVisibleArrow{
+  margin-left: 8;
+}
 
 
 /* Hero End */
