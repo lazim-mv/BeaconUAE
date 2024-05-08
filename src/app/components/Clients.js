@@ -8,7 +8,7 @@ import Brands from "./Brands";
 function Clients() {
   const testimonialData = [
     {
-      message:"“Working with Beacon made setting up our business in Saudi Arabia hassle-free. Their comprehensive services covered everything from paperwork to logistics, ensuring a smooth and successful expansion.”",
+      message: "“Working with Beacon made setting up our business in Saudi Arabia hassle-free. Their comprehensive services covered everything from paperwork to logistics, ensuring a smooth and successful expansion.”",
       name: "Mohammed Al-Saud",
       designation: "Jeddah, KSA",
       img: "/profilePic3.webp",
@@ -28,7 +28,7 @@ function Clients() {
       img: "/profilePic3.webp",
     },
     {
-      message:"“Working with Beacon felt like having an extended team member. Their transparency and unwavering commitment made the partnership seamless and productive.",
+      message: "“Working with Beacon felt like having an extended team member. Their transparency and unwavering commitment made the partnership seamless and productive.",
       name: " Ahmed Al-Sayed",
       designation: "Dubai , UAE",
       img: "/profilePic4.webp",
@@ -39,16 +39,16 @@ function Clients() {
 
   const showNextCard = () => {
     setCurrentCardIndex((prevIndex) =>
-    isMobileScreen ? prevIndex === testimonialData.length - 1 ? 0 : prevIndex + 1 :
-      prevIndex === testimonialData.length - 3 ? 0 : prevIndex + 1
+      isMobileScreen ? prevIndex === testimonialData.length - 1 ? 0 : prevIndex + 1 :
+        prevIndex === testimonialData.length - 3 ? 0 : prevIndex + 1
     );
     console.log(currentCardIndex);
   };
 
   const showPreviousCard = () => {
     setCurrentCardIndex((prevIndex) =>
-    isMobileScreen ? prevIndex === 0 ? testimonialData.length - 1 : prevIndex - 1 :
-      prevIndex === 0 ? testimonialData.length - 3 : prevIndex - 1
+      isMobileScreen ? prevIndex === 0 ? testimonialData.length - 1 : prevIndex - 1 :
+        prevIndex === 0 ? testimonialData.length - 3 : prevIndex - 1
     );
     console.log(currentCardIndex);
   };
@@ -93,6 +93,31 @@ function Clients() {
     ...imageSources,
   ]).flat();
 
+  React.useEffect(() => {
+    const scrollers = document.querySelectorAll('.scroller');
+
+    const addAnimation = () => {
+      scrollers.forEach((scroller) => {
+        scroller.setAttribute('data-animated', true);
+
+        const scrollerInner = scroller.querySelector('.scroller__inner');
+        const scrollerContent = Array.from(scrollerInner.children);
+        scrollerContent.forEach((item) => {
+          const duplicatedItem = item.cloneNode(true);
+          duplicatedItem.setAttribute('aria-hidden', true);
+          scrollerInner.appendChild(duplicatedItem);
+        });
+      });
+    };
+
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      addAnimation();
+    }
+
+    return () => {
+    };
+  }, []);
+
   return (
     <div className="clientsContainer">
       <div className="businessContentContainer">
@@ -100,12 +125,19 @@ function Clients() {
         <h2 className="businessDesc">Our core partners</h2>
       </div>
       <div className="clientsImgContainer">
-        <Brands
+        {/* <Brands
           imageSources={repeatedImageSources}
           initialAnimateValue="-160%"
           hoverDuration="180"
           duration="100"
-        />
+        /> */}
+        <div class="scroller" data-direction="left" data-speed="fast">
+          <div class="scroller__inner">
+            {imageSources.map((img, index) => (
+              <img key={index} src={img} alt="" className="logoClients" />
+            ))}
+          </div>
+        </div>
       </div>
       <div className="testimonialMainContainer">
         <div className="businessContentContainer">
@@ -127,9 +159,9 @@ function Clients() {
                 key={index}
                 style={{
                   transform: isMobileScreen
-                    ? `translateX(${(currentCardIndex * -110)+110}%)`
-                    : `translateX(-${currentCardIndex * 105}%)`, 
-                    transition: 'transform 0.5s ease',
+                    ? `translateX(${(currentCardIndex * -110) + 110}%)`
+                    : `translateX(-${currentCardIndex * 105}%)`,
+                  transition: 'transform 0.5s ease',
 
                 }}
               >
