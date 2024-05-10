@@ -1687,7 +1687,7 @@ li{
 }
 
 .hButtonContainer:hover .topVisibleArrow{
-  transform: translate(420.5%, 15%);
+  transform: translate(345.5%, -50%);
 }
 
 .hButtonContainer:hover .bottomVisibleArrow{
@@ -1884,6 +1884,34 @@ li{
 }
 
 .scroller[data-speed="fast"] {
+  --_animation-duration: 200s;
+}
+
+.scrolle1r {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.scroller__inner1 {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+
+.scroller1[data-animated="true"] .scroller__inner1 {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller1[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.scroller1[data-speed="fast"] {
   --_animation-duration: 200s;
 }
 
@@ -3218,6 +3246,10 @@ li{
   }
 
   .scroller__inner {
+    gap: 2rem;
+  }
+
+  .scroller__inner1 {
     gap: 2rem;
   }
 

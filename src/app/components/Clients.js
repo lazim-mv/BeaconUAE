@@ -94,13 +94,13 @@ function Clients() {
   ]).flat();
 
   React.useEffect(() => {
-    const scrollers = document.querySelectorAll('.scroller');
+    const scrollers = document.querySelectorAll('.scroller1');
 
     const addAnimation = () => {
       scrollers.forEach((scroller) => {
         scroller.setAttribute('data-animated', true);
 
-        const scrollerInner = scroller.querySelector('.scroller__inner');
+        const scrollerInner = scroller.querySelector('.scroller__inner1');
         const scrollerContent = Array.from(scrollerInner.children);
         scrollerContent.forEach((item) => {
           const duplicatedItem = item.cloneNode(true);
@@ -131,8 +131,8 @@ function Clients() {
           hoverDuration="180"
           duration="100"
         /> */}
-        <div className="scroller" data-direction="left" data-speed="fast">
-          <div className="scroller__inner">
+        <div className="scroller1" data-direction="left" data-speed="fast">
+          <div className="scroller__inner1">
             {imageSources.map((img, index) => (
               <img key={index} src={img} alt="" className="logoClients" />
             ))}
