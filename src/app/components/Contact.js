@@ -10,11 +10,11 @@ function Contact() {
         </div>
         <div className="contactDescContainer">
           <p className="contactDesc">
-            If you're ready to thrive in the UAE market, let's make it happen together. Reach out to <br />{" "}
+            If you&apos;re ready to thrive in the UAE market, let&apos;s make it happen together. Reach out to <br />{" "}
             us today for specialized consultancy services tailored to your success.
           </p>
           <p className="mContactDesc">
-            If you're ready to thrive in the UAE market, let's make it happen together. Reach out to
+            If you&apos;re ready to thrive in the UAE market, let&apos;s make it happen together. Reach out to
             us today for specialized consultancy services tailored to your success.
           </p>
         </div>
