@@ -255,10 +255,10 @@ const container8 = {
 
 const contactBanner = {
   img: "/contact.png",
-  sectionTitle: "Contact Us. It’s Easy.",
+  sectionTitle: " Have Questions? We Have Answers.",
   description:
-    "If you think we can do the job for you, do not hesitate. Drop us a message/call us for any services anywhere in UAE.",
-  btnText: "Contact Us",
+    "If you're ready to thrive in the UAE market, let's make it happen together. Reach out to us today for specialized consultancy services tailored to your success",
+  btnText: "Schedule a Call",
 };
 
 export {

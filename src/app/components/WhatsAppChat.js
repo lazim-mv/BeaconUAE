@@ -30,29 +30,31 @@ const WhatsAppChat = () => {
         className={`chat-icon ${isCardVisible ? "active" : ""}`}
         onClick={handleChatIconClick}
       >
-        {
-          isCardVisible ? (
-            <Image
-              src="/close.svg"
-              width={70}
-              height={70}
-              alt="ImageService"
-              quality={100}
-              priority={true}
-              unoptimized
-            />
-          ) : (
-            <Image
-              src="/whatsapp.svg"
-              width={70}
-              height={70}
-              alt="ImageService"
-              quality={100}
-              priority={true}
-              unoptimized
-            />
-          )
-        }
+        <div className="blueborder">
+          {
+            isCardVisible ? (
+              <Image
+                src="/close.svg"
+                width={70}
+                height={70}
+                alt="ImageService"
+                quality={100}
+                priority={true}
+                unoptimized
+              />
+            ) : (
+              <Image
+                src="/whatsapp.svg"
+                width={70}
+                height={70}
+                alt="ImageService"
+                quality={100}
+                priority={true}
+                unoptimized
+              />
+            )
+          }
+        </div>
       </div>
       <div className="whatsapp-chat">
         <div

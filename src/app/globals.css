@@ -454,7 +454,7 @@ li{
   justify-content: center;
   align-items: center;
   gap:60px;
-  padding: 100px 135px;
+  padding: 0px 135px;
 }
 
 .placesContainer .businessContentContainer{
@@ -1437,7 +1437,7 @@ li{
 }
 
 .contactContainer .contactImageButton{
-  width: 210px;
+  width: 230px;
   height: 58px;
   cursor: pointer;
   display: flex;
@@ -1679,7 +1679,7 @@ li{
 }
 
 .topVisibleArrow{
-  transform: translate(285%, -50%);
+  transform: translate(345%, -50%);
 }
 
 .bottomVisibleArrow{
@@ -1691,7 +1691,7 @@ li{
 }
 
 .hButtonContainer:hover .bottomVisibleArrow{
-  transform: translate(285%, -50%);
+  transform: translate(345%, -50%);
 }
 
 
@@ -1895,6 +1895,18 @@ li{
 
 .logoClients{
   height: 60px;
+}
+
+.blueborder{
+  border-radius: 100px;
+  padding: 12px;
+  background-color: #11215B;
+}
+
+.blueborder img{
+  width: 50px;
+  height: 50px;
+  margin: auto;
 }
 
 
@@ -2222,7 +2234,7 @@ li{
 
   .topVisibleContainer,
   .bottomVisibleContainer {
-    transform: translate(-50%, -50%) !important;
+    transform: translate(-53%, -50%) !important;
   }
 
   .bottomVisibleContainer{
@@ -2505,7 +2517,7 @@ li{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 40px 0px 40px 20px;
+    padding: 0px 0px 0px 20px;
     gap: 30px;
     overflow-x: hidden; /* Hide horizontal overflow */
   }
@@ -3185,6 +3197,18 @@ li{
 
   .closeButton{
     display: block;
+  }
+
+  .blueborder{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+  }
+  
+  .blueborder img{
+    width: 40px;
+    height: 40px;
+    margin: auto;
   }
 
   .scroller__inner {
