@@ -23,7 +23,7 @@ function Contact() {
             <div className="visibleWrapperContainer">
               <div className="topVisibleContainer btn">
                 Schedule a Call
-                <div className="topVisibleArrow">
+                <div className="topVisibleArrow bluebutton">
                   <Image
                     src="/whiteArrow.svg"
                     width={23}

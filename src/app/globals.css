@@ -200,7 +200,7 @@ li{
 }
 
 .heroContainer .topVisibleArrow{
-  margin-left: 0px;
+  margin-left: 5px;
 }
 .heroContainer .bottomVisibleArrow{
   margin-left: 12px;
@@ -217,7 +217,7 @@ li{
   align-items: center;
   gap: 10px;
   white-space: nowrap;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 /* Header End */
@@ -1679,7 +1679,11 @@ li{
 }
 
 .topVisibleArrow{
-  transform: translate(345%, -50%);
+  transform: translate(285%, -50%);
+}
+
+.bluebutton .topVisibleArrow{
+  transform: translate(345%,-50%) !important;
 }
 
 .bottomVisibleArrow{
@@ -1691,8 +1695,9 @@ li{
 }
 
 .hButtonContainer:hover .bottomVisibleArrow{
-  transform: translate(345%, -50%);
+  transform: translate(285%, -50%);
 }
+
 
 
 .servicesButton::before {
@@ -1875,7 +1880,7 @@ li{
 .scroller[data-animated="true"] .scroller__inner {
   width: max-content;
   flex-wrap: nowrap;
-  animation: scroll var(--_animation-duration, 40s)
+  animation: scroll var(--_animation-duration, 1s)
     var(--_animation-direction, forwards) linear infinite;
 }
 
