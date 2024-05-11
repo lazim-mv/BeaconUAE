@@ -136,7 +136,7 @@ function Clients() {
         /> */}
         <div className="scroller1" data-direction="left" data-speed="fast">
           <div className="scroller__inner1">
-            {imageSources.map((img, index) => (
+            {repeatedImageSources.map((img, index) => (
               <img key={index} src={img} alt="" className="logoClients" />
             ))}
           </div>
