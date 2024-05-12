@@ -1687,7 +1687,7 @@ li{
 }
 
 .bottomVisibleArrow{
-  transform: translate(175.5%, -198%);
+  transform: translate(175.5%, -50%);
 }
 
 .hButtonContainer:hover .topVisibleArrow{
@@ -1889,7 +1889,7 @@ li{
 }
 
 .scroller[data-speed="fast"] {
-  --_animation-duration: 200s;
+  --_animation-duration: 800s;
 }
 
 .scrolle1r {
@@ -1917,7 +1917,7 @@ li{
 }
 
 .scroller1[data-speed="fast"] {
-  --_animation-duration: 200s;
+  --_animation-duration: 800s;
 }
 
 @keyframes scroll {
@@ -2067,6 +2067,14 @@ li{
   .locationButton{
     margin: auto;
   }
+  
+  .heroContainer .topVisibleArrow {
+    transform: translate(232%, -50%);
+}
+
+.aboutus_heroButton__xLkGA .topVisibleArrow {
+    transform: translate(202%, -50%);
+}
 
   .jurisdictionContainer{
     padding: 100px 60px;
@@ -2090,7 +2098,7 @@ li{
   }
 
   .testimonialProfile{
-    width: auto;
+    width: 21.6vw;
   }
 
   .faqMainContainer{
