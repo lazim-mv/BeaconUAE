@@ -33,7 +33,7 @@ const ContactBanner = () => {
           padding="1.984126984126984vw"
           width="40.67460317460318vw"
         />
-        <a href="tel:971 568 352 250">
+        <a href="/pages/Contact">
           <BtnComponent
             buttonText={contactBanner.btnText}
             bg="#11215B"
