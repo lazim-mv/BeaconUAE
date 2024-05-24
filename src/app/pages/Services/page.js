@@ -200,12 +200,12 @@ function Services() {
           </div>
           <div className={styles.container4Contents}>
             <h1 className="businessDesc">
-              Cracking the Puzzle with the
-              <br /> Right Business Strategies
+              Mastering Success with Tailored  Business Strategies
+              <br />Business Strategies
             </h1>
             <h1 className={`${styles.servicePagecontainer2MobileHeading}`}>
-              Cracking the Puzzle with
-              <br /> the Right Business Strategies
+              Mastering Success with Tailored
+              <br /> Business Strategies
             </h1>
             <p className="servicesDesc">
               With expertise in serving the businesses over years, we have been

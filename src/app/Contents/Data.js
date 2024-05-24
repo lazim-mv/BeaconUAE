@@ -89,7 +89,7 @@ const container5 = {
   cardData: [
     {
       img: "/Container5/2.webp",
-      cardHeading: "In5 Tech Hub ",
+      cardHeading: "In5 innovation center",
       description:
         "In5 is home to hundreds of techpreneur startups. Our tech innovation centre is strategically located in the heart of Dubai Internet City and enjoys access to other  media and educational hubs.The in5 tech startups get access to dedicated facilities including smart labs, private offices, coworking spaces, workshops and top investors."
     },
@@ -101,21 +101,21 @@ const container5 = {
     },
     {
       img: "/Container5/4.webp",
-      cardHeading: "Dubai International Financial Centre",
+      cardHeading: "Dubai Future Foundation",
       description:
-        "DIFC is one of Dubai's independent free zones; it offers companies 100% ownership without the need for a local partner. The freezone houses financial institutions, and wealth funds in addition to retail and hotel space dedicated to the free zones."
+        "Dubai Future Foundation is instrumental in driving Dubai's transformation into a futuristic city. Through its various initiatives and projects, DFF fosters innovation, prepares the government for future challenges, and establishes Dubai as a global leader in technological advancements and smart city development."
     },
     {
       img: "/Container5/6.webp",
-      cardHeading: "Dubai Business Bay",
+      cardHeading: "Dubai Silicon Oasis",
       description:
-        "Business Bay is a central business district in Dubai. The project features numerous skyscrapers located in an area where Dubai Creek has been dredged and extended, and located immediately south of Downtown Dubai. Business Bay will have upwards of 240 buildings, comprising commercial and residential developments."
+        "Dubai Silicon Oasis is a free zone offering a mix of residential and business facilities. It provides startups with access to state-of-the-art infrastructure, incubation centers, and various business incentives to promote technological advancement and entrepreneurship."
     },
     {
       img: "/Container5/7.webp",
-      cardHeading: "DMCC",
+      cardHeading: "FinTech Hive",
       description:
-        "Dubai Multi Commodities Centre, #1 Dubai Free Zone for company setup, was established to provide the physical, market, and financial infrastructure required to set up a commodity marketplace in Dubai. "
+        "FinTech Hive, part of the Dubai International Financial Centre (DIFC), is a leading accelerator focused on financial technology. It supports startups in the fintech space through mentorship, networking, and access to a robust regulatory framework."
     }
   ],
 };

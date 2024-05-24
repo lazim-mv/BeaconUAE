@@ -16,7 +16,7 @@ const Hero = () => {
         unoptimized
       />
       <div className={styles.contentContainer}>
-        <h1>Dubai Vision 2033</h1>
+        <h1> Gateway to Limitless Potential</h1>
         <SectionDescription
           sectionText="Booming economy where everyone has the opportunity to succeed."
           width="34.32539682539682vw"

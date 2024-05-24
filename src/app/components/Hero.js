@@ -61,7 +61,7 @@ function Hero() {
         />
         <div className="heroContent">
           <h1 className="heroTitle">
-            Launch and Expand Your Business In UAE with our Expertise
+            Launch Your Business In UAE With Our Expertise
           </h1>
           <p className="heroDescription">
             We help you fulfill your entrepreneurial journey and dream business

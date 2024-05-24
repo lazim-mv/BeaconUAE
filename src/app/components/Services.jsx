@@ -15,10 +15,10 @@ function Services() {
     <div className="serviceContainer">
       <div className="businessContentContainer">
         <h6 className="businessHeading">Services</h6>
-        <h2 className="businessDesc">Add Spark to Your Business With Us</h2>
+        <h2 className="businessDesc">Elevate Your Business with Our Exceptional Services</h2>
         <h2 className="mBusinessDesc">
-          Add Spark to Your Business
-          <br /> With Us
+          Elevate Your Business with Our
+          <br /> Exceptional Services
         </h2>
       </div>
 
