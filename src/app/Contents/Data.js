@@ -100,13 +100,13 @@ const container5 = {
         "Discover the future of innovation at the Dubai AI & Web3 Campus, an integral part of the prestigious DIFC. This hub seamlessly integrates artificial intelligence and Web3 technologies, shaping the next frontier of technological evolution."
     },
     {
-      img: "/Container5/4.webp",
+      img: "/Container5/8.jpg",
       cardHeading: "Dubai Future Foundation",
       description:
         "Dubai Future Foundation is instrumental in driving Dubai's transformation into a futuristic city. Through its various initiatives and projects, DFF fosters innovation, prepares the government for future challenges, and establishes Dubai as a global leader in technological advancements and smart city development."
     },
     {
-      img: "/Container5/6.webp",
+      img: "/Container5/9.jpg",
       cardHeading: "Dubai Silicon Oasis",
       description:
         "Dubai Silicon Oasis is a free zone offering a mix of residential and business facilities. It provides startups with access to state-of-the-art infrastructure, incubation centers, and various business incentives to promote technological advancement and entrepreneurship."

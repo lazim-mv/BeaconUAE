@@ -200,7 +200,7 @@ function Services() {
           </div>
           <div className={styles.container4Contents}>
             <h1 className="businessDesc">
-              Mastering Success with Tailored  Business Strategies
+              Mastering Success with Tailored
               <br />Business Strategies
             </h1>
             <h1 className={`${styles.servicePagecontainer2MobileHeading}`}>
