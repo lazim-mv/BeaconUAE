@@ -93,19 +93,19 @@ function Footer() {
               <div className="footerContactTextDetails">
                 <h1>Head Office:</h1>
                 <p className="dAddress">
-                  Office #39, 7th Floor, Dubai National Insurance
-                  <br /> Building, Port Saeed Deira, Dubai, UAE
+                  6th floor  le cygne commercial center,  
+                  <br /> Kaab Bin Malik Street, Al Olaya, Riyadh 11533
                 </p>
                 <p className="mAddress">
-                  Office #39, 7th Floor, Dubai National Insurance Building, Port
-                  Saeed Deira, Dubai, UAE
+                  6th floor  le cygne commercial center, Kaab 
+                  Bin Malik Street, Al Olaya, Riyadh 11533
                 </p>
               </div>
             </a>
           </div>
         </div>
         <div className="footerSocialContainer">
-          <a href="https://wa.me/+971568352250"  target="_blank">
+          <a href="https://wa.me/+971568352250" target="_blank">
             <Image
               quality={100}
               priority={true}
