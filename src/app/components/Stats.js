@@ -141,7 +141,7 @@ function Stats({ useBackgroundImage, isMainPage }) {
           <p>Years of Experience</p>
         </div>
         <div className="statContainer">
-          <h1>{count4}+</h1>
+          <h1>{count4}</h1>
           <p>Locations</p>
         </div>
       </div>
