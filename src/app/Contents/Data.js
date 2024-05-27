@@ -212,7 +212,7 @@ const container7 = {
 
 const container8 = {
   sectionName: "Advantages",
-  sectionTitle: "Reasons to Start a Business in UAE",
+  sectionTitle: "Key factors to Start a Business in UAE",
   cardData: [
     {
       img: "/Container8/1.webp",

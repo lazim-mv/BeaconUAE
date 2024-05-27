@@ -9,6 +9,8 @@ export const servicePageData = [
       "Limited Liability Company",
       "Multi Country Business Setup",
       "Branch of Foreign Company",
+      "Saudi National Company",
+      "Saudi Establishment"
     ],
   },
   {
@@ -67,6 +69,8 @@ export const servicePageData = [
       "Web Development",
       "Ecommerce Development",
       "App Development",
+      "ERP Solutions",
+      "AI Chatbots & Predictive modeling"
     ],
   },
   {
@@ -79,6 +83,9 @@ export const servicePageData = [
       "Search Engine Marketing (Google Ads)",
       "Social Media Marketing (Meta Ads)",
       "Social Media Management",
+      "Brand profile creation",
+      "Content Marketing",
+      "Digital marketing strategy"
     ],
   },
 ];
