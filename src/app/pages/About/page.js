@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import dynamic from 'next/dynamic';
 import { cvData, vissionMissionData, mainText, mainText_p } from "./AboutPageContent";
+import WhatsAppChat from "@/app/components/WhatsAppChat";
 
 
 const LoadingCircle = dynamic(() => import('@/app/components/LoadingCircle'));
@@ -26,6 +27,7 @@ function About() {
 
   return (
     <>
+      <WhatsAppChat />
       <Header />
       <MobileHeader />
       <div className={styles.aboutUsMainContainer}>

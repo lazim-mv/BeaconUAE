@@ -2,6 +2,7 @@
 import { container3 } from "@/app/Contents/Data";
 import dynamic from "next/dynamic";
 import "@/app/index.css";
+import WhatsAppChat from "@/app/components/WhatsAppChat";
 
 const Header = dynamic(() => import("@/app/components/Header/Header"));
 const MobileHeader = dynamic(() => import("@/app/components/MobileHeader/MobileHeader"));
@@ -20,6 +21,7 @@ const Container8 = dynamic(() => import("@/app/components/Container8/Container8"
 export default function Home() {
   return (
     <main>
+      <WhatsAppChat />
       <Header />
       <MobileHeader />
       <Hero />

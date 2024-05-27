@@ -4,6 +4,7 @@ import styles from "../../Styles/servicesPage.module.css";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import { servicePageData, sellingCardData } from "./ServicesPageContent";
+import WhatsAppChat from "@/app/components/WhatsAppChat";
 
 const LoadingCircle = dynamic(() => import("@/app/components/LoadingCircle"));
 const Header = dynamic(() => import("@/app/components/Header"));
@@ -24,6 +25,7 @@ function Services() {
 
   return (
     <>
+      <WhatsAppChat />
       <Header />
       <MobileHeader />
       <div className={styles.servicePageMainContainer}>
