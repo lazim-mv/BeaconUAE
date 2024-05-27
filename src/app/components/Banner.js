@@ -14,7 +14,7 @@ const Banner = () => {
         unoptimized
         alt="banner"
       />
-      <div className="bannerContent">
+      <div className="bannerContent" style={{zIndex:10}}>
         <SectionTitle
           sectionText="A progressive hub for business"
           color="#fff"
