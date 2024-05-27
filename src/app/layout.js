@@ -1,6 +1,7 @@
 import Script from "next/script";
 import "./globals.css";
 import localFont from "next/font/local";
+import WhatsAppChat from "./components/WhatsAppChat";
 
 export const metadata = {
   title: "Beacon - Launch and Expand Your Business In UAE with our Expertise",
@@ -83,7 +84,10 @@ export default function RootLayout({ children }) {
           gtag('config', 'AW-11435430520');
         `}
       </Script>
-      <body className={Sora.className}>{children}</body>
+      <body className={Sora.className}>
+        <WhatsAppChat />
+        {children}
+      </body>
     </html>
   );
 }
