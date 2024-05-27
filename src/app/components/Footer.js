@@ -93,12 +93,13 @@ function Footer() {
               <div className="footerContactTextDetails">
                 <h1>Head Office:</h1>
                 <p className="dAddress">
-                  6th floor  le cygne commercial center,  
-                  <br /> Kaab Bin Malik Street, Al Olaya, Riyadh 11533
+                  Office #39, 7th Floor,Dubai National Insurance
+                  <br />  
+                  Building, Port Saeed Deira, Dubai, UAE
                 </p>
                 <p className="mAddress">
-                  6th floor  le cygne commercial center, Kaab 
-                  Bin Malik Street, Al Olaya, Riyadh 11533
+                  Office #39, 7th Floor, Dubai National Insurance Building,
+                  Port Saeed Deira, Dubai, UAE
                 </p>
               </div>
             </a>

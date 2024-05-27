@@ -53,19 +53,19 @@ const container3 = [
     sectionTitle: "",
     cardData: [
       {
-        img: "/Container3/4.webp",
+        img: "/Jurisdiction/2.jpg",
         cardHeading: "Mainland Company",
         description:
           "Dubai's mainland companies offer full access to the UAE market and allow 100% foreign ownership with a local service agent. This flexibility comes with the requirement for a physical office and potential future corporate tax. The setup process is more complex, but these companies can participate in government tenders.",
       },
       {
-        img: "/Container3/5.webp",
+        img: "/Jurisdiction/6.webp",
         cardHeading: "Freezone Company",
         description:
           "Freezone companies operate within designated zones with streamlined setup, 100% foreign ownership, and tax exemptions (depending on the zone). They benefit from world-class infrastructure but face limitations on business activities (restricted to the free zone's permitted activities) and may have annual fees.",
       },
       {
-        img: "/Container3/6.webp",
+        img: "/Jurisdiction/5.webp",
         cardHeading: "Offshore Companies",
         description:
           "Offshore companies, registered outside the UAE, are ideal for international trade and investment holding. They offer 100% foreign ownership, tax benefits, and low setup costs, but cannot conduct business directly within the UAE mainland and have limited banking facilities there.",
