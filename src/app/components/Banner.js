@@ -27,6 +27,7 @@ const Banner = () => {
           and develop its legacy as a city for the global community.
         </h3>
       </div>
+      <div style={{position:"absolute",backgroundColor:"black",height:"100%",width:"100%",top:0 ,opacity:0.5,zIndex:0}}/>
     </div>
   );
 };
