@@ -49,6 +49,7 @@ export default function Home() {
 
       <Header />
       <MobileHeader />
+        <WhatsAppChat />
       <div id="white-screen">
         <LoadingCircle />
         <div className="changeTextContainer">
@@ -60,7 +61,6 @@ export default function Home() {
         </div>
       </div>
       <div className="mainContainer">
-        <WhatsAppChat />
         <Hero />
         <Services />
         <Locations />
