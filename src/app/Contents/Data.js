@@ -3,19 +3,19 @@ const container2 = {
   sectionTitle: "Reasons to Start a Business in Saudi arabia",
   cardData: [
     {
-      img: "/Container2/1.png",
+      img: "/Container2/1.webp",
       cardHeading: "The Burgeoning Economy",
       description:
         "The UAE has the most liberal trade regime in the Gulf.  For the last 40 years, it has been an open economy with high per capita income and a high annual trade surplus. Companies from all over the world are shifting base to UAE and opening offshore companies here. Today the UAE is home to many start-ups and multi-million dollar conglomerates.The emirates state is wealthy and offers stable financial situations to all companies, leading to a huge inflow of foreign capital in this region. Thus making the economy even more strong.",
     },
     {
-      img: "/Container2/2.png",
+      img: "/Container2/2.webp",
       cardHeading: "Global gateway to trade",
       description:
         "Porttitor sed viverra curabitur augue at vitae. Adipiscing euismod fermentum et orci orci quis. Sed diam dignissim enim morbi. Ultrices diam pharetra faucibus tristique. Nisl in dui purus nisl sagittis elit. Laoreet suscipit est vel ullamcorper. In eleifend vitae a sed at urna. Blandit odio scelerisque ut dis elit nulla vivamus. Posuere curabitur congue nibh dolor erat dolor risus imperdiet.",
     },
     {
-      img: "/Container2/3.png",
+      img: "/Container2/3.webp",
       cardHeading: "Global gateway to trade",
       description:
         "Porttitor sed viverra curabitur augue at vitae. Adipiscing euismod fermentum et orci orci quis. Sed diam dignissim enim morbi. Ultrices diam pharetra faucibus tristique. Nisl in dui purus nisl sagittis elit. Laoreet suscipit est vel ullamcorper. In eleifend vitae a sed at urna. Blandit odio scelerisque ut dis elit nulla vivamus. Posuere curabitur congue nibh dolor erat dolor risus imperdiet.",
