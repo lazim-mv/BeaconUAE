@@ -53,7 +53,7 @@ const container3 = [
     sectionTitle: "",
     cardData: [
       {
-        img: "/Jurisdiction/2.jpg",
+        img: "/Jurisdiction/2.webp",
         cardHeading: "Mainland Company",
         description:
           "Dubai's mainland companies offer full access to the UAE market and allow 100% foreign ownership with a local service agent. This flexibility comes with the requirement for a physical office and potential future corporate tax. The setup process is more complex, but these companies can participate in government tenders.",
@@ -100,13 +100,13 @@ const container5 = {
         "Discover the future of innovation at the Dubai AI & Web3 Campus, an integral part of the prestigious DIFC. This hub seamlessly integrates artificial intelligence and Web3 technologies, shaping the next frontier of technological evolution."
     },
     {
-      img: "/Container5/8.jpg",
+      img: "/Container5/8.webp",
       cardHeading: "Dubai Future Foundation",
       description:
         "Dubai Future Foundation is instrumental in driving Dubai's transformation into a futuristic city. Through its various initiatives and projects, DFF fosters innovation, prepares the government for future challenges, and establishes Dubai as a global leader in technological advancements and smart city development."
     },
     {
-      img: "/Container5/9.jpg",
+      img: "/Container5/9.webp",
       cardHeading: "Dubai Silicon Oasis",
       description:
         "Dubai Silicon Oasis is a free zone offering a mix of residential and business facilities. It provides startups with access to state-of-the-art infrastructure, incubation centers, and various business incentives to promote technological advancement and entrepreneurship."
@@ -254,7 +254,7 @@ const container8 = {
 };
 
 const contactBanner = {
-  img: "/contact.png",
+  img: "/contact.webp",
   sectionTitle: " Have Questions? We Have Answers.",
   description:
     "If you're ready to thrive in the UAE market, let's make it happen together. Reach out to us today for specialized consultancy services tailored to your success",
